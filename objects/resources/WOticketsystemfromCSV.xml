@@ -1,0 +1,295 @@
+<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="91ffb3d4-af51-4bd9-8fe6-a2a87f001921" version="5"  xsi:type="c:ResourceType">
+        <_metadata id="1">
+            <storage>
+                <createTimestamp>2024-11-26T07:54:54.983Z</createTimestamp>
+                <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2024-11-26T07:54:54.903Z</requestTimestamp>
+                <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            </process>
+        </_metadata>
+        <name>WO ticket system from CSV</name>
+        <lifecycleState>active</lifecycleState>
+        <operationExecution id="2">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-26T07:54:55.001Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>add</t:changeType>
+                    <t:objectType>c:ResourceType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000015474</token>
+                </executionResult>
+                <objectName>WO ticket system from CSV</objectName>
+            </operation>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <iteration>0</iteration>
+        <iterationToken/>
+        <operationalState>
+            <lastAvailabilityStatus>up</lastAvailabilityStatus>
+            <message>Status set to UP because resource schema was successfully fetched</message>
+            <timestamp>2024-11-26T07:54:55.031Z</timestamp>
+            <nodeId>DefaultNode</nodeId>
+        </operationalState>
+        <operationalStateHistory id="5">
+            <lastAvailabilityStatus>up</lastAvailabilityStatus>
+            <message>Status set to UP because resource schema was successfully fetched</message>
+            <timestamp>2024-11-26T07:54:55.031Z</timestamp>
+            <nodeId>DefaultNode</nodeId>
+        </operationalStateHistory>
+        <connectorRef oid="85021a1e-3eea-421f-8d8f-9f98022efc6b" relation="org:default" type="c:ConnectorType"/>
+        <connectorConfiguration xmlns:icfc="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/connector-schema-3">
+            <icfc:configurationProperties xmlns:cfg="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/bundle/com.evolveum.polygon.connector-csv/com.evolveum.polygon.connector.csv.CsvConnector">
+                <cfg:fieldDelimiter>;</cfg:fieldDelimiter>
+                <cfg:filePath>/opt/midpoint/var/info/wo.csv</cfg:filePath>
+                <cfg:uniqueAttribute>wo_num</cfg:uniqueAttribute>
+            </icfc:configurationProperties>
+        </connectorConfiguration>
+        <schema>
+            <cachingMetadata>
+                <retrievalTimestamp>2024-11-26T07:54:55.031Z</retrievalTimestamp>
+                <serialNumber>f833b5cc654e6299-f09acc68d5d8ae6f</serialNumber>
+            </cachingMetadata>
+            <generationConstraints>
+                <generateObjectClass>ri:AccountObjectClass</generateObjectClass>
+            </generationConstraints>
+            <definition>
+                <xsd:schema xmlns:a="http://prism.evolveum.com/xml/ns/public/annotation-3" xmlns:ra="http://midpoint.evolveum.com/xml/ns/public/resource/annotation-3" xmlns:tns="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xml:space="preserve">
+                <xsd:import namespace="http://prism.evolveum.com/xml/ns/public/annotation-3"/>
+                <xsd:import namespace="http://midpoint.evolveum.com/xml/ns/public/resource/annotation-3"/>
+                <xsd:complexType name="AccountObjectClass">
+                    <xsd:annotation>
+                        <xsd:appinfo>
+                            <a:container>true</a:container>
+                            <ra:resourceObject>true</ra:resourceObject>
+                            <ra:nativeObjectClass>__ACCOUNT__</ra:nativeObjectClass>
+                            <ra:default>true</ra:default>
+                            <ra:auxiliary>false</ra:auxiliary>
+                            <ra:embedded>false</ra:embedded>
+                            <ra:namingAttribute>ri:wo_num</ra:namingAttribute>
+                            <ra:displayNameAttribute>ri:wo_num</ra:displayNameAttribute>
+                            <ra:identifier>ri:wo_num</ra:identifier>
+                        </xsd:appinfo>
+                    </xsd:annotation>
+                    <xsd:sequence>
+                        <xsd:element minOccurs="0" name="wo_satus" type="xsd:string">
+                            <xsd:annotation>
+                                <xsd:appinfo>
+                                    <a:displayOrder>120</a:displayOrder>
+                                    <ra:nativeAttributeName>wo_satus</ra:nativeAttributeName>
+                                    <ra:frameworkAttributeName>wo_satus</ra:frameworkAttributeName>
+                                    <ra:returnedByDefault>true</ra:returnedByDefault>
+                                </xsd:appinfo>
+                            </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element minOccurs="0" name="wo_role" type="xsd:string">
+                            <xsd:annotation>
+                                <xsd:appinfo>
+                                    <a:displayOrder>130</a:displayOrder>
+                                    <ra:nativeAttributeName>wo_role</ra:nativeAttributeName>
+                                    <ra:frameworkAttributeName>wo_role</ra:frameworkAttributeName>
+                                    <ra:returnedByDefault>true</ra:returnedByDefault>
+                                </xsd:appinfo>
+                            </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="wo_num" type="xsd:string">
+                            <xsd:annotation>
+                                <xsd:appinfo>
+                                    <a:displayOrder>100</a:displayOrder>
+                                    <ra:nativeAttributeName>wo_num</ra:nativeAttributeName>
+                                    <ra:frameworkAttributeName>__NAME__</ra:frameworkAttributeName>
+                                    <ra:returnedByDefault>true</ra:returnedByDefault>
+                                </xsd:appinfo>
+                            </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element minOccurs="0" name="wo_action" type="xsd:string">
+                            <xsd:annotation>
+                                <xsd:appinfo>
+                                    <a:displayOrder>140</a:displayOrder>
+                                    <ra:nativeAttributeName>wo_action</ra:nativeAttributeName>
+                                    <ra:frameworkAttributeName>wo_action</ra:frameworkAttributeName>
+                                    <ra:returnedByDefault>true</ra:returnedByDefault>
+                                </xsd:appinfo>
+                            </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element minOccurs="0" name="wo_user" type="xsd:string">
+                            <xsd:annotation>
+                                <xsd:appinfo>
+                                    <a:displayOrder>150</a:displayOrder>
+                                    <ra:nativeAttributeName>wo_user</ra:nativeAttributeName>
+                                    <ra:frameworkAttributeName>wo_user</ra:frameworkAttributeName>
+                                    <ra:returnedByDefault>true</ra:returnedByDefault>
+                                </xsd:appinfo>
+                            </xsd:annotation>
+                        </xsd:element>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:schema>
+            </definition>
+        </schema>
+        <schemaHandling>
+            <objectType id="7">
+                <kind>entitlement</kind>
+                <intent>intent WO</intent>
+                <displayName>WO</displayName>
+                <default>true</default>
+                <delineation>
+                    <objectClass>ri:AccountObjectClass</objectClass>
+                    <filter>
+                        <q:text>attributes/wo_satus not contains 'DONE'</q:text>
+                    </filter>
+                </delineation>
+                <focus>
+                    <type>c:RoleType</type>
+                    <archetypeRef oid="c1eb5951-760a-4f2f-b799-b342380dc062" relation="org:default" type="c:ArchetypeType"/>
+                </focus>
+                <attribute id="9">
+                    <ref>ri:wo_num</ref>
+                    <inbound id="10">
+                        <name>01 inbound</name>
+                        <strength>strong</strength>
+                        <target>
+                            <path>identifier</path>
+                        </target>
+                    </inbound>
+                    <inbound id="11">
+                        <name>02 inbound</name>
+                        <strength>strong</strength>
+                        <expression>
+                            <script>
+                                <code>"WO:" + input.padLeft(14,'0')</code>
+                            </script>
+                        </expression>
+                        <target>
+                            <path>name</path>
+                        </target>
+                    </inbound>
+                    <inbound id="472">
+                        <name>03 add POLICY to WO</name>
+                        <lifecycleState>active</lifecycleState>
+                        <strength>strong</strength>
+                        <expression>
+                            <assignmentTargetSearch>
+                                <targetType>c:RoleType</targetType>
+                                <oid>db7df2a6-537d-493f-917a-fdac99758b11</oid>
+                            </assignmentTargetSearch>
+                        </expression>
+                        <target>
+                            <path>$focus/assignment</path>
+                        </target>
+                    </inbound>
+                </attribute>
+                <attribute id="12">
+                    <ref>ri:wo_role</ref>
+                    <inbound id="13">
+                        <name>04 inbound</name>
+                        <strength>weak</strength>
+                        <target>
+                            <path>extension/DROLER_role</path>
+                        </target>
+                    </inbound>
+                </attribute>
+                <attribute id="14">
+                    <ref>ri:wo_user</ref>
+                    <inbound id="15">
+                        <name>05 inbound</name>
+                        <strength>weak</strength>
+                        <target>
+                            <path>extension/DROLER_owner</path>
+                        </target>
+                    </inbound>
+                </attribute>
+                <attribute id="16">
+                    <ref>ri:wo_action</ref>
+                    <inbound id="17">
+                        <name>06 inbound</name>
+                        <strength>weak</strength>
+                        <target>
+                            <path>costCenter</path>
+                        </target>
+                    </inbound>
+                </attribute>
+                <attribute id="21">
+                    <ref>ri:wo_satus</ref>
+                    <outbound>
+                        <name>01 outbound</name>
+                        <strength>strong</strength>
+                        <source>
+                            <path>$focus/documentation</path>
+                        </source>
+                        <condition>
+                            <script>
+                                <code>documentation == 'DONE'</code>
+                            </script>
+                        </condition>
+                    </outbound>
+                </attribute>
+                <correlation>
+                    <correlators>
+                        <items id="30">
+                            <item id="31">
+                                <ref>c:identifier</ref>
+                            </item>
+                        </items>
+                    </correlators>
+                </correlation>
+                <synchronization>
+                    <reaction id="23">
+                        <situation>unmatched</situation>
+                        <actions>
+                            <addFocus id="26"/>
+                        </actions>
+                    </reaction>
+                    <reaction id="24">
+                        <situation>linked</situation>
+                        <actions>
+                            <synchronize id="27"/>
+                        </actions>
+                    </reaction>
+                    <reaction id="25">
+                        <situation>unlinked</situation>
+                        <actions>
+                            <synchronize id="28"/>
+                        </actions>
+                    </reaction>
+                </synchronization>
+            </objectType>
+        </schemaHandling>
+        <capabilities>
+            <cachingMetadata>
+                <retrievalTimestamp>2024-11-26T07:54:55.026Z</retrievalTimestamp>
+                <serialNumber>fa097f5941fc5420-6b28284bcd075caa</serialNumber>
+            </cachingMetadata>
+            <native xmlns:cap="http://midpoint.evolveum.com/xml/ns/public/resource/capabilities-3">
+                <cap:schema/>
+                <cap:discoverConfiguration/>
+                <cap:liveSync/>
+                <cap:create/>
+                <cap:read>
+                    <cap:returnDefaultAttributesOption>false</cap:returnDefaultAttributesOption>
+                </cap:read>
+                <cap:update>
+                    <cap:addRemoveAttributeValues>true</cap:addRemoveAttributeValues>
+                </cap:update>
+                <cap:delete/>
+                <cap:testConnection/>
+                <cap:script>
+                    <cap:host id="3">
+                        <cap:type>resource</cap:type>
+                    </cap:host>
+                    <cap:host id="4">
+                        <cap:type>connector</cap:type>
+                    </cap:host>
+                </cap:script>
+            </native>
+        </capabilities>
+    </apti:object>

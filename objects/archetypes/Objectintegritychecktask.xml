@@ -1,0 +1,167 @@
+<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000522" version="3"  xsi:type="c:ArchetypeType">
+        <_metadata id="16">
+            <storage>
+                <createTimestamp>2024-11-08T07:43:55.419Z</createTimestamp>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2024-11-08T07:43:55.407Z</requestTimestamp>
+            </process>
+        </_metadata>
+        <name>Object integrity check task</name>
+        <operationExecution id="19">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-08T07:43:55.442Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>add</t:changeType>
+                    <t:objectType>c:ArchetypeType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000000440</token>
+                </executionResult>
+                <objectName>Object integrity check task</objectName>
+            </operation>
+            <status>success</status>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+        </operationExecution>
+        <operationExecution id="20">
+            <recordType>complex</recordType>
+            <timestamp>2024-11-08T07:53:15.886Z</timestamp>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
+            <activityPath/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="21">
+            <recordType>complex</recordType>
+            <timestamp>2024-11-18T08:09:26.344Z</timestamp>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+            <activityPath/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <assignment id="12">
+            <_metadata id="17">
+                <storage>
+                    <createTimestamp>2024-11-08T07:43:55.419Z</createTimestamp>
+                    <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+                </storage>
+                <process>
+                    <requestTimestamp>2024-11-08T07:43:55.407Z</requestTimestamp>
+                </process>
+                <provenance>
+                    <acquisition id="18">
+                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                        <timestamp>2024-11-08T07:43:55.406Z</timestamp>
+                    </acquisition>
+                </provenance>
+            </_metadata>
+            <identifier>holderType</identifier>
+            <activation>
+                <effectiveStatus>enabled</effectiveStatus>
+            </activation>
+            <assignmentRelation id="13">
+                <holderType>TaskType</holderType>
+            </assignmentRelation>
+        </assignment>
+        <iteration>0</iteration>
+        <iterationToken/>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+            <enableTimestamp>2024-11-08T07:43:55.412Z</enableTimestamp>
+        </activation>
+        <inducement id="14">
+            <identifier>nameMapping</identifier>
+            <focusMappings>
+                <mapping id="15">
+                    <strength>weak</strength>
+                    <expression>
+                        <script>
+                            <code>
+                            return source.name
+                        </code>
+                        </script>
+                    </expression>
+                    <target>
+                        <path>name</path>
+                    </target>
+                </mapping>
+            </focusMappings>
+        </inducement>
+        <archetypePolicy>
+            <display>
+                <label>
+                    <t:orig>Object integrity check task</t:orig>
+                    <t:norm>object integrity check task</t:norm>
+                    <t:translation>
+                        <t:key>ObjectIntegrityCheckTask.label</t:key>
+                    </t:translation>
+                </label>
+                <pluralLabel>
+                    <t:orig>Object integrity check task</t:orig>
+                    <t:norm>object integrity check task</t:norm>
+                    <t:translation>
+                        <t:key>TaskHandlerSelector.model.object.integrity.check.handler</t:key>
+                    </t:translation>
+                </pluralLabel>
+                <icon>
+                    <cssClass>fa fa-wrench</cssClass>
+                    <color>green</color>
+                </icon>
+            </display>
+            <itemConstraint id="1">
+                <path>extension</path>
+                <visibility>vacant</visibility>
+            </itemConstraint>
+            <itemConstraint id="2">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:objectType</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="3">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:objectQuery</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="4">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:searchOptions</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="5">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:iterationMethod</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="6">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:useRepositoryDirectly</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="7">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:failedObjectsSelector</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="8">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:workerThreads</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <adminGuiConfiguration>
+                <objectDetails>
+                    <type>TaskType</type>
+                    <panel id="9">
+                        <identifier>activity</identifier>
+                        <panel id="10">
+                            <identifier>work</identifier>
+                            <container id="11">
+                                <identifier>work-objectIntegrityCheck</identifier>
+                                <path>activity/work/objectIntegrityCheck</path>
+                            </container>
+                        </panel>
+                    </panel>
+                </objectDetails>
+            </adminGuiConfiguration>
+        </archetypePolicy>
+        <archetypeType>auxiliary</archetypeType>
+    </apti:object>

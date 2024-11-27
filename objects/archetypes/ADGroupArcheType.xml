@@ -1,0 +1,200 @@
+<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="e9eda47b-b097-4814-9605-7177a2482fa1" version="23"  xsi:type="c:ArchetypeType">
+        <_metadata id="1">
+            <storage>
+                <createTimestamp>2024-11-17T11:46:32.471Z</createTimestamp>
+                <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+                <modifyTimestamp>2024-11-20T07:09:35.507Z</modifyTimestamp>
+                <modifierRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+                <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2024-11-17T11:46:32.396Z</requestTimestamp>
+                <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            </process>
+        </_metadata>
+        <name>AD Group ArcheType</name>
+        <operationExecution id="29">
+            <recordType>complex</recordType>
+            <timestamp>2024-11-18T08:09:28.373Z</timestamp>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+            <activityPath/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="34">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-20T06:46:03.094Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>modify</t:changeType>
+                    <t:objectType>c:ArchetypeType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000036553</token>
+                </executionResult>
+                <objectName>AD Group ArcheType</objectName>
+            </operation>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="36">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-20T06:47:56.167Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>modify</t:changeType>
+                    <t:objectType>c:ArchetypeType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000038039</token>
+                </executionResult>
+                <objectName>AD Group ArcheType</objectName>
+            </operation>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="41">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-20T06:54:42.694Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>modify</t:changeType>
+                    <t:objectType>c:ArchetypeType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000043508</token>
+                </executionResult>
+                <objectName>AD Group ArcheType</objectName>
+            </operation>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="42">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-20T06:55:55.992Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>modify</t:changeType>
+                    <t:objectType>c:ArchetypeType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000045301</token>
+                </executionResult>
+                <objectName>AD Group ArcheType</objectName>
+            </operation>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="43">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-20T07:09:35.524Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>modify</t:changeType>
+                    <t:objectType>c:ArchetypeType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000049636</token>
+                </executionResult>
+                <objectName>AD Group ArcheType</objectName>
+            </operation>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <assignment id="1">
+            <identifier>holderType</identifier>
+            <activation>
+                <effectiveStatus>enabled</effectiveStatus>
+            </activation>
+            <assignmentRelation id="2">
+                <holderType>RoleType</holderType>
+            </assignmentRelation>
+        </assignment>
+        <iteration>0</iteration>
+        <iterationToken/>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+            <enableTimestamp>2024-11-16T06:58:25.872Z</enableTimestamp>
+        </activation>
+        <inducement id="7">
+            <construction>
+                <resourceRef oid="b8618fba-cf8b-416c-8e3b-32ea34cf003d" relation="org:default" type="c:ResourceType"/>
+                <kind>account</kind>
+                <intent>intent  MS AD account</intent>
+                <association id="28">
+                    <ref>AD group membership to Midpoint</ref>
+                    <outbound>
+                        <expression>
+                            <associationFromLink>
+                                <projectionDiscriminator xsi:type="c:ShadowDiscriminatorType">
+                                    <kind>entitlement</kind>
+                                    <intent>intent MS AD group</intent>
+                                </projectionDiscriminator>
+                            </associationFromLink>
+                        </expression>
+                    </outbound>
+                </association>
+            </construction>
+            <order>2</order>
+            <focusType>UserType</focusType>
+        </inducement>
+        <inducement id="30">
+            <policyRule>
+                <name>User must have role MS AD account 2.0</name>
+                <policyConstraints>
+                    <requirement id="31">
+                        <targetRef oid="1cae659f-69f2-43b8-b075-8226d718eef9" relation="org:default" type="c:RoleType"/>
+                    </requirement>
+                </policyConstraints>
+                <policyActions>
+                    <approval id="35">
+                        <approverRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType">
+                            <_metadata id="37">
+                                <provenance>
+                                    <acquisition id="38">
+                                        <actorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+                                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+                                        <timestamp>2024-11-20T06:54:42.638Z</timestamp>
+                                    </acquisition>
+                                </provenance>
+                            </_metadata>
+                        </approverRef>
+                    </approval>
+                </policyActions>
+                <evaluationTarget>assignment</evaluationTarget>
+            </policyRule>
+        </inducement>
+        <archetypePolicy>
+            <display>
+                <label>AD Group role</label>
+                <pluralLabel>AD Group roles</pluralLabel>
+                <icon>
+                    <cssClass>fa fa-people-group</cssClass>
+                    <color>#6b0f89</color>
+                </icon>
+            </display>
+            <adminGuiConfiguration/>
+        </archetypePolicy>
+    </apti:object>

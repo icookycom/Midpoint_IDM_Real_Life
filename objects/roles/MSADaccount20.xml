@@ -1,0 +1,314 @@
+<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="1cae659f-69f2-43b8-b075-8226d718eef9" version="47"  xsi:type="c:RoleType">
+        <_metadata id="1">
+            <storage>
+                <createTimestamp>2024-11-13T06:35:46.841Z</createTimestamp>
+                <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+                <modifyTimestamp>2024-11-25T06:39:54.027Z</modifyTimestamp>
+                <modifierRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+                <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2024-11-13T06:35:46.670Z</requestTimestamp>
+                <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            </process>
+        </_metadata>
+        <name>MS AD account 2.0</name>
+        <description>Create AD account for user, generate unique login, to nickName regenerate nickName if femalyName changes</description>
+        <operationExecution id="2227">
+            <recordType>complex</recordType>
+            <timestamp>2024-11-18T08:09:27.513Z</timestamp>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+            <activityPath/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="2233">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-19T07:00:11.145Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>modify</t:changeType>
+                    <t:objectType>c:RoleType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000019158</token>
+                </executionResult>
+                <objectName>MS AD account 2.0</objectName>
+            </operation>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="2235">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-19T07:00:27.911Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>modify</t:changeType>
+                    <t:objectType>c:RoleType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000019583</token>
+                </executionResult>
+                <objectName>MS AD account 2.0</objectName>
+            </operation>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="2237">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-19T07:00:57.473Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>modify</t:changeType>
+                    <t:objectType>c:RoleType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000020122</token>
+                </executionResult>
+                <objectName>MS AD account 2.0</objectName>
+            </operation>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="2238">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-25T06:38:29.331Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>modify</t:changeType>
+                    <t:objectType>c:RoleType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000001436</token>
+                </executionResult>
+                <objectName>MS AD account 2.0</objectName>
+            </operation>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="2239">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-25T06:39:54.051Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>modify</t:changeType>
+                    <t:objectType>c:RoleType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000001959</token>
+                </executionResult>
+                <objectName>MS AD account 2.0</objectName>
+            </operation>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <iteration>0</iteration>
+        <iterationToken/>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+            <enableTimestamp>2024-11-13T06:35:46.695Z</enableTimestamp>
+        </activation>
+        <inducement id="22">
+            <focusMappings>
+                <mapping id="2222">
+                    <name>Generate uniq nickName for AD and Midpoint</name>
+                    <lifecycleState>active</lifecycleState>
+                    <strength>strong</strength>
+                    <source>
+                        <path>c:givenName</path>
+                    </source>
+                    <source>
+                        <path>c:familyName</path>
+                    </source>
+                    <source>
+                        <path>c:additionalName</path>
+                    </source>
+                    <expression>
+                        <script>
+                            <code>import com.evolveum.midpoint.xml.ns._public.common.common_3.*;
+import com.evolveum.midpoint.prism.query.OrderDirection;
+import com.evolveum.midpoint.prism.path.ItemPath;
+
+iterationToken = 0
+is_it_ok = false
+resource_oid = "b8618fba-cf8b-416c-8e3b-32ea34cf003d"
+resource_kind = "ACCOUNT"
+resource_intent = "intent  MS AD account"
+
+do {
+userGivenName = basic.stringify(givenName)?.tr(' ', '')
+userFamilyName = basic.stringify(familyName)?.tr(' ', '')
+useradditionalName = basic.stringify(additionalName)?.tr(' ', '')
+national_letters =['Я','я','Ю','ю','Ч','ч','Ш','ш','Щ','щ','Ж','ж','А','а','Б','б','В','в','Г','г','Д','д','Е','е','Ё','ё','Э','э','З','з','И','и','Й','й','К','к','Л','л','М','м','Н','н', 'О','о','П','п','Р','р','С','с','Т','т','У','у','Ф','ф','Х','х','Ц','ц','Ы','ы','Ь','ь','Ъ','ъ',' ']
+latin_letters =['Ya','ya','Yu','yu','Ch','ch','Sh','sh','Sh','sh','Zh','zh','A','a','B','b','V','v','G','g','D','d','E','e','E','e','E','e','Z','z','I','i','J','j','K','k','L','l','M','m','N','n', 'O','o','P','p','R','r','S','s','T','t','U','u','F','f','H','h','C','c','Y','y','','','','','']
+
+
+for( i = 0; i &lt; national_letters.size(); i++)
+{
+userGivenName  = userGivenName?.replace(national_letters[i],latin_letters[i]);
+userFamilyName  = userFamilyName?.replace(national_letters[i],latin_letters[i]);
+useradditionalName  = useradditionalName?.replace(national_letters[i],latin_letters[i]);
+}
+
+if ((iterationToken.toInteger() &amp; 1) == 0) 
+{
+second_letter = iterationToken.toInteger() / 2;
+first_letter = second_letter.toInteger() + 1;
+}
+else
+{
+first_letter = (iterationToken.toInteger() + 1) / 2;
+second_letter = first_letter;
+}
+
+
+if(first_letter.toInteger() &gt; userGivenName.length() &amp;&amp; second_letter.toInteger() &gt; useradditionalName.length())
+{
+user_number = iterationToken.toInteger()
+first_full = userGivenName.length()
+second_full = useradditionalName.length()
+if(useradditionalName.length() != 0)
+{
+    name_login_for_user = userGivenName.substring(0,first_letter.toInteger()) + useradditionalName.substring(0,second_letter.toInteger()) + userFamilyName
+    
+    def query = midpoint.queryFor(ShadowType.class, "resourceRef matches (oid = '" + resource_oid + "') and kind = '" + resource_kind + "' and intent = '" + resource_intent + "' and attributes/cn = '" + name_login_for_user + "'") 
+    def result_ad_login = midpoint.searchObjects(query); 
+    
+    if (midpoint.isUniquePropertyValue(user, 'name', name_login_for_user.toString()) &gt; !result_shadow_search)
+    {return name_login_for_user
+    is_it_ok = true}
+    
+}
+
+else
+{return userGivenName.substring(0,first_full.toInteger()) + userFamilyName  + user_number}
+}
+else
+{if (first_letter.toInteger() &gt; userGivenName.length())
+{
+    first_letter = userGivenName.length();
+}
+if (second_letter.toInteger() &gt; useradditionalName.length())
+{
+    second_letter = useradditionalName.length();
+}
+
+name_login_for_user = userGivenName.substring(0,first_letter.toInteger()) + useradditionalName.substring(0,second_letter.toInteger()) + userFamilyName
+
+
+def query = midpoint.queryFor(ShadowType.class, "resourceRef matches (oid = '" + resource_oid + "') and kind = '" + resource_kind + "' and intent = '" + resource_intent + "' and attributes/sAMAccountName = '" + name_login_for_user + "'") 
+def result_ad_login = midpoint.searchObjects(query); 
+
+
+if (midpoint.isUniquePropertyValue(user, 'name', name_login_for_user.toString()) &amp;&amp; !result_ad_login)
+{return name_login_for_user
+is_it_ok = true}
+
+}
+iterationToken = iterationToken + 1
+} while (!is_it_ok)
+</code>
+                        </script>
+                    </expression>
+                    <target>
+                        <path>nickName</path>
+                    </target>
+                </mapping>
+            </focusMappings>
+            <focusType>c:UserType</focusType>
+            <condition>
+                <source>
+                    <path>c:givenName</path>
+                </source>
+                <source>
+                    <path>c:familyName</path>
+                </source>
+                <source>
+                    <path>c:nickName</path>
+                </source>
+                <expression>
+                    <script>
+                        <code>if (basic.isEmpty(nickName)) {if (!basic.isEmpty(givenName)) {if (!basic.isEmpty(familyName)) {
+return true
+}}} else {
+return false
+}</code>
+                    </script>
+                </expression>
+            </condition>
+        </inducement>
+        <inducement id="222">
+            <policyRule>
+                <name>Delete nickName if familyName modified</name>
+                <policyConstraints>
+                    <or id="14">
+                        <modification id="16">
+                            <item>c:familyName</item>
+                        </modification>
+                    </or>
+                </policyConstraints>
+                <policyActions>
+                    <scriptExecution id="5">
+                        <name>some script</name>
+                        <executeScript xmlns:s="http://midpoint.evolveum.com/xml/ns/public/model/scripting-3">
+                            <s:pipeline list="true">
+                                <s:action>
+                                    <s:type>execute-script</s:type>
+                                    <s:parameter>
+                                        <s:name>script</s:name>
+                                        <s:value>
+                                            <code>
+import com.evolveum.midpoint.xml.ns._public.common.common_3.*
+import com.evolveum.midpoint.prism.delta.builder.*
+import com.evolveum.midpoint.model.api.*
+import javax.xml.namespace.QName
+import com.evolveum.midpoint.prism.polystring.PolyString
+
+my_info = new PolyString("")
+delta = prismContext.deltaFor(UserType.class).item(UserType.F_NICK_NAME).replace(my_info).asObjectDelta(input.oid)
+midpoint.modifyObject(delta,  ModelExecuteOptions.createRaw())
+midpoint.recompute(UserType.class, input.oid)
+</code>
+                                        </s:value>
+                                    </s:parameter>
+                                </s:action>
+                            </s:pipeline>
+                        </executeScript>
+                    </scriptExecution>
+                </policyActions>
+            </policyRule>
+            <activation>
+                <administrativeStatus>disabled</administrativeStatus>
+            </activation>
+            <focusType>c:UserType</focusType>
+        </inducement>
+        <inducement id="2236">
+            <construction>
+                <resourceRef oid="b8618fba-cf8b-416c-8e3b-32ea34cf003d" relation="org:default" type="c:ResourceType"/>
+                <kind>account</kind>
+                <intent>intent  MS AD account</intent>
+            </construction>
+        </inducement>
+    </apti:object>

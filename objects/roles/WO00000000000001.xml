@@ -1,0 +1,193 @@
+<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="d916edea-0abf-4182-948c-d1bd289e1dea" version="8"  xsi:type="c:RoleType">
+        <_metadata id="3">
+            <storage>
+                <createTimestamp>2024-11-26T07:59:43.131Z</createTimestamp>
+                <creatorRef oid="772cf74c-aa6c-4d29-a92f-7e668a142d9c" relation="org:default" type="c:UserType"/>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#reconciliation</createChannel>
+                <createTaskRef oid="78d0c4b7-3b54-41d6-a5ce-8ffe516c8c8d" relation="org:default" type="c:TaskType"/>
+                <modifyTimestamp>2024-11-26T08:02:00.295Z</modifyTimestamp>
+                <modifierRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+                <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2024-11-26T07:59:42.392Z</requestTimestamp>
+                <requestorRef oid="772cf74c-aa6c-4d29-a92f-7e668a142d9c" relation="org:default" type="c:UserType"/>
+            </process>
+            <provisioning>
+                <lastProvisioningTimestamp>2024-11-26T07:59:43.996Z</lastProvisioningTimestamp>
+            </provisioning>
+        </_metadata>
+        <name>WO:00000000000001</name>
+        <description>OK: Added role identfier:CN=ADG Terra WC,OU=Groups,OU=OOO_ODIN,DC=168testserverhome,DC=com to user personalNumber:500201</description>
+        <documentation>DONE</documentation>
+        <extension xmlns:gen183="http://example.com/xml/ns/mySchema">
+            <gen183:DROLER_owner>500201</gen183:DROLER_owner>
+            <gen183:DROLER_role>CN=ADG Terra WC,OU=Groups,OU=OOO_ODIN,DC=168testserverhome,DC=com</gen183:DROLER_role>
+        </extension>
+        <operationExecution id="15">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-26T07:59:44.753Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>add</t:changeType>
+                    <t:objectType>c:RoleType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000021054</token>
+                </executionResult>
+                <objectName>WO:00000000000001</objectName>
+            </operation>
+            <operation>
+                <objectDelta>
+                    <t:changeType>modify</t:changeType>
+                    <t:objectType>c:RoleType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.linkShadow</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000021055</token>
+                </executionResult>
+                <objectName>WO:00000000000001</objectName>
+                <resourceOid>91ffb3d4-af51-4bd9-8fe6-a2a87f001921</resourceOid>
+                <resourceName>WO ticket system from CSV</resourceName>
+            </operation>
+            <operation>
+                <objectDelta>
+                    <t:changeType>modify</t:changeType>
+                    <t:objectType>c:RoleType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000021056</token>
+                </executionResult>
+                <objectName>WO:00000000000001</objectName>
+            </operation>
+            <status>success</status>
+            <initiatorRef oid="772cf74c-aa6c-4d29-a92f-7e668a142d9c" relation="org:default" type="c:UserType"/>
+            <taskRef oid="78d0c4b7-3b54-41d6-a5ce-8ffe516c8c8d" relation="org:default" type="c:TaskType"/>
+            <activityPath>
+                <identifier>resourceObjects</identifier>
+            </activityPath>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#reconciliation</channel>
+        </operationExecution>
+        <operationExecution id="16">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-26T08:02:00.335Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>modify</t:changeType>
+                    <t:objectType>c:RoleType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000025776</token>
+                </executionResult>
+                <objectName>WO:00000000000001</objectName>
+            </operation>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <assignment id="1">
+            <_metadata id="4">
+                <storage>
+                    <createTimestamp>2024-11-26T07:59:43.131Z</createTimestamp>
+                    <creatorRef oid="772cf74c-aa6c-4d29-a92f-7e668a142d9c" relation="org:default" type="c:UserType"/>
+                    <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#reconciliation</createChannel>
+                    <createTaskRef oid="78d0c4b7-3b54-41d6-a5ce-8ffe516c8c8d" relation="org:default" type="c:TaskType"/>
+                </storage>
+                <process>
+                    <requestTimestamp>2024-11-26T07:59:42.392Z</requestTimestamp>
+                    <requestorRef oid="772cf74c-aa6c-4d29-a92f-7e668a142d9c" relation="org:default" type="c:UserType"/>
+                </process>
+            </_metadata>
+            <targetRef oid="c1eb5951-760a-4f2f-b799-b342380dc062" relation="org:default" type="c:ArchetypeType"/>
+            <activation>
+                <effectiveStatus>enabled</effectiveStatus>
+            </activation>
+        </assignment>
+        <assignment id="2">
+            <_metadata id="5">
+                <storage>
+                    <createTimestamp>2024-11-26T07:59:43.131Z</createTimestamp>
+                    <creatorRef oid="772cf74c-aa6c-4d29-a92f-7e668a142d9c" relation="org:default" type="c:UserType"/>
+                    <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#reconciliation</createChannel>
+                    <createTaskRef oid="78d0c4b7-3b54-41d6-a5ce-8ffe516c8c8d" relation="org:default" type="c:TaskType"/>
+                </storage>
+                <process>
+                    <requestTimestamp>2024-11-26T07:59:42.392Z</requestTimestamp>
+                    <requestorRef oid="772cf74c-aa6c-4d29-a92f-7e668a142d9c" relation="org:default" type="c:UserType"/>
+                </process>
+                <provenance>
+                    <mappingSpecification>
+                        <definitionObjectRef oid="91ffb3d4-af51-4bd9-8fe6-a2a87f001921" relation="org:default" type="c:ResourceType"/>
+                        <objectType>
+                            <kind>entitlement</kind>
+                            <intent>intent WO</intent>
+                        </objectType>
+                        <mappingName>03 add POLICY to WO</mappingName>
+                    </mappingSpecification>
+                </provenance>
+            </_metadata>
+            <targetRef oid="db7df2a6-537d-493f-917a-fdac99758b11" relation="org:default" type="c:RoleType"/>
+            <activation>
+                <effectiveStatus>enabled</effectiveStatus>
+            </activation>
+        </assignment>
+        <iteration>0</iteration>
+        <iterationToken/>
+        <archetypeRef oid="c1eb5951-760a-4f2f-b799-b342380dc062" relation="org:default" type="c:ArchetypeType"/>
+        <roleMembershipRef oid="c1eb5951-760a-4f2f-b799-b342380dc062" relation="org:default" type="c:ArchetypeType">
+            <_metadata id="10">
+                <storage>
+                    <createTimestamp>2024-11-26T07:59:43.131Z</createTimestamp>
+                </storage>
+                <provenance>
+                    <assignmentPath>
+                        <sourceRef oid="d916edea-0abf-4182-948c-d1bd289e1dea" relation="org:default" type="c:RoleType"/>
+                        <segment id="11">
+                            <segmentOrder>1</segmentOrder>
+                            <assignmentId>1</assignmentId>
+                            <targetRef oid="c1eb5951-760a-4f2f-b799-b342380dc062" relation="org:default" type="c:ArchetypeType"/>
+                            <matchingOrder>true</matchingOrder>
+                        </segment>
+                    </assignmentPath>
+                </provenance>
+            </_metadata>
+        </roleMembershipRef>
+        <roleMembershipRef oid="db7df2a6-537d-493f-917a-fdac99758b11" relation="org:default" type="c:RoleType">
+            <_metadata id="12">
+                <storage>
+                    <createTimestamp>2024-11-26T07:59:43.131Z</createTimestamp>
+                </storage>
+                <provenance>
+                    <assignmentPath>
+                        <sourceRef oid="d916edea-0abf-4182-948c-d1bd289e1dea" relation="org:default" type="c:RoleType"/>
+                        <segment id="13">
+                            <segmentOrder>1</segmentOrder>
+                            <assignmentId>2</assignmentId>
+                            <targetRef oid="db7df2a6-537d-493f-917a-fdac99758b11" relation="org:default" type="c:RoleType"/>
+                            <matchingOrder>true</matchingOrder>
+                        </segment>
+                    </assignmentPath>
+                </provenance>
+            </_metadata>
+        </roleMembershipRef>
+        <linkRef oid="3ea931b1-30c3-43f5-8705-ca2690acdda7" relation="org:default" type="c:ShadowType"/>
+        <activation>
+            <administrativeStatus>disabled</administrativeStatus>
+            <effectiveStatus>disabled</effectiveStatus>
+            <disableTimestamp>2024-11-26T08:02:00.239Z</disableTimestamp>
+            <enableTimestamp>2024-11-26T07:59:42.393Z</enableTimestamp>
+        </activation>
+        <costCenter>ADD</costCenter>
+        <identifier>1</identifier>
+    </apti:object>

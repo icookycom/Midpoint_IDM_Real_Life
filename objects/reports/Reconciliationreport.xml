@@ -1,0 +1,289 @@
+<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000100" version="3"  xsi:type="c:ReportType">
+        <_metadata id="12">
+            <storage>
+                <createTimestamp>2024-11-08T07:43:52.750Z</createTimestamp>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2024-11-08T07:43:52.736Z</requestTimestamp>
+            </process>
+        </_metadata>
+        <name>Reconciliation report</name>
+        <description>Reconciliation report for selected resource.</description>
+        <operationExecution id="20">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-08T07:43:52.785Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>add</t:changeType>
+                    <t:objectType>c:ReportType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000000130</token>
+                </executionResult>
+                <objectName>Reconciliation report</objectName>
+            </operation>
+            <status>success</status>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+        </operationExecution>
+        <operationExecution id="21">
+            <recordType>complex</recordType>
+            <timestamp>2024-11-08T07:53:14.845Z</timestamp>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
+            <activityPath/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="22">
+            <recordType>complex</recordType>
+            <timestamp>2024-11-18T08:09:25.579Z</timestamp>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+            <activityPath/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <assignment id="1">
+            <_metadata id="13">
+                <storage>
+                    <createTimestamp>2024-11-08T07:43:52.750Z</createTimestamp>
+                    <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+                </storage>
+                <process>
+                    <requestTimestamp>2024-11-08T07:43:52.736Z</requestTimestamp>
+                </process>
+                <provenance>
+                    <acquisition id="14">
+                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                        <timestamp>2024-11-08T07:43:52.736Z</timestamp>
+                    </acquisition>
+                </provenance>
+            </_metadata>
+            <identifier>archetype</identifier>
+            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+            <activation>
+                <effectiveStatus>enabled</effectiveStatus>
+            </activation>
+        </assignment>
+        <iteration>0</iteration>
+        <iterationToken/>
+        <archetypeRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+        <archetypeRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
+        <roleMembershipRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType">
+            <_metadata id="17">
+                <storage>
+                    <createTimestamp>2024-11-08T07:43:52.747Z</createTimestamp>
+                </storage>
+                <provenance>
+                    <assignmentPath>
+                        <sourceRef oid="00000000-0000-0000-0000-000000000100" relation="org:default" type="c:ReportType"/>
+                        <segment id="18">
+                            <segmentOrder>1</segmentOrder>
+                            <assignmentId>1</assignmentId>
+                            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+                            <matchingOrder>true</matchingOrder>
+                        </segment>
+                        <segment id="19">
+                            <segmentOrder>2</segmentOrder>
+                            <targetRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
+                            <matchingOrder>true</matchingOrder>
+                        </segment>
+                    </assignmentPath>
+                </provenance>
+            </_metadata>
+        </roleMembershipRef>
+        <roleMembershipRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType">
+            <_metadata id="15">
+                <storage>
+                    <createTimestamp>2024-11-08T07:43:52.747Z</createTimestamp>
+                </storage>
+                <provenance>
+                    <assignmentPath>
+                        <sourceRef oid="00000000-0000-0000-0000-000000000100" relation="org:default" type="c:ReportType"/>
+                        <segment id="16">
+                            <segmentOrder>1</segmentOrder>
+                            <assignmentId>1</assignmentId>
+                            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+                            <matchingOrder>true</matchingOrder>
+                        </segment>
+                    </assignmentPath>
+                </provenance>
+            </_metadata>
+        </roleMembershipRef>
+        <objectCollection>
+            <collection>
+                <filter>
+                    <q:and>
+                        <q:ref>
+                            <q:path>resourceRef</q:path>
+                            <expression>
+                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                                <path>$resourceRef</path>
+                            </expression>
+                        </q:ref>
+                        <q:equal>
+                            <q:path>synchronizationSituation</q:path>
+                            <expression>
+                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                                <path>$situation</path>
+                            </expression>
+                        </q:equal>
+                        <q:equal>
+                            <q:path>objectClass</q:path>
+                            <expression>
+                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                                <script>
+                                    <code>
+                                    import javax.xml.namespace.QName;
+                                    if (objectClass != null)
+                                    return new QName("http://midpoint.evolveum.com/xml/ns/public/resource/instance-3", objectClass)
+                                </code>
+                                </script>
+                            </expression>
+                        </q:equal>
+                        <q:equal>
+                            <q:path>kind</q:path>
+                            <expression>
+                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                                <path>$kind</path>
+                            </expression>
+                        </q:equal>
+                        <q:equal>
+                            <q:path>intent</q:path>
+                            <expression>
+                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                                <path>$intent</path>
+                            </expression>
+                        </q:equal>
+                    </q:and>
+                </filter>
+                <baseCollectionRef>
+                    <collectionRef oid="00000000-0000-0000-0001-000000000008" relation="org:default" type="c:ObjectCollectionType"/>
+                </baseCollectionRef>
+            </collection>
+            <view>
+                <column id="7">
+                    <name>nameColumn</name>
+                    <path>name</path>
+                </column>
+                <column id="8">
+                    <name>resourceColumn</name>
+                    <path>resourceRef</path>
+                    <previousColumn>nameColumn</previousColumn>
+                </column>
+                <column id="9">
+                    <name>situationColumn</name>
+                    <path>synchronizationSituation</path>
+                    <previousColumn>resourceColumn</previousColumn>
+                </column>
+                <column id="10">
+                    <name>ownerColumn</name>
+                    <display>
+                        <label>
+                            <t:orig>Owner</t:orig>
+                            <t:norm>owner</t:norm>
+                            <t:translation>
+                                <t:key>reportReconciliation.ownerColumn.label</t:key>
+                            </t:translation>
+                        </label>
+                    </display>
+                    <previousColumn>situationColumn</previousColumn>
+                    <export>
+                        <expression>
+                            <script>
+                                <code>
+                                import com.evolveum.midpoint.schema.GetOperationOptions;
+                                import com.evolveum.midpoint.schema.SelectorOptions;
+                                import com.evolveum.midpoint.xml.ns._public.common.common_3.*;
+                                import com.evolveum.midpoint.prism.query.*
+
+                                query = midpoint.getPrismContext().queryFor(FocusType.class)
+                                .item(FocusType.F_LINK_REF).ref(object.getOid())
+                                .build();
+
+                                options = SelectorOptions.createCollection(GetOperationOptions.createRaw())
+                                return midpoint.searchObjects(FocusType.class, query, options);
+                            </code>
+                            </script>
+                        </expression>
+                    </export>
+                </column>
+                <column id="11">
+                    <name>synchTimestampColumn</name>
+                    <path>synchronizationTimestamp</path>
+                    <previousColumn>ownerColumn</previousColumn>
+                </column>
+                <type>ShadowType</type>
+            </view>
+            <parameter id="2">
+                <name>intent</name>
+                <type>string</type>
+                <display>
+                    <label>
+                        <t:orig>intent</t:orig>
+                        <t:norm>intent</t:norm>
+                        <t:translation>
+                            <t:key>ShadowType.intent</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+            </parameter>
+            <parameter id="3">
+                <name>objectClass</name>
+                <type>string</type>
+                <display>
+                    <label>
+                        <t:orig>objectClass</t:orig>
+                        <t:norm>objectclass</t:norm>
+                        <t:translation>
+                            <t:key>ShadowType.objectClass</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+            </parameter>
+            <parameter id="4">
+                <name>kind</name>
+                <type>ShadowKindType</type>
+                <display>
+                    <label>
+                        <t:orig>kind</t:orig>
+                        <t:norm>kind</t:norm>
+                        <t:translation>
+                            <t:key>ShadowType.kind</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+            </parameter>
+            <parameter id="5">
+                <name>situation</name>
+                <type>SynchronizationSituationType</type>
+                <display>
+                    <label>
+                        <t:orig>situation</t:orig>
+                        <t:norm>situation</t:norm>
+                        <t:translation>
+                            <t:key>ShadowType.synchronizationSituation</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+            </parameter>
+            <parameter id="6">
+                <name>resourceRef</name>
+                <type>c:ObjectReferenceType</type>
+                <targetType>c:ResourceType</targetType>
+                <display>
+                    <label>
+                        <t:orig>resource</t:orig>
+                        <t:norm>resource</t:norm>
+                        <t:translation>
+                            <t:key>ObjectTypeGuiDescriptor.resource</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+            </parameter>
+        </objectCollection>
+    </apti:object>

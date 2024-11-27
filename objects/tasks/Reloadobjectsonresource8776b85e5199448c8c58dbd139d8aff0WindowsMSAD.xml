@@ -1,0 +1,349 @@
+<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="3975c5d8-353d-419e-a158-73c67bd9bf30" version="20"  xsi:type="c:TaskType">
+        <_metadata id="2">
+            <storage>
+                <createTimestamp>2024-11-12T10:10:20.426Z</createTimestamp>
+                <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2024-11-12T10:10:20.344Z</requestTimestamp>
+                <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            </process>
+        </_metadata>
+        <name>Reload objects on resource:8776b85e-5199-448c-8c58-dbd139d8aff0(Windows MS AD)</name>
+        <operationExecution id="8">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-12T10:10:20.445Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>add</t:changeType>
+                    <t:objectType>c:TaskType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000116929</token>
+                </executionResult>
+                <objectName>Reload objects on resource:8776b85e-5199-448c-8c58-dbd139d8aff0(Windows MS AD)</objectName>
+            </operation>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="12">
+            <recordType>complex</recordType>
+            <timestamp>2024-11-18T08:09:27.550Z</timestamp>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+            <activityPath/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <assignment id="1">
+            <_metadata id="3">
+                <storage>
+                    <createTimestamp>2024-11-12T10:10:20.426Z</createTimestamp>
+                    <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+                    <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+                </storage>
+                <process>
+                    <requestTimestamp>2024-11-12T10:10:20.344Z</requestTimestamp>
+                    <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+                </process>
+                <provenance>
+                    <acquisition id="4">
+                        <actorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+                        <timestamp>2024-11-12T10:10:20.344Z</timestamp>
+                    </acquisition>
+                </provenance>
+            </_metadata>
+            <targetRef oid="00000000-0000-0000-0000-000000000503" relation="org:default" type="c:ArchetypeType"/>
+            <activation>
+                <effectiveStatus>enabled</effectiveStatus>
+            </activation>
+        </assignment>
+        <iteration>0</iteration>
+        <iterationToken/>
+        <archetypeRef oid="00000000-0000-0000-0000-000000000503" relation="org:default" type="c:ArchetypeType"/>
+        <roleMembershipRef oid="00000000-0000-0000-0000-000000000503" relation="org:default" type="c:ArchetypeType">
+            <_metadata id="5">
+                <storage>
+                    <createTimestamp>2024-11-12T10:10:20.421Z</createTimestamp>
+                </storage>
+                <provenance>
+                    <assignmentPath>
+                        <sourceRef oid="3975c5d8-353d-419e-a158-73c67bd9bf30" relation="org:default" type="c:TaskType"/>
+                        <segment id="6">
+                            <segmentOrder>1</segmentOrder>
+                            <assignmentId>1</assignmentId>
+                            <targetRef oid="00000000-0000-0000-0000-000000000503" relation="org:default" type="c:ArchetypeType"/>
+                            <matchingOrder>true</matchingOrder>
+                        </segment>
+                    </assignmentPath>
+                </provenance>
+            </_metadata>
+        </roleMembershipRef>
+        <taskIdentifier>1731406220426-53013-1</taskIdentifier>
+        <ownerRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <executionState>suspended</executionState>
+        <schedulingState>suspended</schedulingState>
+        <stateBeforeSuspend>running</stateBeforeSuspend>
+        <schedulingStateBeforeSuspend>ready</schedulingStateBeforeSuspend>
+        <result incomplete="true"/>
+        <resultStatus>fatal_error</resultStatus>
+        <objectRef oid="8776b85e-5199-448c-8c58-dbd139d8aff0" relation="org:default" type="c:ResourceType"/>
+        <lastRunStartTimestamp>2024-11-12T10:10:20.465Z</lastRunStartTimestamp>
+        <lastRunFinishTimestamp>2024-11-12T10:10:20.535Z</lastRunFinishTimestamp>
+        <cleanupAfterCompletion>PT0S</cleanupAfterCompletion>
+        <progress>0</progress>
+        <operationStats>
+            <environmentalPerformanceInformation>
+                <provisioningStatistics>
+                    <entry>
+                        <resourceRef oid="8776b85e-5199-448c-8c58-dbd139d8aff0" relation="org:default" type="c:ResourceType" xsi:type="c:ObjectReferenceType">
+                            <targetName>Windows MS AD</targetName>
+                        </resourceRef>
+                        <objectClass>ri:user</objectClass>
+                        <operation>
+                            <operation>search</operation>
+                            <count>1</count>
+                            <totalTime>7</totalTime>
+                            <minTime>7</minTime>
+                            <maxTime>7</maxTime>
+                        </operation>
+                    </entry>
+                </provisioningStatistics>
+                <mappingsStatistics/>
+                <notificationsStatistics/>
+                <lastMessageTimestamp>2024-11-12T10:10:20.520Z</lastMessageTimestamp>
+                <lastMessage>Finished (unsuccessfully) ConnIdOperation{identifier='1731406220513-53013-1', operation=ICF_SEARCH, resourceRef=ObjectReferenceType[value=PRV(oid=8776b85e-5199-448c-8c58-dbd139d8aff0, targetType={.../common/common-3}ResourceType, targetName=Windows MS AD, relation={.../common/org-3}default)], objectClassDef=ResourceObjectClassDefinitionImpl{native=Native object class 'user'{362 item definitions}, attributeDefinitions: 362, associationDefinitions: 0, primaryIdentifiersNames: 1, secondaryIdentifiersNames: 1}, uid='null', startTimestamp=1731406220513, endTimestamp=1731406220520, result=null, message='null'} of user on Windows MS ADin 7 ms</lastMessage>
+            </environmentalPerformanceInformation>
+            <repositoryPerformanceInformation>
+                <operation>
+                    <name>SqaleRepositoryService.getObject</name>
+                    <invocationCount>4</invocationCount>
+                    <executionCount>4</executionCount>
+                    <totalTime>6</totalTime>
+                    <minTime>1</minTime>
+                    <maxTime>2</maxTime>
+                    <totalWastedTime>0</totalWastedTime>
+                    <minWastedTime>0</minWastedTime>
+                    <maxWastedTime>0</maxWastedTime>
+                </operation>
+                <operation>
+                    <name>SqaleRepositoryService.modifyObjectDynamically</name>
+                    <invocationCount>2</invocationCount>
+                    <executionCount>2</executionCount>
+                    <totalTime>7</totalTime>
+                    <minTime>3</minTime>
+                    <maxTime>4</maxTime>
+                    <totalWastedTime>0</totalWastedTime>
+                    <minWastedTime>0</minWastedTime>
+                    <maxWastedTime>0</maxWastedTime>
+                </operation>
+                <operation>
+                    <name>SqaleRepositoryService.modifyObject</name>
+                    <invocationCount>9</invocationCount>
+                    <executionCount>9</executionCount>
+                    <totalTime>27</totalTime>
+                    <minTime>2</minTime>
+                    <maxTime>4</maxTime>
+                    <totalWastedTime>0</totalWastedTime>
+                    <minWastedTime>0</minWastedTime>
+                    <maxWastedTime>0</maxWastedTime>
+                </operation>
+            </repositoryPerformanceInformation>
+            <cachesPerformanceInformation>
+                <cache>
+                    <name>com.evolveum.midpoint.repo.cache.global.GlobalVersionCache</name>
+                    <hitCount>4</hitCount>
+                    <weakHitCount>0</weakHitCount>
+                    <missCount>0</missCount>
+                    <passCount>0</passCount>
+                    <notAvailableCount>0</notAvailableCount>
+                </cache>
+                <cache>
+                    <name>com.evolveum.midpoint.repo.cache.local.LocalVersionCache</name>
+                    <hitCount>0</hitCount>
+                    <weakHitCount>0</weakHitCount>
+                    <missCount>0</missCount>
+                    <passCount>0</passCount>
+                    <notAvailableCount>4</notAvailableCount>
+                </cache>
+                <cache>
+                    <name>com.evolveum.midpoint.provisioning.impl.resources.ResourceCache</name>
+                    <hitCount>4</hitCount>
+                    <weakHitCount>0</weakHitCount>
+                    <missCount>0</missCount>
+                    <passCount>0</passCount>
+                    <notAvailableCount>0</notAvailableCount>
+                </cache>
+            </cachesPerformanceInformation>
+            <operationsPerformanceInformation>
+                <operation>
+                    <name>com.evolveum.midpoint.task.api.Task.refresh</name>
+                    <invocationCount>3</invocationCount>
+                    <totalTime>4592</totalTime>
+                    <minTime>965</minTime>
+                    <maxTime>2627</maxTime>
+                </operation>
+                <operation>
+                    <name>SqaleRepositoryService.getObject</name>
+                    <invocationCount>4</invocationCount>
+                    <totalTime>6559</totalTime>
+                    <minTime>917</minTime>
+                    <maxTime>2575</maxTime>
+                </operation>
+                <operation>
+                    <name>com.evolveum.midpoint.provisioning.api.ProvisioningService.getObject</name>
+                    <invocationCount>3</invocationCount>
+                    <totalTime>101</totalTime>
+                    <minTime>28</minTime>
+                    <maxTime>44</maxTime>
+                </operation>
+                <operation>
+                    <name>com.evolveum.midpoint.provisioning.impl.ProvisioningContext.getConnectorInstance</name>
+                    <invocationCount>1</invocationCount>
+                    <totalTime>94</totalTime>
+                    <minTime>94</minTime>
+                    <maxTime>94</maxTime>
+                </operation>
+                <operation>
+                    <name>com.evolveum.midpoint.provisioning.api.ProvisioningService.searchObjectsIterative</name>
+                    <invocationCount>1</invocationCount>
+                    <totalTime>7597</totalTime>
+                    <minTime>7597</minTime>
+                    <maxTime>7597</maxTime>
+                </operation>
+                <operation>
+                    <name>com.evolveum.midpoint.provisioning.ucf.api.ConnectorInstance.search</name>
+                    <invocationCount>1</invocationCount>
+                    <totalTime>7022</totalTime>
+                    <minTime>7022</minTime>
+                    <maxTime>7022</maxTime>
+                </operation>
+                <operation>
+                    <name>com.evolveum.midpoint.repo.cache.RepositoryCache.getVersion</name>
+                    <invocationCount>4</invocationCount>
+                    <totalTime>52</totalTime>
+                    <minTime>8</minTime>
+                    <maxTime>18</maxTime>
+                </operation>
+                <operation>
+                    <name>SqaleRepositoryService.modifyObject</name>
+                    <invocationCount>9</invocationCount>
+                    <totalTime>27718</totalTime>
+                    <minTime>2321</minTime>
+                    <maxTime>3464</maxTime>
+                </operation>
+                <operation>
+                    <name>org.identityconnectors.framework.api.ConnectorFacade.search</name>
+                    <invocationCount>1</invocationCount>
+                    <totalTime>6766</totalTime>
+                    <minTime>6766</minTime>
+                    <maxTime>6766</maxTime>
+                </operation>
+                <operation>
+                    <name>com.evolveum.midpoint.repo.common.activity.run.LocalActivityRun.runLocally</name>
+                    <invocationCount>1</invocationCount>
+                    <totalTime>22833</totalTime>
+                    <minTime>22833</minTime>
+                    <maxTime>22833</maxTime>
+                </operation>
+                <operation>
+                    <name>com.evolveum.midpoint.provisioning.impl.resourceobjects.ResourceObjectConverter.searchResourceObjects</name>
+                    <invocationCount>1</invocationCount>
+                    <totalTime>7452</totalTime>
+                    <minTime>7452</minTime>
+                    <maxTime>7452</maxTime>
+                </operation>
+                <operation>
+                    <name>SqaleRepositoryService.modifyObjectDynamically</name>
+                    <invocationCount>2</invocationCount>
+                    <totalTime>7071</totalTime>
+                    <minTime>2989</minTime>
+                    <maxTime>4082</maxTime>
+                </operation>
+            </operationsPerformanceInformation>
+            <cachingConfiguration>Caching configuration for thread midPointScheduler_Worker-2 on 2024-11-12T10:10:20.528Z:
+
+Profiles: []</cachingConfiguration>
+            <timestamp>2024-11-12T10:10:20.528Z</timestamp>
+        </operationStats>
+        <binding>loose</binding>
+        <activity>
+            <work>
+                <import>
+                    <resourceObjects>
+                        <resourceRef oid="8776b85e-5199-448c-8c58-dbd139d8aff0" relation="org:default" type="c:ResourceType"/>
+                        <kind>account</kind>
+                        <intent>intent  MS AD account</intent>
+                    </resourceObjects>
+                </import>
+            </work>
+            <execution>
+                <mode>none</mode>
+            </execution>
+        </activity>
+        <activityState>
+            <activity>
+                <realizationState>inProgressLocal</realizationState>
+                <resultStatus>fatal_error</resultStatus>
+                <realizationStartTimestamp>2024-11-12T10:10:20.490Z</realizationStartTimestamp>
+                <runStartTimestamp>2024-11-12T10:10:20.490Z</runStartTimestamp>
+                <runEndTimestamp>2024-11-12T10:10:20.520Z</runEndTimestamp>
+                <progress/>
+                <statistics>
+                    <itemProcessing>
+                        <run id="11">
+                            <startTimestamp>2024-11-12T10:10:20.490Z</startTimestamp>
+                            <endTimestamp>2024-11-12T10:10:20.520Z</endTimestamp>
+                        </run>
+                    </itemProcessing>
+                    <synchronization/>
+                    <actionsExecuted/>
+                </statistics>
+                <bucketing>
+                    <bucket id="10">
+                        <sequentialNumber>1</sequentialNumber>
+                        <state>ready</state>
+                        <content xsi:type="c:NullWorkBucketContentType"/>
+                    </bucket>
+                    <numberOfBuckets>1</numberOfBuckets>
+                </bucketing>
+                <workState/>
+                <persistence>singleRealization</persistence>
+            </activity>
+            <tree>
+                <realizationState>inProgress</realizationState>
+                <activity>
+                    <realizationState>inProgress</realizationState>
+                    <resultStatus>fatal_error</resultStatus>
+                    <task>
+                        <taskRef oid="3975c5d8-353d-419e-a158-73c67bd9bf30" relation="org:default" type="c:TaskType" xsi:type="c:ObjectReferenceType">
+                            <targetName>Reload objects on resource:8776b85e-5199-448c-8c58-dbd139d8aff0(Windows MS AD)</targetName>
+                        </taskRef>
+                        <node>DefaultNode</node>
+                        <executionState>notRunning</executionState>
+                        <resultStatus>fatal_error</resultStatus>
+                    </task>
+                    <progressInformationVisibility>hidden</progressInformationVisibility>
+                    <persistence>singleRealization</persistence>
+                </activity>
+            </tree>
+        </activityState>
+        <affectedObjects>
+            <activity id="7">
+                <activityType>c:import</activityType>
+                <resourceObjects>
+                    <resourceRef oid="8776b85e-5199-448c-8c58-dbd139d8aff0" relation="org:default" type="c:ResourceType"/>
+                    <kind>account</kind>
+                    <intent>intent  MS AD account</intent>
+                </resourceObjects>
+                <executionMode>none</executionMode>
+                <predefinedConfigurationToUse>production</predefinedConfigurationToUse>
+            </activity>
+        </affectedObjects>
+    </apti:object>

@@ -1,0 +1,326 @@
+<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000110" version="3"  xsi:type="c:ReportType">
+        <_metadata id="12">
+            <storage>
+                <createTimestamp>2024-11-08T07:43:52.809Z</createTimestamp>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2024-11-08T07:43:52.798Z</requestTimestamp>
+            </process>
+        </_metadata>
+        <name>Users in MidPoint</name>
+        <description>Users listed in MidPoint.</description>
+        <operationExecution id="20">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-08T07:43:52.844Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>add</t:changeType>
+                    <t:objectType>c:ReportType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000000135</token>
+                </executionResult>
+                <objectName>Users in MidPoint</objectName>
+            </operation>
+            <status>success</status>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+        </operationExecution>
+        <operationExecution id="21">
+            <recordType>complex</recordType>
+            <timestamp>2024-11-08T07:53:14.866Z</timestamp>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
+            <activityPath/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="22">
+            <recordType>complex</recordType>
+            <timestamp>2024-11-18T08:09:25.591Z</timestamp>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+            <activityPath/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <assignment id="1">
+            <_metadata id="13">
+                <storage>
+                    <createTimestamp>2024-11-08T07:43:52.809Z</createTimestamp>
+                    <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+                </storage>
+                <process>
+                    <requestTimestamp>2024-11-08T07:43:52.798Z</requestTimestamp>
+                </process>
+                <provenance>
+                    <acquisition id="14">
+                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                        <timestamp>2024-11-08T07:43:52.797Z</timestamp>
+                    </acquisition>
+                </provenance>
+            </_metadata>
+            <identifier>archetype</identifier>
+            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+            <activation>
+                <effectiveStatus>enabled</effectiveStatus>
+            </activation>
+        </assignment>
+        <iteration>0</iteration>
+        <iterationToken/>
+        <archetypeRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+        <archetypeRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
+        <roleMembershipRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType">
+            <_metadata id="17">
+                <storage>
+                    <createTimestamp>2024-11-08T07:43:52.806Z</createTimestamp>
+                </storage>
+                <provenance>
+                    <assignmentPath>
+                        <sourceRef oid="00000000-0000-0000-0000-000000000110" relation="org:default" type="c:ReportType"/>
+                        <segment id="18">
+                            <segmentOrder>1</segmentOrder>
+                            <assignmentId>1</assignmentId>
+                            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+                            <matchingOrder>true</matchingOrder>
+                        </segment>
+                        <segment id="19">
+                            <segmentOrder>2</segmentOrder>
+                            <targetRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
+                            <matchingOrder>true</matchingOrder>
+                        </segment>
+                    </assignmentPath>
+                </provenance>
+            </_metadata>
+        </roleMembershipRef>
+        <roleMembershipRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType">
+            <_metadata id="15">
+                <storage>
+                    <createTimestamp>2024-11-08T07:43:52.806Z</createTimestamp>
+                </storage>
+                <provenance>
+                    <assignmentPath>
+                        <sourceRef oid="00000000-0000-0000-0000-000000000110" relation="org:default" type="c:ReportType"/>
+                        <segment id="16">
+                            <segmentOrder>1</segmentOrder>
+                            <assignmentId>1</assignmentId>
+                            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+                            <matchingOrder>true</matchingOrder>
+                        </segment>
+                    </assignmentPath>
+                </provenance>
+            </_metadata>
+        </roleMembershipRef>
+        <objectCollection>
+            <collection>
+                <filter>
+                    <q:and>
+                        <q:equal>
+                            <q:path>activation/administrativeStatus</q:path>
+                            <expression>
+                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                                <path>$activation</path>
+                            </expression>
+                        </q:equal>
+                        <q:ref>
+                            <q:path>assignment/targetRef</q:path>
+                            <expression>
+                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                                <path>$organizationRef</path>
+                            </expression>
+                        </q:ref>
+                        <q:ref>
+                            <q:path>assignment/targetRef</q:path>
+                            <expression>
+                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                                <path>$roleRef</path>
+                            </expression>
+                        </q:ref>
+                        <q:ref>
+                            <q:path>assignment/construction/resourceRef</q:path>
+                            <expression>
+                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                                <path>$resourceRef</path>
+                            </expression>
+                        </q:ref>
+                    </q:and>
+                </filter>
+            </collection>
+            <view>
+                <column id="6">
+                    <name>nameColumn</name>
+                    <path>name</path>
+                </column>
+                <column id="7">
+                    <name>fullNameColumn</name>
+                    <path>fullName</path>
+                    <previousColumn>nameColumn</previousColumn>
+                </column>
+                <column id="8">
+                    <name>activationColumn</name>
+                    <path>activation/administrativeStatus</path>
+                    <previousColumn>fullNameColumn</previousColumn>
+                </column>
+                <column id="9">
+                    <name>roleColumn</name>
+                    <path>assignment</path>
+                    <display>
+                        <label>
+                            <t:orig>Role</t:orig>
+                            <t:norm>role</t:norm>
+                            <t:translation>
+                                <t:key>reportUserList.roleColumn.label</t:key>
+                            </t:translation>
+                        </label>
+                    </display>
+                    <previousColumn>activationColumn</previousColumn>
+                    <export>
+                        <expression>
+                            <script>
+                                <code>
+                                if (input != null){
+                                    roles = report.resolveRoles(input);
+                                    if (roles.isEmpty()) {
+                                        return null;
+                                    }
+                                    list = new ArrayList();
+                                    for (role in roles) {
+                                        list.add(role.getName());
+                                    }
+                                    return list;
+                                }
+                            </code>
+                            </script>
+                        </expression>
+                    </export>
+                </column>
+                <column id="10">
+                    <name>orgColumn</name>
+                    <path>assignment</path>
+                    <display>
+                        <label>
+                            <t:orig>Organization</t:orig>
+                            <t:norm>organization</t:norm>
+                            <t:translation>
+                                <t:key>reportUserList.orgColumn.label</t:key>
+                            </t:translation>
+                        </label>
+                    </display>
+                    <previousColumn>roleColumn</previousColumn>
+                    <export>
+                        <expression>
+                            <script>
+                                <code>
+                                if (input != null){
+                                    orgs = report.resolveOrgs(input);
+                                    if (orgs.isEmpty()) {
+                                        return null;
+                                    }
+                                    list = new ArrayList();
+                                    for (org in orgs) {
+                                        list.add(org.getName());
+                                    }
+                                    return list;
+                                }
+                            </code>
+                            </script>
+                        </expression>
+                    </export>
+                </column>
+                <column id="11">
+                    <name>accountColumn</name>
+                    <path>linkRef</path>
+                    <display>
+                        <label>
+                            <t:orig>Account</t:orig>
+                            <t:norm>account</t:norm>
+                            <t:translation>
+                                <t:key>reportUserList.accountColumn.label</t:key>
+                            </t:translation>
+                        </label>
+                    </display>
+                    <previousColumn>orgColumn</previousColumn>
+                    <export>
+                        <expression>
+                            <script>
+                                <code>
+                                import com.evolveum.midpoint.schema.SelectorOptions;
+                                import com.evolveum.midpoint.schema.GetOperationOptions;
+                                import com.evolveum.midpoint.xml.ns._public.common.common_3.ShadowType;
+
+                                if (input != null){
+                                    list = new ArrayList();
+                                    for (linkRef in input){
+                                    shadow = midpoint.getObject(ShadowType.class, linkRef.getOid(),
+                                    SelectorOptions.createCollection(GetOperationOptions.createNoFetch().resolveNames(true)));
+                                    list.add(shadow.getName().getOrig() + "(Resource: " + shadow.getResourceRef().getTargetName()?.getOrig() + ")");
+                                }
+                                return list;
+                                }
+                            </code>
+                            </script>
+                        </expression>
+                    </export>
+                </column>
+                <type>UserType</type>
+            </view>
+            <parameter id="2">
+                <name>activation</name>
+                <type>ActivationStatusType</type>
+                <display>
+                    <label>
+                        <t:orig>activation</t:orig>
+                        <t:norm>activation</t:norm>
+                        <t:translation>
+                            <t:key>ActivationType.administrativeStatus</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+            </parameter>
+            <parameter id="3">
+                <name>organizationRef</name>
+                <type>c:ObjectReferenceType</type>
+                <targetType>c:OrgType</targetType>
+                <display>
+                    <label>
+                        <t:orig>organization</t:orig>
+                        <t:norm>organization</t:norm>
+                        <t:translation>
+                            <t:key>ObjectTypeGuiDescriptor.org</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+            </parameter>
+            <parameter id="4">
+                <name>roleRef</name>
+                <type>c:ObjectReferenceType</type>
+                <targetType>c:RoleType</targetType>
+                <display>
+                    <label>
+                        <t:orig>role</t:orig>
+                        <t:norm>role</t:norm>
+                        <t:translation>
+                            <t:key>ObjectTypeGuiDescriptor.role</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+            </parameter>
+            <parameter id="5">
+                <name>resourceRef</name>
+                <type>c:ObjectReferenceType</type>
+                <targetType>c:ResourceType</targetType>
+                <display>
+                    <label>
+                        <t:orig>resource</t:orig>
+                        <t:norm>resource</t:norm>
+                        <t:translation>
+                            <t:key>ObjectTypeGuiDescriptor.resource</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+            </parameter>
+        </objectCollection>
+    </apti:object>

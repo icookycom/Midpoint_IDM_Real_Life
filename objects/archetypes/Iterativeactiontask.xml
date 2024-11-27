@@ -1,0 +1,195 @@
+<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000509" version="3"  xsi:type="c:ArchetypeType">
+        <_metadata id="24">
+            <storage>
+                <createTimestamp>2024-11-08T07:43:54.926Z</createTimestamp>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2024-11-08T07:43:54.916Z</requestTimestamp>
+            </process>
+        </_metadata>
+        <name>Iterative action task</name>
+        <operationExecution id="27">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-08T07:43:54.944Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>add</t:changeType>
+                    <t:objectType>c:ArchetypeType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000000375</token>
+                </executionResult>
+                <objectName>Iterative action task</objectName>
+            </operation>
+            <status>success</status>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+        </operationExecution>
+        <operationExecution id="28">
+            <recordType>complex</recordType>
+            <timestamp>2024-11-08T07:53:15.658Z</timestamp>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
+            <activityPath/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="29">
+            <recordType>complex</recordType>
+            <timestamp>2024-11-18T08:09:26.184Z</timestamp>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+            <activityPath/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <assignment id="20">
+            <_metadata id="25">
+                <storage>
+                    <createTimestamp>2024-11-08T07:43:54.926Z</createTimestamp>
+                    <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+                </storage>
+                <process>
+                    <requestTimestamp>2024-11-08T07:43:54.916Z</requestTimestamp>
+                </process>
+                <provenance>
+                    <acquisition id="26">
+                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                        <timestamp>2024-11-08T07:43:54.916Z</timestamp>
+                    </acquisition>
+                </provenance>
+            </_metadata>
+            <identifier>holderType</identifier>
+            <activation>
+                <effectiveStatus>enabled</effectiveStatus>
+            </activation>
+            <assignmentRelation id="21">
+                <holderType>TaskType</holderType>
+            </assignmentRelation>
+        </assignment>
+        <iteration>0</iteration>
+        <iterationToken/>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+            <enableTimestamp>2024-11-08T07:43:54.920Z</enableTimestamp>
+        </activation>
+        <inducement id="22">
+            <identifier>nameMapping</identifier>
+            <focusMappings>
+                <mapping id="23">
+                    <strength>weak</strength>
+                    <expression>
+                        <script>
+                            <code>
+                            return source.name
+                        </code>
+                        </script>
+                    </expression>
+                    <target>
+                        <path>name</path>
+                    </target>
+                </mapping>
+            </focusMappings>
+        </inducement>
+        <archetypePolicy>
+            <display>
+                <label>
+                    <t:orig>Iterative action task</t:orig>
+                    <t:norm>iterative action task</t:norm>
+                    <t:translation>
+                        <t:key>IterativeActionTask.title</t:key>
+                    </t:translation>
+                </label>
+                <pluralLabel>
+                    <t:orig>Iterative action tasks</t:orig>
+                    <t:norm>iterative action tasks</t:norm>
+                    <t:translation>
+                        <t:key>IterativeActionTasks.title</t:key>
+                    </t:translation>
+                </pluralLabel>
+                <icon>
+                    <cssClass>fa fa-bullseye</cssClass>
+                    <color>green</color>
+                </icon>
+            </display>
+            <itemConstraint id="1">
+                <path>extension</path>
+                <visibility>vacant</visibility>
+            </itemConstraint>
+            <itemConstraint id="2">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:objectType</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="3">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:objectQuery</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="4">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:searchOptions</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="5">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:useRepositoryDirectly</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="6">
+                <path xmlns:scext="http://midpoint.evolveum.com/xml/ns/public/model/scripting/extension-3">extension/scext:executeScript</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="7">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:workerThreads</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <adminGuiConfiguration>
+                <objectDetails>
+                    <type>c:TaskType</type>
+                    <panel id="8">
+                        <identifier>activity</identifier>
+                        <panel id="10">
+                            <identifier>work</identifier>
+                            <container id="11">
+                                <identifier>work-iterative-scripting</identifier>
+                                <path>activity/work/iterativeScripting</path>
+                            </container>
+                        </panel>
+                    </panel>
+                    <panel id="9">
+                        <identifier>taskBasic</identifier>
+                        <container id="12">
+                            <identifier>objects-to-process</identifier>
+                            <display>
+                                <label>IterativeActionTask.objectsToProcess</label>
+                            </display>
+                            <item id="14">
+                                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:objectType</path>
+                            </item>
+                            <item id="15">
+                                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:objectQuery</path>
+                            </item>
+                            <item id="16">
+                                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:searchOptions</path>
+                            </item>
+                            <item id="17">
+                                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:useRepositoryDirectly</path>
+                            </item>
+                        </container>
+                        <container id="13">
+                            <identifier>bulk-action</identifier>
+                            <display>
+                                <label>IterativeActionTask.action</label>
+                            </display>
+                            <item id="18">
+                                <path xmlns:scext="http://midpoint.evolveum.com/xml/ns/public/model/scripting/extension-3">extension/scext:executeScript</path>
+                            </item>
+                            <item id="19">
+                                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:workerThreads</path>
+                            </item>
+                        </container>
+                    </panel>
+                </objectDetails>
+            </adminGuiConfiguration>
+        </archetypePolicy>
+    </apti:object>

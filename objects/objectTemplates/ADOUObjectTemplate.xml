@@ -1,0 +1,115 @@
+<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="81eff8ec-1195-4f78-a26a-92996ef190eb" version="27"  xsi:type="c:ObjectTemplateType">
+        <_metadata id="1">
+            <storage>
+                <createTimestamp>2024-11-19T08:06:16.363Z</createTimestamp>
+                <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2024-11-19T08:06:16.335Z</requestTimestamp>
+                <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            </process>
+        </_metadata>
+        <name>AD OU Object Template</name>
+        <operationExecution id="2">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-19T08:06:16.385Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>add</t:changeType>
+                    <t:objectType>c:ObjectTemplateType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000061881</token>
+                </executionResult>
+                <objectName>AD OU Object Template</objectName>
+            </operation>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <iteration>0</iteration>
+        <iterationToken/>
+        <item id="1">
+            <ref>assignment</ref>
+            <displayName>Assignment to OU form locality</displayName>
+            <mapping id="9">
+                <source>
+                    <path>locality</path>
+                </source>
+                <expression>
+                    <assignmentTargetSearch>
+                        <targetType>OrgType</targetType>
+                        <filter>
+                            <q:equal>
+                                <q:path>identifier</q:path>
+                                <expression>
+                                    <path>$user/locality</path>
+                                </expression>
+                            </q:equal>
+                        </filter>
+                        <createOnDemand>true</createOnDemand>
+                        <populateObject>
+                            <populateItem>
+                                <expression>
+                                    <script>
+                                        <code>
+                                               locality
+                                            </code>
+                                    </script>
+                                </expression>
+                                <target>
+                                    <path>name</path>
+                                </target>
+                            </populateItem>
+                            <populateItem>
+                                <expression>
+                                    <script>
+                                        <code>
+                                                locality
+                                            </code>
+                                    </script>
+                                </expression>
+                                <target>
+                                    <path>identifier</path>
+                                </target>
+                            </populateItem>
+                            <populateItem>
+                                <expression>
+                                    <script>
+                                        <code>
+                                                "populated"
+                                            </code>
+                                    </script>
+                                </expression>
+                                <target>
+                                    <path>documentation</path>
+                                </target>
+                            </populateItem>
+                            <populateItem>
+                                <expression>
+                                    <assignmentTargetSearch>
+                                        <targetType>ArchetypeType</targetType>
+                                        <filter>
+                                            <q:equal>
+                                                <q:path>name</q:path>
+                                                <expression>
+                                                    <value>AD OU ArcheType</value>
+                                                </expression>
+                                            </q:equal>
+                                        </filter>
+                                    </assignmentTargetSearch>
+                                </expression>
+                                <target>
+                                    <path>assignment</path>
+                                </target>
+                            </populateItem>
+                        </populateObject>
+                    </assignmentTargetSearch>
+                </expression>
+            </mapping>
+        </item>
+    </apti:object>

@@ -1,0 +1,183 @@
+<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000516" version="3"  xsi:type="c:ArchetypeType">
+        <_metadata id="17">
+            <storage>
+                <createTimestamp>2024-11-08T07:43:55.163Z</createTimestamp>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2024-11-08T07:43:55.154Z</requestTimestamp>
+            </process>
+        </_metadata>
+        <name>Delete long time not updated shadows task</name>
+        <operationExecution id="20">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-08T07:43:55.183Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>add</t:changeType>
+                    <t:objectType>c:ArchetypeType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000000410</token>
+                </executionResult>
+                <objectName>Delete long time not updated shadows task</objectName>
+            </operation>
+            <status>success</status>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+        </operationExecution>
+        <operationExecution id="21">
+            <recordType>complex</recordType>
+            <timestamp>2024-11-08T07:53:15.777Z</timestamp>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
+            <activityPath/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="22">
+            <recordType>complex</recordType>
+            <timestamp>2024-11-18T08:09:26.273Z</timestamp>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+            <activityPath/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <assignment id="13">
+            <_metadata id="18">
+                <storage>
+                    <createTimestamp>2024-11-08T07:43:55.163Z</createTimestamp>
+                    <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+                </storage>
+                <process>
+                    <requestTimestamp>2024-11-08T07:43:55.154Z</requestTimestamp>
+                </process>
+                <provenance>
+                    <acquisition id="19">
+                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                        <timestamp>2024-11-08T07:43:55.153Z</timestamp>
+                    </acquisition>
+                </provenance>
+            </_metadata>
+            <identifier>holderType</identifier>
+            <activation>
+                <effectiveStatus>enabled</effectiveStatus>
+            </activation>
+            <assignmentRelation id="14">
+                <holderType>TaskType</holderType>
+            </assignmentRelation>
+        </assignment>
+        <iteration>0</iteration>
+        <iterationToken/>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+            <enableTimestamp>2024-11-08T07:43:55.157Z</enableTimestamp>
+        </activation>
+        <inducement id="15">
+            <identifier>nameMapping</identifier>
+            <focusMappings>
+                <mapping id="16">
+                    <strength>weak</strength>
+                    <expression>
+                        <script>
+                            <code>
+                            import com.evolveum.midpoint.xml.ns._public.common.common_3.TaskType
+                            import org.apache.commons.lang3.StringUtils
+
+                            def task = focus as TaskType
+
+                            String name = source.name
+
+                            String description = midpoint.describeResourceObjectSet(task?.activity?.work?.shadowCleanup?.shadows)
+                            if(StringUtils.isNotEmpty(description)) {
+                                return name + ': ' + description
+                            }
+
+                            return name
+                        </code>
+                        </script>
+                    </expression>
+                    <target>
+                        <path>name</path>
+                    </target>
+                </mapping>
+            </focusMappings>
+        </inducement>
+        <archetypePolicy>
+            <display>
+                <label>
+                    <t:orig>Delete long time not updated shadows task</t:orig>
+                    <t:norm>delete long time not updated shadows task</t:norm>
+                    <t:translation>
+                        <t:key>DeleteLongTimeNotUpdatedShadowsTask.label</t:key>
+                    </t:translation>
+                </label>
+                <pluralLabel>
+                    <t:orig>Delete long time not updated shadows task</t:orig>
+                    <t:norm>delete long time not updated shadows task</t:norm>
+                    <t:translation>
+                        <t:key>TaskHandlerSelector.model.synchronization.task.delete.not.updated.shadow.handler</t:key>
+                    </t:translation>
+                </pluralLabel>
+                <icon>
+                    <cssClass>fa fa-wrench</cssClass>
+                    <color>green</color>
+                </icon>
+            </display>
+            <itemConstraint id="1">
+                <path>extension</path>
+                <visibility>vacant</visibility>
+            </itemConstraint>
+            <itemConstraint id="2">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:objectclass</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="3">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:kind</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="4">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:intent</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="5">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:objectQuery</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="6">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:searchOptions</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="7">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:iterationMethod</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="8">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:failedObjectsSelector</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <itemConstraint id="9">
+                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:notUpdatedShadowsDuration</path>
+                <visibility>visible</visibility>
+            </itemConstraint>
+            <adminGuiConfiguration>
+                <objectDetails>
+                    <type>TaskType</type>
+                    <panel id="10">
+                        <identifier>activity</identifier>
+                        <panel id="11">
+                            <identifier>work</identifier>
+                            <container id="12">
+                                <identifier>work-shadowCleanup</identifier>
+                                <path>activity/work/shadowCleanup</path>
+                            </container>
+                        </panel>
+                    </panel>
+                </objectDetails>
+            </adminGuiConfiguration>
+        </archetypePolicy>
+        <archetypeType>auxiliary</archetypeType>
+    </apti:object>

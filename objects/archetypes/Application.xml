@@ -1,0 +1,251 @@
+<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000329" version="3"  xsi:type="c:ArchetypeType">
+        <_metadata id="16">
+            <storage>
+                <createTimestamp>2024-11-08T07:43:51.222Z</createTimestamp>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2024-11-08T07:43:51.204Z</requestTimestamp>
+            </process>
+        </_metadata>
+        <name>Application</name>
+        <description>
+        Applications are basic building blocks for defining access.
+        These objects contain business information.
+        Application is an administrative object describing application
+        as a business target that the access relates to.
+    </description>
+        <operationExecution id="19">
+            <recordType>simple</recordType>
+            <timestamp>2024-11-08T07:43:51.257Z</timestamp>
+            <operation>
+                <objectDelta>
+                    <t:changeType>add</t:changeType>
+                    <t:objectType>c:ArchetypeType</t:objectType>
+                </objectDelta>
+                <executionResult>
+                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                    <status>success</status>
+                    <importance>normal</importance>
+                    <token>1000000000000000065</token>
+                </executionResult>
+                <objectName>Application</objectName>
+            </operation>
+            <status>success</status>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+        </operationExecution>
+        <operationExecution id="20">
+            <recordType>complex</recordType>
+            <timestamp>2024-11-08T07:53:15.338Z</timestamp>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
+            <activityPath/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <operationExecution id="21">
+            <recordType>complex</recordType>
+            <timestamp>2024-11-18T08:09:25.954Z</timestamp>
+            <status>success</status>
+            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+            <activityPath/>
+            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+        </operationExecution>
+        <assignment id="1">
+            <_metadata id="17">
+                <storage>
+                    <createTimestamp>2024-11-08T07:43:51.222Z</createTimestamp>
+                    <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+                </storage>
+                <process>
+                    <requestTimestamp>2024-11-08T07:43:51.204Z</requestTimestamp>
+                </process>
+                <provenance>
+                    <acquisition id="18">
+                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                        <timestamp>2024-11-08T07:43:51.203Z</timestamp>
+                    </acquisition>
+                </provenance>
+            </_metadata>
+            <identifier>holderType</identifier>
+            <activation>
+                <effectiveStatus>enabled</effectiveStatus>
+            </activation>
+            <assignmentRelation id="2">
+                <holderType>ServiceType</holderType>
+            </assignmentRelation>
+        </assignment>
+        <iteration>0</iteration>
+        <iterationToken/>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+            <enableTimestamp>2024-11-08T07:43:51.211Z</enableTimestamp>
+        </activation>
+        <archetypePolicy>
+            <display>
+                <label>
+                    <t:orig>Application</t:orig>
+                    <t:norm>application</t:norm>
+                    <t:translation>
+                        <t:key>Application.label</t:key>
+                    </t:translation>
+                </label>
+                <pluralLabel>
+                    <t:orig>Applications</t:orig>
+                    <t:norm>applications</t:norm>
+                    <t:translation>
+                        <t:key>Applications.title</t:key>
+                    </t:translation>
+                </pluralLabel>
+                <icon>
+                    <cssClass>fa fa-cloud</cssClass>
+                    <color>blue</color>
+                </icon>
+            </display>
+            <adminGuiConfiguration>
+                <objectDetails>
+                    <panel id="3">
+                        <identifier>projections</identifier>
+                        <display>
+                            <label>
+                                <t:orig>Inventory records</t:orig>
+                                <t:norm>inventory records</t:norm>
+                                <t:translation>
+                                    <t:key>Application.panel.projections</t:key>
+                                </t:translation>
+                            </label>
+                        </display>
+                        <panelType>projections</panelType>
+                    </panel>
+                    <panel id="4">
+                        <identifier>assignments</identifier>
+                        <visibility>hidden</visibility>
+                    </panel>
+                    <panel id="5">
+                        <identifier>password</identifier>
+                        <visibility>hidden</visibility>
+                    </panel>
+                    <panel id="6">
+                        <identifier>applicablePolicies</identifier>
+                        <visibility>hidden</visibility>
+                    </panel>
+                    <panel id="7">
+                        <identifier>serviceMembers</identifier>
+                        <listView>
+                            <searchBoxConfiguration>
+                                <objectTypeConfiguration>
+                                    <visibility>hidden</visibility>
+                                    <defaultValue>UserType</defaultValue>
+                                    <supportedTypes>UserType</supportedTypes>
+                                </objectTypeConfiguration>
+                                <indirectConfiguration>
+                                    <indirect>true</indirect>
+                                </indirectConfiguration>
+                            </searchBoxConfiguration>
+                        </listView>
+                    </panel>
+                    <panel id="8">
+                        <identifier>serviceGovernance</identifier>
+                        <visibility>hidden</visibility>
+                    </panel>
+                    <panel id="9">
+                        <identifier>governance</identifier>
+                        <display>
+                            <label>
+                                <t:orig>Governance</t:orig>
+                                <t:norm>governance</t:norm>
+                                <t:translation>
+                                    <t:key>GovernanceCardsPanel.label</t:key>
+                                </t:translation>
+                            </label>
+                            <icon>
+                                <cssClass>fa fa-users</cssClass>
+                            </icon>
+                        </display>
+                        <displayOrder>91</displayOrder>
+                        <panelType>governanceCards</panelType>
+                    </panel>
+                    <panel id="15">
+                        <identifier>classifications</identifier>
+                        <display>
+                            <label>
+                                <t:orig>Classifications</t:orig>
+                                <t:norm>classifications</t:norm>
+                                <t:translation>
+                                    <t:key>classifications.panel.label</t:key>
+                                </t:translation>
+                            </label>
+                            <tooltip>Information classifications (labels)</tooltip>
+                            <icon>
+                                <cssClass>fa fa-tags</cssClass>
+                            </icon>
+                        </display>
+                        <displayOrder>92</displayOrder>
+                        <panelType>roleAssignments</panelType>
+                        <listView>
+                            <identifier>classifications-view</identifier>
+                            <dataProvider xsi:type="c:RepositoryAssignmentDataProviderType"/>
+                            <type>c:AssignmentType</type>
+                            <collection>
+                                <filter>
+                                    <q:text>targetRef/@/archetypeRef matches ( oid = "00000000-0000-0000-0000-000000000330" )</q:text>
+                                </filter>
+                            </collection>
+                        </listView>
+                    </panel>
+                    <panel id="10">
+                        <identifier>inducements</identifier>
+                        <visibility>hidden</visibility>
+                    </panel>
+                    <panel id="11">
+                        <identifier>resourceEntitlementsTopLevel</identifier>
+                        <display>
+                            <label>
+                                <t:orig>Construction inducements</t:orig>
+                                <t:norm>construction inducements</t:norm>
+                                <t:translation>
+                                    <t:key>Application.panel.constructionInducements</t:key>
+                                </t:translation>
+                            </label>
+                        </display>
+                        <displayOrder>115</displayOrder>
+                        <panelType>constructionInducements</panelType>
+                    </panel>
+                    <panel id="13">
+                        <identifier>applicationRoles</identifier>
+                        <display>
+                            <label>
+                                <t:orig>Application roles</t:orig>
+                                <t:norm>application roles</t:norm>
+                                <t:translation>
+                                    <t:key>Application.panel.inducedBy</t:key>
+                                </t:translation>
+                            </label>
+                        </display>
+                        <displayOrder>117</displayOrder>
+                        <panelType>inducedBy</panelType>
+                        <listView>
+                            <identifier>applicationRoles</identifier>
+                            <searchBoxConfiguration>
+                                <objectTypeConfiguration>
+                                    <visibility>hidden</visibility>
+                                    <defaultValue>RoleType</defaultValue>
+                                    <supportedTypes>RoleType</supportedTypes>
+                                </objectTypeConfiguration>
+                            </searchBoxConfiguration>
+                            <type>c:RoleType</type>
+                            <collection>
+                                <collectionRef oid="00000000-0000-0000-0001-000000000016" relation="org:default" type="c:ObjectCollectionType"/>
+                            </collection>
+                        </listView>
+                    </panel>
+                    <panel id="14">
+                        <identifier>inducedBy</identifier>
+                        <displayOrder>118</displayOrder>
+                        <panelType>inducedBy</panelType>
+                    </panel>
+                </objectDetails>
+            </adminGuiConfiguration>
+        </archetypePolicy>
+    </apti:object>
