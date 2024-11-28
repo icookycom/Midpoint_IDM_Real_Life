@@ -1,5 +1,53 @@
-<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000504" version="3"  xsi:type="c:ArchetypeType">
-        <_metadata id="29">
+<archetype xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000504" version="3" >
+    <_metadata id="29">
+        <storage>
+            <createTimestamp>2024-11-08T07:43:54.734Z</createTimestamp>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2024-11-08T07:43:54.718Z</requestTimestamp>
+        </process>
+    </_metadata>
+    <name>Live synchronization task</name>
+    <operationExecution id="32">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-08T07:43:54.754Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:ArchetypeType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000000350</token>
+            </executionResult>
+            <objectName>Live synchronization task</objectName>
+        </operation>
+        <status>success</status>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+    </operationExecution>
+    <operationExecution id="33">
+        <recordType>complex</recordType>
+        <timestamp>2024-11-08T07:53:15.572Z</timestamp>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
+        <activityPath/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="34">
+        <recordType>complex</recordType>
+        <timestamp>2024-11-18T08:09:26.127Z</timestamp>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+        <activityPath/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <assignment id="25">
+        <_metadata id="30">
             <storage>
                 <createTimestamp>2024-11-08T07:43:54.734Z</createTimestamp>
                 <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
@@ -7,83 +55,35 @@
             <process>
                 <requestTimestamp>2024-11-08T07:43:54.718Z</requestTimestamp>
             </process>
+            <provenance>
+                <acquisition id="31">
+                    <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                    <timestamp>2024-11-08T07:43:54.718Z</timestamp>
+                </acquisition>
+            </provenance>
         </_metadata>
-        <name>Live synchronization task</name>
-        <operationExecution id="32">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-08T07:43:54.754Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>add</t:changeType>
-                    <t:objectType>c:ArchetypeType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000000350</token>
-                </executionResult>
-                <objectName>Live synchronization task</objectName>
-            </operation>
-            <status>success</status>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
-        </operationExecution>
-        <operationExecution id="33">
-            <recordType>complex</recordType>
-            <timestamp>2024-11-08T07:53:15.572Z</timestamp>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
-            <activityPath/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <operationExecution id="34">
-            <recordType>complex</recordType>
-            <timestamp>2024-11-18T08:09:26.127Z</timestamp>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
-            <activityPath/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <assignment id="25">
-            <_metadata id="30">
-                <storage>
-                    <createTimestamp>2024-11-08T07:43:54.734Z</createTimestamp>
-                    <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
-                </storage>
-                <process>
-                    <requestTimestamp>2024-11-08T07:43:54.718Z</requestTimestamp>
-                </process>
-                <provenance>
-                    <acquisition id="31">
-                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
-                        <timestamp>2024-11-08T07:43:54.718Z</timestamp>
-                    </acquisition>
-                </provenance>
-            </_metadata>
-            <identifier>holderType</identifier>
-            <activation>
-                <effectiveStatus>enabled</effectiveStatus>
-            </activation>
-            <assignmentRelation id="26">
-                <holderType>TaskType</holderType>
-            </assignmentRelation>
-        </assignment>
-        <iteration>0</iteration>
-        <iterationToken/>
+        <identifier>holderType</identifier>
         <activation>
             <effectiveStatus>enabled</effectiveStatus>
-            <enableTimestamp>2024-11-08T07:43:54.727Z</enableTimestamp>
         </activation>
-        <inducement id="27">
-            <identifier>nameMapping</identifier>
-            <focusMappings>
-                <mapping id="28">
-                    <strength>weak</strength>
-                    <expression>
-                        <script>
-                            <code>
+        <assignmentRelation id="26">
+            <holderType>TaskType</holderType>
+        </assignmentRelation>
+    </assignment>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <activation>
+        <effectiveStatus>enabled</effectiveStatus>
+        <enableTimestamp>2024-11-08T07:43:54.727Z</enableTimestamp>
+    </activation>
+    <inducement id="27">
+        <identifier>nameMapping</identifier>
+        <focusMappings>
+            <mapping id="28">
+                <strength>weak</strength>
+                <expression>
+                    <script>
+                        <code>
                             import com.evolveum.midpoint.xml.ns._public.common.common_3.TaskType
                             import org.apache.commons.lang3.StringUtils
 
@@ -98,128 +98,128 @@
 
                             return name
                         </code>
-                        </script>
-                    </expression>
-                    <target>
-                        <path>name</path>
-                    </target>
-                </mapping>
-            </focusMappings>
-        </inducement>
-        <archetypePolicy>
-            <display>
-                <label>
-                    <t:orig>Live synchronization task</t:orig>
-                    <t:norm>live synchronization task</t:norm>
-                    <t:translation>
-                        <t:key>LiveSynchronizationTask.label</t:key>
-                    </t:translation>
-                </label>
-                <pluralLabel>
-                    <t:orig>Live synchronization tasks</t:orig>
-                    <t:norm>live synchronization tasks</t:norm>
-                    <t:translation>
-                        <t:key>LiveSynchronizationTasks.title</t:key>
-                    </t:translation>
-                </pluralLabel>
-                <icon>
-                    <cssClass>fa fa-sync-alt</cssClass>
-                    <color>green</color>
-                </icon>
-            </display>
-            <itemConstraint id="1">
-                <path>extension</path>
-                <visibility>vacant</visibility>
-            </itemConstraint>
-            <itemConstraint id="2">
-                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:objectclass</path>
-                <visibility>visible</visibility>
-            </itemConstraint>
-            <itemConstraint id="3">
-                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:kind</path>
-                <visibility>visible</visibility>
-            </itemConstraint>
-            <itemConstraint id="4">
-                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:intent</path>
-                <visibility>visible</visibility>
-            </itemConstraint>
-            <itemConstraint id="5">
-                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:synchronizationOptions</path>
-                <visibility>visible</visibility>
-            </itemConstraint>
-            <itemConstraint id="6">
-                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:workerThreads</path>
-                <visibility>visible</visibility>
-            </itemConstraint>
-            <itemConstraint id="7">
-                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:dryRun</path>
-                <visibility>visible</visibility>
-            </itemConstraint>
-            <itemConstraint id="8">
-                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:retryLiveSyncErrors</path>
-                <visibility>visible</visibility>
-            </itemConstraint>
-            <itemConstraint id="9">
-                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:updateLiveSyncTokenInDryRun</path>
-                <visibility>visible</visibility>
-            </itemConstraint>
-            <itemConstraint id="10">
-                <path xmlns:livesync="http://midpoint.evolveum.com/xml/ns/public/provisioning/liveSync-3">extension/livesync:token</path>
-                <visibility>visible</visibility>
-            </itemConstraint>
-            <adminGuiConfiguration>
-                <objectDetails>
-                    <type>TaskType</type>
-                    <panel id="11">
-                        <identifier>activity</identifier>
-                        <panel id="13">
-                            <identifier>work</identifier>
-                            <container id="14">
-                                <identifier>work-live-sync</identifier>
-                                <path>activity/work/liveSynchronization</path>
-                            </container>
-                        </panel>
-                    </panel>
-                    <panel id="12">
-                        <identifier>taskBasic</identifier>
-                        <container id="15">
-                            <identifier>objects-to-synchronize</identifier>
-                            <display>
-                                <label>LiveSynchronizationTask.objectsToSynchronize</label>
-                            </display>
-                            <item id="17">
-                                <path>objectRef</path>
-                            </item>
-                            <item id="18">
-                                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:objectclass</path>
-                            </item>
-                            <item id="19">
-                                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:kind</path>
-                            </item>
-                            <item id="20">
-                                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:intent</path>
-                            </item>
-                        </container>
-                        <container id="16">
-                            <identifier>synchronization-options</identifier>
-                            <display>
-                                <label>LiveSynchronizationTask.synchronizationOptions</label>
-                            </display>
-                            <item id="21">
-                                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:workerThreads</path>
-                            </item>
-                            <item id="22">
-                                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:dryRun</path>
-                            </item>
-                            <item id="23">
-                                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:retryLiveSyncErrors</path>
-                            </item>
-                            <item id="24">
-                                <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:updateLiveSyncTokenInDryRun</path>
-                            </item>
+                    </script>
+                </expression>
+                <target>
+                    <path>name</path>
+                </target>
+            </mapping>
+        </focusMappings>
+    </inducement>
+    <archetypePolicy>
+        <display>
+            <label>
+                <t:orig>Live synchronization task</t:orig>
+                <t:norm>live synchronization task</t:norm>
+                <t:translation>
+                    <t:key>LiveSynchronizationTask.label</t:key>
+                </t:translation>
+            </label>
+            <pluralLabel>
+                <t:orig>Live synchronization tasks</t:orig>
+                <t:norm>live synchronization tasks</t:norm>
+                <t:translation>
+                    <t:key>LiveSynchronizationTasks.title</t:key>
+                </t:translation>
+            </pluralLabel>
+            <icon>
+                <cssClass>fa fa-sync-alt</cssClass>
+                <color>green</color>
+            </icon>
+        </display>
+        <itemConstraint id="1">
+            <path>extension</path>
+            <visibility>vacant</visibility>
+        </itemConstraint>
+        <itemConstraint id="2">
+            <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:objectclass</path>
+            <visibility>visible</visibility>
+        </itemConstraint>
+        <itemConstraint id="3">
+            <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:kind</path>
+            <visibility>visible</visibility>
+        </itemConstraint>
+        <itemConstraint id="4">
+            <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:intent</path>
+            <visibility>visible</visibility>
+        </itemConstraint>
+        <itemConstraint id="5">
+            <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:synchronizationOptions</path>
+            <visibility>visible</visibility>
+        </itemConstraint>
+        <itemConstraint id="6">
+            <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:workerThreads</path>
+            <visibility>visible</visibility>
+        </itemConstraint>
+        <itemConstraint id="7">
+            <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:dryRun</path>
+            <visibility>visible</visibility>
+        </itemConstraint>
+        <itemConstraint id="8">
+            <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:retryLiveSyncErrors</path>
+            <visibility>visible</visibility>
+        </itemConstraint>
+        <itemConstraint id="9">
+            <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:updateLiveSyncTokenInDryRun</path>
+            <visibility>visible</visibility>
+        </itemConstraint>
+        <itemConstraint id="10">
+            <path xmlns:livesync="http://midpoint.evolveum.com/xml/ns/public/provisioning/liveSync-3">extension/livesync:token</path>
+            <visibility>visible</visibility>
+        </itemConstraint>
+        <adminGuiConfiguration>
+            <objectDetails>
+                <type>TaskType</type>
+                <panel id="11">
+                    <identifier>activity</identifier>
+                    <panel id="13">
+                        <identifier>work</identifier>
+                        <container id="14">
+                            <identifier>work-live-sync</identifier>
+                            <path>activity/work/liveSynchronization</path>
                         </container>
                     </panel>
-                </objectDetails>
-            </adminGuiConfiguration>
-        </archetypePolicy>
-    </apti:object>
+                </panel>
+                <panel id="12">
+                    <identifier>taskBasic</identifier>
+                    <container id="15">
+                        <identifier>objects-to-synchronize</identifier>
+                        <display>
+                            <label>LiveSynchronizationTask.objectsToSynchronize</label>
+                        </display>
+                        <item id="17">
+                            <path>objectRef</path>
+                        </item>
+                        <item id="18">
+                            <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:objectclass</path>
+                        </item>
+                        <item id="19">
+                            <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:kind</path>
+                        </item>
+                        <item id="20">
+                            <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:intent</path>
+                        </item>
+                    </container>
+                    <container id="16">
+                        <identifier>synchronization-options</identifier>
+                        <display>
+                            <label>LiveSynchronizationTask.synchronizationOptions</label>
+                        </display>
+                        <item id="21">
+                            <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:workerThreads</path>
+                        </item>
+                        <item id="22">
+                            <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:dryRun</path>
+                        </item>
+                        <item id="23">
+                            <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:retryLiveSyncErrors</path>
+                        </item>
+                        <item id="24">
+                            <path xmlns:mext="http://midpoint.evolveum.com/xml/ns/public/model/extension-3">extension/mext:updateLiveSyncTokenInDryRun</path>
+                        </item>
+                    </container>
+                </panel>
+            </objectDetails>
+        </adminGuiConfiguration>
+    </archetypePolicy>
+</archetype>

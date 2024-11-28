@@ -1,5 +1,54 @@
-<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000140" version="3"  xsi:type="c:ReportType">
-        <_metadata id="12">
+<report xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000140" version="3" >
+    <_metadata id="12">
+        <storage>
+            <createTimestamp>2024-11-08T07:43:52.929Z</createTimestamp>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2024-11-08T07:43:52.913Z</requestTimestamp>
+        </process>
+    </_metadata>
+    <name>Certification campaigns report</name>
+    <description>All certification campaigns along with their state.</description>
+    <operationExecution id="20">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-08T07:43:52.958Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:ReportType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000000145</token>
+            </executionResult>
+            <objectName>Certification campaigns report</objectName>
+        </operation>
+        <status>success</status>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+    </operationExecution>
+    <operationExecution id="21">
+        <recordType>complex</recordType>
+        <timestamp>2024-11-08T07:53:14.929Z</timestamp>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
+        <activityPath/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="22">
+        <recordType>complex</recordType>
+        <timestamp>2024-11-18T08:09:25.635Z</timestamp>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+        <activityPath/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <assignment id="1">
+        <_metadata id="13">
             <storage>
                 <createTimestamp>2024-11-08T07:43:52.929Z</createTimestamp>
                 <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
@@ -7,319 +56,270 @@
             <process>
                 <requestTimestamp>2024-11-08T07:43:52.913Z</requestTimestamp>
             </process>
+            <provenance>
+                <acquisition id="14">
+                    <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                    <timestamp>2024-11-08T07:43:52.913Z</timestamp>
+                </acquisition>
+            </provenance>
         </_metadata>
-        <name>Certification campaigns report</name>
-        <description>All certification campaigns along with their state.</description>
-        <operationExecution id="20">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-08T07:43:52.958Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>add</t:changeType>
-                    <t:objectType>c:ReportType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000000145</token>
-                </executionResult>
-                <objectName>Certification campaigns report</objectName>
-            </operation>
-            <status>success</status>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
-        </operationExecution>
-        <operationExecution id="21">
-            <recordType>complex</recordType>
-            <timestamp>2024-11-08T07:53:14.929Z</timestamp>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
-            <activityPath/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <operationExecution id="22">
-            <recordType>complex</recordType>
-            <timestamp>2024-11-18T08:09:25.635Z</timestamp>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
-            <activityPath/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <assignment id="1">
-            <_metadata id="13">
-                <storage>
-                    <createTimestamp>2024-11-08T07:43:52.929Z</createTimestamp>
-                    <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
-                </storage>
-                <process>
-                    <requestTimestamp>2024-11-08T07:43:52.913Z</requestTimestamp>
-                </process>
-                <provenance>
-                    <acquisition id="14">
-                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
-                        <timestamp>2024-11-08T07:43:52.913Z</timestamp>
-                    </acquisition>
-                </provenance>
-            </_metadata>
-            <identifier>archetype</identifier>
-            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-            <activation>
-                <effectiveStatus>enabled</effectiveStatus>
-            </activation>
-        </assignment>
-        <iteration>0</iteration>
-        <iterationToken/>
-        <archetypeRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-        <archetypeRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
-        <roleMembershipRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType">
-            <_metadata id="15">
-                <storage>
-                    <createTimestamp>2024-11-08T07:43:52.927Z</createTimestamp>
-                </storage>
-                <provenance>
-                    <assignmentPath>
-                        <sourceRef oid="00000000-0000-0000-0000-000000000140" relation="org:default" type="c:ReportType"/>
-                        <segment id="16">
-                            <segmentOrder>1</segmentOrder>
-                            <assignmentId>1</assignmentId>
-                            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-                            <matchingOrder>true</matchingOrder>
-                        </segment>
-                    </assignmentPath>
-                </provenance>
-            </_metadata>
-        </roleMembershipRef>
-        <roleMembershipRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType">
-            <_metadata id="17">
-                <storage>
-                    <createTimestamp>2024-11-08T07:43:52.927Z</createTimestamp>
-                </storage>
-                <provenance>
-                    <assignmentPath>
-                        <sourceRef oid="00000000-0000-0000-0000-000000000140" relation="org:default" type="c:ReportType"/>
-                        <segment id="18">
-                            <segmentOrder>1</segmentOrder>
-                            <assignmentId>1</assignmentId>
-                            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-                            <matchingOrder>true</matchingOrder>
-                        </segment>
-                        <segment id="19">
-                            <segmentOrder>2</segmentOrder>
-                            <targetRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
-                            <matchingOrder>true</matchingOrder>
-                        </segment>
-                    </assignmentPath>
-                </provenance>
-            </_metadata>
-        </roleMembershipRef>
-        <objectCollection>
-            <collection>
-                <filter>
-                    <q:or>
-                        <q:equal>
-                            <q:path>state</q:path>
-                            <expression>
-                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
-                                <script>
-                                    <code>
+        <identifier>archetype</identifier>
+        <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+    </assignment>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <archetypeRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+    <archetypeRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
+    <roleMembershipRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType">
+        <_metadata id="15">
+            <storage>
+                <createTimestamp>2024-11-08T07:43:52.927Z</createTimestamp>
+            </storage>
+            <provenance>
+                <assignmentPath>
+                    <sourceRef oid="00000000-0000-0000-0000-000000000140" relation="org:default" type="c:ReportType"/>
+                    <segment id="16">
+                        <segmentOrder>1</segmentOrder>
+                        <assignmentId>1</assignmentId>
+                        <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+                        <matchingOrder>true</matchingOrder>
+                    </segment>
+                </assignmentPath>
+            </provenance>
+        </_metadata>
+    </roleMembershipRef>
+    <roleMembershipRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType">
+        <_metadata id="17">
+            <storage>
+                <createTimestamp>2024-11-08T07:43:52.927Z</createTimestamp>
+            </storage>
+            <provenance>
+                <assignmentPath>
+                    <sourceRef oid="00000000-0000-0000-0000-000000000140" relation="org:default" type="c:ReportType"/>
+                    <segment id="18">
+                        <segmentOrder>1</segmentOrder>
+                        <assignmentId>1</assignmentId>
+                        <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+                        <matchingOrder>true</matchingOrder>
+                    </segment>
+                    <segment id="19">
+                        <segmentOrder>2</segmentOrder>
+                        <targetRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
+                        <matchingOrder>true</matchingOrder>
+                    </segment>
+                </assignmentPath>
+            </provenance>
+        </_metadata>
+    </roleMembershipRef>
+    <objectCollection>
+        <collection>
+            <filter>
+                <q:or>
+                    <q:equal>
+                        <q:path>state</q:path>
+                        <expression>
+                            <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                            <script>
+                                <code>
                                     import com.evolveum.midpoint.xml.ns._public.common.common_3.AccessCertificationCampaignStateType
 
                                     // If "alsoClosedCampaigns" is true, we return null that causes all campaigns to be considered
                                     return alsoClosedCampaigns ? null : AccessCertificationCampaignStateType.CREATED
                                 </code>
-                                </script>
-                            </expression>
-                        </q:equal>
-                        <q:equal>
-                            <q:path>state</q:path>
-                            <q:value>inReviewStage</q:value>
-                        </q:equal>
-                        <q:equal>
-                            <q:path>state</q:path>
-                            <q:value>reviewStageDone</q:value>
-                        </q:equal>
-                        <q:equal>
-                            <q:path>state</q:path>
-                            <q:value>inRemediation</q:value>
-                        </q:equal>
-                    </q:or>
-                </filter>
-                <baseCollectionRef>
-                    <collectionRef oid="00000000-0000-0000-0001-000000000280" relation="org:default" type="c:ObjectCollectionType"/>
-                </baseCollectionRef>
-            </collection>
-            <view>
-                <column id="2">
-                    <name>name</name>
-                    <path>name</path>
-                    <display>
-                        <label>
-                            <t:orig>Name</t:orig>
-                            <t:norm>name</t:norm>
-                            <t:translation>
-                                <t:key>reportCertificationCampaigns.nameColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                </column>
-                <column id="3">
-                    <name>owner</name>
-                    <path>ownerRef</path>
-                    <display>
-                        <label>
-                            <t:orig>Owner</t:orig>
-                            <t:norm>owner</t:norm>
-                            <t:translation>
-                                <t:key>reportCertificationCampaigns.ownerColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>name</previousColumn>
-                </column>
-                <column id="4">
-                    <name>startTimestamp</name>
-                    <path>startTimestamp</path>
-                    <display>
-                        <label>
-                            <t:orig>Start</t:orig>
-                            <t:norm>start</t:norm>
-                            <t:translation>
-                                <t:key>reportCertificationCampaigns.startTimestampColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>owner</previousColumn>
-                </column>
-                <column id="5">
-                    <name>endTimestamp</name>
-                    <path>endTimestamp</path>
-                    <display>
-                        <label>
-                            <t:orig>Finish</t:orig>
-                            <t:norm>finish</t:norm>
-                            <t:translation>
-                                <t:key>reportCertificationCampaigns.endTimestampColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>startTimestamp</previousColumn>
-                </column>
-                <column id="6">
-                    <name>cases</name>
-                    <path>case</path>
-                    <display>
-                        <label>
-                            <t:orig>Cases</t:orig>
-                            <t:norm>cases</t:norm>
-                            <t:translation>
-                                <t:key>reportCertificationCampaigns.casesColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>endTimestamp</previousColumn>
-                    <displayValue>number</displayValue>
-                </column>
-                <column id="7">
-                    <name>state</name>
-                    <path>state</path>
-                    <display>
-                        <label>
-                            <t:orig>State</t:orig>
-                            <t:norm>state</t:norm>
-                            <t:translation>
-                                <t:key>reportCertificationCampaigns.stateColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>cases</previousColumn>
-                </column>
-                <column id="8">
-                    <name>stageNumber</name>
-                    <path>stageNumber</path>
-                    <display>
-                        <label>
-                            <t:orig>Actual stage</t:orig>
-                            <t:norm>actual stage</t:norm>
-                            <t:translation>
-                                <t:key>reportCertificationCampaigns.stageNumberColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>state</previousColumn>
-                </column>
-                <column id="9">
-                    <name>stageCases</name>
-                    <display>
-                        <label>
-                            <t:orig>Stage cases</t:orig>
-                            <t:norm>stage cases</t:norm>
-                            <t:translation>
-                                <t:key>reportCertificationCampaigns.stageCasesColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>stageNumber</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>
+                            </script>
+                        </expression>
+                    </q:equal>
+                    <q:equal>
+                        <q:path>state</q:path>
+                        <q:value>inReviewStage</q:value>
+                    </q:equal>
+                    <q:equal>
+                        <q:path>state</q:path>
+                        <q:value>reviewStageDone</q:value>
+                    </q:equal>
+                    <q:equal>
+                        <q:path>state</q:path>
+                        <q:value>inRemediation</q:value>
+                    </q:equal>
+                </q:or>
+            </filter>
+            <baseCollectionRef>
+                <collectionRef oid="00000000-0000-0000-0001-000000000280" relation="org:default" type="c:ObjectCollectionType"/>
+            </baseCollectionRef>
+        </collection>
+        <view>
+            <column id="2">
+                <name>name</name>
+                <path>name</path>
+                <display>
+                    <label>
+                        <t:orig>Name</t:orig>
+                        <t:norm>name</t:norm>
+                        <t:translation>
+                            <t:key>reportCertificationCampaigns.nameColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+            </column>
+            <column id="3">
+                <name>owner</name>
+                <path>ownerRef</path>
+                <display>
+                    <label>
+                        <t:orig>Owner</t:orig>
+                        <t:norm>owner</t:norm>
+                        <t:translation>
+                            <t:key>reportCertificationCampaigns.ownerColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>name</previousColumn>
+            </column>
+            <column id="4">
+                <name>startTimestamp</name>
+                <path>startTimestamp</path>
+                <display>
+                    <label>
+                        <t:orig>Start</t:orig>
+                        <t:norm>start</t:norm>
+                        <t:translation>
+                            <t:key>reportCertificationCampaigns.startTimestampColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>owner</previousColumn>
+            </column>
+            <column id="5">
+                <name>endTimestamp</name>
+                <path>endTimestamp</path>
+                <display>
+                    <label>
+                        <t:orig>Finish</t:orig>
+                        <t:norm>finish</t:norm>
+                        <t:translation>
+                            <t:key>reportCertificationCampaigns.endTimestampColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>startTimestamp</previousColumn>
+            </column>
+            <column id="6">
+                <name>cases</name>
+                <path>case</path>
+                <display>
+                    <label>
+                        <t:orig>Cases</t:orig>
+                        <t:norm>cases</t:norm>
+                        <t:translation>
+                            <t:key>reportCertificationCampaigns.casesColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>endTimestamp</previousColumn>
+                <displayValue>number</displayValue>
+            </column>
+            <column id="7">
+                <name>state</name>
+                <path>state</path>
+                <display>
+                    <label>
+                        <t:orig>State</t:orig>
+                        <t:norm>state</t:norm>
+                        <t:translation>
+                            <t:key>reportCertificationCampaigns.stateColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>cases</previousColumn>
+            </column>
+            <column id="8">
+                <name>stageNumber</name>
+                <path>stageNumber</path>
+                <display>
+                    <label>
+                        <t:orig>Actual stage</t:orig>
+                        <t:norm>actual stage</t:norm>
+                        <t:translation>
+                            <t:key>reportCertificationCampaigns.stageNumberColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>state</previousColumn>
+            </column>
+            <column id="9">
+                <name>stageCases</name>
+                <display>
+                    <label>
+                        <t:orig>Stage cases</t:orig>
+                        <t:norm>stage cases</t:norm>
+                        <t:translation>
+                            <t:key>reportCertificationCampaigns.stageCasesColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>stageNumber</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <code>
                                 import com.evolveum.midpoint.schema.util.CertCampaignTypeUtil
                                 import com.evolveum.midpoint.xml.ns._public.common.common_3.AccessCertificationCampaignType
 
                                 def campaign = object as AccessCertificationCampaignType
                                 CertCampaignTypeUtil.getActiveCases(campaign.case, campaign.stageNumber, campaign.state)
                             </code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="10">
-                    <name>percentComplete</name>
-                    <display>
-                        <label>
-                            <t:orig>% complete</t:orig>
-                            <t:norm> complete</t:norm>
-                            <t:translation>
-                                <t:key>reportCertificationCampaigns.percentCompleteColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>stageCases</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="10">
+                <name>percentComplete</name>
+                <display>
+                    <label>
+                        <t:orig>% complete</t:orig>
+                        <t:norm> complete</t:norm>
+                        <t:translation>
+                            <t:key>reportCertificationCampaigns.percentCompleteColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>stageCases</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <code>
                                 import com.evolveum.midpoint.schema.util.CertCampaignTypeUtil
                                 import com.evolveum.midpoint.xml.ns._public.common.common_3.AccessCertificationCampaignType
 
                                 def campaign = object as AccessCertificationCampaignType
                                 CertCampaignTypeUtil.getCasesDecidedPercentageAllStagesAllIterations(campaign) + " %"
                             </code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <paging>
-                    <q:orderBy>name</q:orderBy>
-                    <q:orderDirection>ascending</q:orderDirection>
-                </paging>
-                <type>AccessCertificationCampaignType</type>
-            </view>
-            <useOnlyReportView>true</useOnlyReportView>
-            <parameter id="11">
-                <name>alsoClosedCampaigns</name>
-                <type>boolean</type>
-                <display>
-                    <label>
-                        <t:orig>alsoClosedCampaigns</t:orig>
-                        <t:norm>alsoclosedcampaigns</t:norm>
-                        <t:translation>
-                            <t:key>runReportPopupContent.param.name.alsoClosedCampaigns</t:key>
-                        </t:translation>
-                    </label>
-                </display>
-            </parameter>
-        </objectCollection>
-    </apti:object>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <paging>
+                <q:orderBy>name</q:orderBy>
+                <q:orderDirection>ascending</q:orderDirection>
+            </paging>
+            <type>AccessCertificationCampaignType</type>
+        </view>
+        <useOnlyReportView>true</useOnlyReportView>
+        <parameter id="11">
+            <name>alsoClosedCampaigns</name>
+            <type>boolean</type>
+            <display>
+                <label>
+                    <t:orig>alsoClosedCampaigns</t:orig>
+                    <t:norm>alsoclosedcampaigns</t:norm>
+                    <t:translation>
+                        <t:key>runReportPopupContent.param.name.alsoClosedCampaigns</t:key>
+                    </t:translation>
+                </label>
+            </display>
+        </parameter>
+    </objectCollection>
+</report>

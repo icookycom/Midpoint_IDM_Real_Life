@@ -1,72 +1,92 @@
-<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="fe5ad99f-0167-43f8-97a0-7d6c2375c6fc" version="3"  xsi:type="c:RoleType">
-        <_metadata id="1">
-            <storage>
-                <createTimestamp>2024-11-25T08:11:53.516Z</createTimestamp>
-                <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
-                <modifyTimestamp>2024-11-26T07:34:53.505Z</modifyTimestamp>
-                <modifierRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-                <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
-            </storage>
-            <process>
-                <requestTimestamp>2024-11-25T08:11:53.383Z</requestTimestamp>
-                <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            </process>
-        </_metadata>
-        <name>Create Shared Folder</name>
-        <documentation>https://habr.com/ru/articles/852726/</documentation>
-        <operationExecution id="3">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-25T08:11:53.555Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>add</t:changeType>
-                    <t:objectType>c:RoleType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000002634</token>
-                </executionResult>
-                <objectName>Create Shared Folder</objectName>
-            </operation>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <operationExecution id="4">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-26T07:34:53.517Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>modify</t:changeType>
-                    <t:objectType>c:RoleType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000026263</token>
-                </executionResult>
-                <objectName>Create Shared Folder</objectName>
-            </operation>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <iteration>0</iteration>
-        <iterationToken/>
-        <activation>
-            <effectiveStatus>enabled</effectiveStatus>
-            <enableTimestamp>2024-11-25T08:11:53.407Z</enableTimestamp>
-        </activation>
-        <inducement id="2">
-            <construction>
-                <resourceRef oid="893e943a-5732-452d-a221-5470e7abb871" relation="org:default" type="c:ResourceType"/>
-                <kind>account</kind>
-                <intent>Account SCV Shared Folder</intent>
-            </construction>
-            <focusType>c:UserType</focusType>
-        </inducement>
-    </apti:object>
+<role xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="fe5ad99f-0167-43f8-97a0-7d6c2375c6fc" version="5" >
+    <_metadata id="1">
+        <storage>
+            <createTimestamp>2024-11-25T08:11:53.516Z</createTimestamp>
+            <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+            <modifyTimestamp>2024-11-28T06:21:17.341Z</modifyTimestamp>
+            <modifierRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2024-11-25T08:11:53.383Z</requestTimestamp>
+            <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        </process>
+    </_metadata>
+    <name>Create Shared Folder</name>
+    <documentation>https://github.com/icookycom/Midpoint_IDM_Real_Life/tree/a596b6be29f64f56a6b2338d3f0be70b8cbdd36e/manuals</documentation>
+    <operationExecution id="3">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-25T08:11:53.555Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:RoleType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000002634</token>
+            </executionResult>
+            <objectName>Create Shared Folder</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="4">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-26T07:34:53.517Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:RoleType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000026263</token>
+            </executionResult>
+            <objectName>Create Shared Folder</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="5">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-28T06:21:17.393Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:RoleType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000001346</token>
+            </executionResult>
+            <objectName>Create Shared Folder</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <activation>
+        <effectiveStatus>enabled</effectiveStatus>
+        <enableTimestamp>2024-11-25T08:11:53.407Z</enableTimestamp>
+    </activation>
+    <inducement id="2">
+        <construction>
+            <resourceRef oid="893e943a-5732-452d-a221-5470e7abb871" relation="org:default" type="c:ResourceType"/>
+            <kind>account</kind>
+            <intent>Account SCV Shared Folder</intent>
+        </construction>
+        <focusType>c:UserType</focusType>
+    </inducement>
+</role>

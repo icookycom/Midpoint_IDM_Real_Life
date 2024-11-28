@@ -1,5 +1,55 @@
-<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-b8249b79d2b5" version="3"  xsi:type="c:ReportType">
-        <_metadata id="15">
+<report xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-b8249b79d2b5" version="3" >
+    <_metadata id="15">
+        <storage>
+            <createTimestamp>2024-11-08T07:43:53.481Z</createTimestamp>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2024-11-08T07:43:53.470Z</requestTimestamp>
+        </process>
+    </_metadata>
+    <name>IGA: Who has access to what and why</name>
+    <description>Displays IGA representation of user access - all roles, ORGs and services (applications) assigned to users directly or indirectly.
+        Formerly known as Indirect assignment report.</description>
+    <operationExecution id="23">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-08T07:43:53.510Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:ReportType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000000190</token>
+            </executionResult>
+            <objectName>IGA: Who has access to what and why</objectName>
+        </operation>
+        <status>success</status>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+    </operationExecution>
+    <operationExecution id="24">
+        <recordType>complex</recordType>
+        <timestamp>2024-11-08T07:53:16.836Z</timestamp>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
+        <activityPath/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="25">
+        <recordType>complex</recordType>
+        <timestamp>2024-11-18T08:09:27.111Z</timestamp>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+        <activityPath/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <assignment id="1">
+        <_metadata id="16">
             <storage>
                 <createTimestamp>2024-11-08T07:43:53.481Z</createTimestamp>
                 <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
@@ -7,265 +57,215 @@
             <process>
                 <requestTimestamp>2024-11-08T07:43:53.470Z</requestTimestamp>
             </process>
+            <provenance>
+                <acquisition id="17">
+                    <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                    <timestamp>2024-11-08T07:43:53.469Z</timestamp>
+                </acquisition>
+            </provenance>
         </_metadata>
-        <name>IGA: Who has access to what and why</name>
-        <description>Displays IGA representation of user access - all roles, ORGs and services (applications) assigned to users directly or indirectly.
-        Formerly known as Indirect assignment report.</description>
-        <operationExecution id="23">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-08T07:43:53.510Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>add</t:changeType>
-                    <t:objectType>c:ReportType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000000190</token>
-                </executionResult>
-                <objectName>IGA: Who has access to what and why</objectName>
-            </operation>
-            <status>success</status>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
-        </operationExecution>
-        <operationExecution id="24">
-            <recordType>complex</recordType>
-            <timestamp>2024-11-08T07:53:16.836Z</timestamp>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
-            <activityPath/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <operationExecution id="25">
-            <recordType>complex</recordType>
-            <timestamp>2024-11-18T08:09:27.111Z</timestamp>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
-            <activityPath/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <assignment id="1">
-            <_metadata id="16">
-                <storage>
-                    <createTimestamp>2024-11-08T07:43:53.481Z</createTimestamp>
-                    <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
-                </storage>
-                <process>
-                    <requestTimestamp>2024-11-08T07:43:53.470Z</requestTimestamp>
-                </process>
-                <provenance>
-                    <acquisition id="17">
-                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
-                        <timestamp>2024-11-08T07:43:53.469Z</timestamp>
-                    </acquisition>
-                </provenance>
-            </_metadata>
-            <identifier>archetype</identifier>
-            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-            <activation>
-                <effectiveStatus>enabled</effectiveStatus>
-            </activation>
-        </assignment>
-        <iteration>0</iteration>
-        <iterationToken/>
-        <archetypeRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-        <archetypeRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
-        <roleMembershipRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType">
-            <_metadata id="18">
-                <storage>
-                    <createTimestamp>2024-11-08T07:43:53.479Z</createTimestamp>
-                </storage>
-                <provenance>
-                    <assignmentPath>
-                        <sourceRef oid="00000000-0000-0000-0000-b8249b79d2b5" relation="org:default" type="c:ReportType"/>
-                        <segment id="19">
-                            <segmentOrder>1</segmentOrder>
-                            <assignmentId>1</assignmentId>
-                            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-                            <matchingOrder>true</matchingOrder>
-                        </segment>
-                    </assignmentPath>
-                </provenance>
-            </_metadata>
-        </roleMembershipRef>
-        <roleMembershipRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType">
-            <_metadata id="20">
-                <storage>
-                    <createTimestamp>2024-11-08T07:43:53.479Z</createTimestamp>
-                </storage>
-                <provenance>
-                    <assignmentPath>
-                        <sourceRef oid="00000000-0000-0000-0000-b8249b79d2b5" relation="org:default" type="c:ReportType"/>
-                        <segment id="21">
-                            <segmentOrder>1</segmentOrder>
-                            <assignmentId>1</assignmentId>
-                            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-                            <matchingOrder>true</matchingOrder>
-                        </segment>
-                        <segment id="22">
-                            <segmentOrder>2</segmentOrder>
-                            <targetRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
-                            <matchingOrder>true</matchingOrder>
-                        </segment>
-                    </assignmentPath>
-                </provenance>
-            </_metadata>
-        </roleMembershipRef>
-        <objectCollection>
-            <collection>
-                <filter>
-                    <q:and>
-                        <q:ownedBy>
-                            <q:type>UserType</q:type>
-                            <q:path>roleMembershipRef</q:path>
-                            <q:filter>
-                                <q:equal>
-                                    <q:path>name</q:path>
-                                    <expression>
-                                        <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
-                                        <path>$userName</path>
-                                    </expression>
-                                </q:equal>
-                            </q:filter>
-                        </q:ownedBy>
-                        <q:ref>
-                            <q:path>.</q:path>
-                            <expression>
-                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
-                                <path>$roleRef</path>
-                            </expression>
-                        </q:ref>
-                    </q:and>
-                </filter>
-            </collection>
-            <view>
-                <column id="5">
-                    <name>user</name>
-                    <display>
-                        <label>
-                            <t:orig>User</t:orig>
-                            <t:norm>user</t:norm>
-                            <t:translation>
-                                <t:key>reportIndirectAssignments.userColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <export>
+        <identifier>archetype</identifier>
+        <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+    </assignment>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <archetypeRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+    <archetypeRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
+    <roleMembershipRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType">
+        <_metadata id="18">
+            <storage>
+                <createTimestamp>2024-11-08T07:43:53.479Z</createTimestamp>
+            </storage>
+            <provenance>
+                <assignmentPath>
+                    <sourceRef oid="00000000-0000-0000-0000-b8249b79d2b5" relation="org:default" type="c:ReportType"/>
+                    <segment id="19">
+                        <segmentOrder>1</segmentOrder>
+                        <assignmentId>1</assignmentId>
+                        <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+                        <matchingOrder>true</matchingOrder>
+                    </segment>
+                </assignmentPath>
+            </provenance>
+        </_metadata>
+    </roleMembershipRef>
+    <roleMembershipRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType">
+        <_metadata id="20">
+            <storage>
+                <createTimestamp>2024-11-08T07:43:53.479Z</createTimestamp>
+            </storage>
+            <provenance>
+                <assignmentPath>
+                    <sourceRef oid="00000000-0000-0000-0000-b8249b79d2b5" relation="org:default" type="c:ReportType"/>
+                    <segment id="21">
+                        <segmentOrder>1</segmentOrder>
+                        <assignmentId>1</assignmentId>
+                        <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+                        <matchingOrder>true</matchingOrder>
+                    </segment>
+                    <segment id="22">
+                        <segmentOrder>2</segmentOrder>
+                        <targetRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
+                        <matchingOrder>true</matchingOrder>
+                    </segment>
+                </assignmentPath>
+            </provenance>
+        </_metadata>
+    </roleMembershipRef>
+    <objectCollection>
+        <collection>
+            <filter>
+                <q:and>
+                    <q:ownedBy>
+                        <q:type>UserType</q:type>
+                        <q:path>roleMembershipRef</q:path>
+                        <q:filter>
+                            <q:equal>
+                                <q:path>name</q:path>
+                                <expression>
+                                    <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                                    <path>$userName</path>
+                                </expression>
+                            </q:equal>
+                        </q:filter>
+                    </q:ownedBy>
+                    <q:ref>
+                        <q:path>.</q:path>
                         <expression>
-                            <script>
-                                <objectVariableMode>prismReference</objectVariableMode>
-                                <code>data?.owner?.name?.orig ?: 'Unknown owner'</code>
-                            </script>
+                            <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                            <path>$roleRef</path>
                         </expression>
-                    </export>
-                </column>
-                <column id="6">
-                    <name>nameColumn</name>
-                    <display>
-                        <label>
-                            <t:orig>Name</t:orig>
-                            <t:norm>name</t:norm>
-                            <t:translation>
-                                <t:key>reportIndirectAssignments.nameColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>user</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <objectVariableMode>prismReference</objectVariableMode>
-                                <code>data?.role?.name?.orig</code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="7">
-                    <name>archetypeName</name>
-                    <display>
-                        <label>
-                            <t:orig>Type</t:orig>
-                            <t:norm>type</t:norm>
-                            <t:translation>
-                                <t:key>reportIndirectAssignments.archetypeNameColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>nameColumn</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <objectVariableMode>prismReference</objectVariableMode>
-                                <code>data?.roleArchetype?.name?.orig</code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="8">
-                    <name>relation</name>
-                    <display>
-                        <label>
-                            <t:orig>Relation</t:orig>
-                            <t:norm>relation</t:norm>
-                            <t:translation>
-                                <t:key>reportIndirectAssignments.relationColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>archetypeName</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <objectVariableMode>prismReference</objectVariableMode>
-                                <code>object?.relation</code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="9">
-                    <name>allPath</name>
-                    <display>
-                        <label>
-                            <t:orig>Path</t:orig>
-                            <t:norm>path</t:norm>
-                            <t:translation>
-                                <t:key>reportIndirectAssignments.allPathColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>relation</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <objectVariableMode>prismReference</objectVariableMode>
-                                <code>
+                    </q:ref>
+                </q:and>
+            </filter>
+        </collection>
+        <view>
+            <column id="5">
+                <name>user</name>
+                <display>
+                    <label>
+                        <t:orig>User</t:orig>
+                        <t:norm>user</t:norm>
+                        <t:translation>
+                            <t:key>reportIndirectAssignments.userColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <export>
+                    <expression>
+                        <script>
+                            <objectVariableMode>prismReference</objectVariableMode>
+                            <code>data?.owner?.name?.orig ?: 'Unknown owner'</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="6">
+                <name>nameColumn</name>
+                <display>
+                    <label>
+                        <t:orig>Name</t:orig>
+                        <t:norm>name</t:norm>
+                        <t:translation>
+                            <t:key>reportIndirectAssignments.nameColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>user</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <objectVariableMode>prismReference</objectVariableMode>
+                            <code>data?.role?.name?.orig</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="7">
+                <name>archetypeName</name>
+                <display>
+                    <label>
+                        <t:orig>Type</t:orig>
+                        <t:norm>type</t:norm>
+                        <t:translation>
+                            <t:key>reportIndirectAssignments.archetypeNameColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>nameColumn</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <objectVariableMode>prismReference</objectVariableMode>
+                            <code>data?.roleArchetype?.name?.orig</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="8">
+                <name>relation</name>
+                <display>
+                    <label>
+                        <t:orig>Relation</t:orig>
+                        <t:norm>relation</t:norm>
+                        <t:translation>
+                            <t:key>reportIndirectAssignments.relationColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>archetypeName</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <objectVariableMode>prismReference</objectVariableMode>
+                            <code>object?.relation</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="9">
+                <name>allPath</name>
+                <display>
+                    <label>
+                        <t:orig>Path</t:orig>
+                        <t:norm>path</t:norm>
+                        <t:translation>
+                            <t:key>reportIndirectAssignments.allPathColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>relation</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <objectVariableMode>prismReference</objectVariableMode>
+                            <code>
                                 return data?.segmentTargets?.collect(o -&gt; o?.name?.orig)?.join(' -&gt; ') ?: '?'
                             </code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="10">
-                    <name>parent</name>
-                    <display>
-                        <label>
-                            <t:orig>Parent</t:orig>
-                            <t:norm>parent</t:norm>
-                            <t:translation>
-                                <t:key>reportIndirectAssignments.parentColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>allPath</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <objectVariableMode>prismReference</objectVariableMode>
-                                <code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="10">
+                <name>parent</name>
+                <display>
+                    <label>
+                        <t:orig>Parent</t:orig>
+                        <t:norm>parent</t:norm>
+                        <t:translation>
+                            <t:key>reportIndirectAssignments.parentColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>allPath</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <objectVariableMode>prismReference</objectVariableMode>
+                            <code>
                                 if (!data?.segmentTargets) {
                                     return "?"
                                 }
@@ -277,124 +277,124 @@
                                     return data.segmentTargets[segLen - 2]?.name?.orig
                                 }
                             </code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="11">
-                    <name>activation</name>
-                    <display>
-                        <label>
-                            <t:orig>Activation</t:orig>
-                            <t:norm>activation</t:norm>
-                            <t:translation>
-                                <t:key>reportIndirectAssignments.activationColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>parent</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <objectVariableMode>prismReference</objectVariableMode>
-                                <code>data?.assignment?.activation?.effectiveStatus</code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="12">
-                    <name>validTo</name>
-                    <display>
-                        <label>
-                            <t:orig>Valid to</t:orig>
-                            <t:norm>valid to</t:norm>
-                            <t:translation>
-                                <t:key>reportIndirectAssignments.validToColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>activation</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <objectVariableMode>prismReference</objectVariableMode>
-                                <code>data?.assignment?.activation?.validTo</code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="13">
-                    <name>since</name>
-                    <display>
-                        <label>
-                            <t:orig>Since</t:orig>
-                            <t:norm>since</t:norm>
-                            <t:translation>
-                                <t:key>reportIndirectAssignments.sinceColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>validTo</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <objectVariableMode>prismReference</objectVariableMode>
-                                <code>data?.createTimestamp</code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="14">
-                    <name>createChannel</name>
-                    <display>
-                        <label>
-                            <t:orig>Source</t:orig>
-                            <t:norm>source</t:norm>
-                            <t:translation>
-                                <t:key>reportIndirectAssignments.createChannelColumn.label</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>since</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <objectVariableMode>prismReference</objectVariableMode>
-                                <code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="11">
+                <name>activation</name>
+                <display>
+                    <label>
+                        <t:orig>Activation</t:orig>
+                        <t:norm>activation</t:norm>
+                        <t:translation>
+                            <t:key>reportIndirectAssignments.activationColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>parent</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <objectVariableMode>prismReference</objectVariableMode>
+                            <code>data?.assignment?.activation?.effectiveStatus</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="12">
+                <name>validTo</name>
+                <display>
+                    <label>
+                        <t:orig>Valid to</t:orig>
+                        <t:norm>valid to</t:norm>
+                        <t:translation>
+                            <t:key>reportIndirectAssignments.validToColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>activation</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <objectVariableMode>prismReference</objectVariableMode>
+                            <code>data?.assignment?.activation?.validTo</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="13">
+                <name>since</name>
+                <display>
+                    <label>
+                        <t:orig>Since</t:orig>
+                        <t:norm>since</t:norm>
+                        <t:translation>
+                            <t:key>reportIndirectAssignments.sinceColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>validTo</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <objectVariableMode>prismReference</objectVariableMode>
+                            <code>data?.createTimestamp</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="14">
+                <name>createChannel</name>
+                <display>
+                    <label>
+                        <t:orig>Source</t:orig>
+                        <t:norm>source</t:norm>
+                        <t:translation>
+                            <t:key>reportIndirectAssignments.createChannelColumn.label</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>since</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <objectVariableMode>prismReference</objectVariableMode>
+                            <code>
                                 // Explicit String to use the right split() and not random Groovy default method.
                                 String channel = data?.assignment?.metadata?.createChannel
                                 return channel?.split('#')?.last()?.with(s -&gt; midpoint.translate('Channel.' + s))
                             </code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <paging>
-                    <q:orderBy>../name</q:orderBy>
-                </paging>
-                <type>c:ObjectReferenceType</type>
-            </view>
-            <parameter id="2">
-                <name>userName</name>
-                <type>string</type>
-            </parameter>
-            <parameter id="3">
-                <name>roleRef</name>
-                <type>c:ObjectReferenceType</type>
-                <targetType>c:AbstractRoleType</targetType>
-            </parameter>
-            <subreport id="4">
-                <name>data</name>
-                <expression>
-                    <script>
-                        <objectVariableMode>prismReference</objectVariableMode>
-                        <code>report.generateAssignmentPathRows(object)</code>
-                    </script>
-                </expression>
-                <order>1</order>
-                <resultHandling>
-                    <multipleValues>splitParentRow</multipleValues>
-                </resultHandling>
-            </subreport>
-        </objectCollection>
-    </apti:object>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <paging>
+                <q:orderBy>../name</q:orderBy>
+            </paging>
+            <type>c:ObjectReferenceType</type>
+        </view>
+        <parameter id="2">
+            <name>userName</name>
+            <type>string</type>
+        </parameter>
+        <parameter id="3">
+            <name>roleRef</name>
+            <type>c:ObjectReferenceType</type>
+            <targetType>c:AbstractRoleType</targetType>
+        </parameter>
+        <subreport id="4">
+            <name>data</name>
+            <expression>
+                <script>
+                    <objectVariableMode>prismReference</objectVariableMode>
+                    <code>report.generateAssignmentPathRows(object)</code>
+                </script>
+            </expression>
+            <order>1</order>
+            <resultHandling>
+                <multipleValues>splitParentRow</multipleValues>
+            </resultHandling>
+        </subreport>
+    </objectCollection>
+</report>

@@ -1,5 +1,54 @@
-<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-ea32deff43df" version="3"  xsi:type="c:ReportType">
-        <_metadata id="36">
+<report xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-ea32deff43df" version="3" >
+    <_metadata id="36">
+        <storage>
+            <createTimestamp>2024-11-08T07:43:53.273Z</createTimestamp>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2024-11-08T07:43:53.255Z</requestTimestamp>
+        </process>
+    </_metadata>
+    <name>Simulation report: Items changed</name>
+    <description>Items changed within individual objects processed by a simulation.</description>
+    <operationExecution id="44">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-08T07:43:53.301Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:ReportType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000000170</token>
+            </executionResult>
+            <objectName>Simulation report: Items changed</objectName>
+        </operation>
+        <status>success</status>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+    </operationExecution>
+    <operationExecution id="45">
+        <recordType>complex</recordType>
+        <timestamp>2024-11-08T07:53:16.858Z</timestamp>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
+        <activityPath/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="46">
+        <recordType>complex</recordType>
+        <timestamp>2024-11-18T08:09:27.126Z</timestamp>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+        <activityPath/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <assignment id="1">
+        <_metadata id="37">
             <storage>
                 <createTimestamp>2024-11-08T07:43:53.273Z</createTimestamp>
                 <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
@@ -7,570 +56,521 @@
             <process>
                 <requestTimestamp>2024-11-08T07:43:53.255Z</requestTimestamp>
             </process>
+            <provenance>
+                <acquisition id="38">
+                    <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                    <timestamp>2024-11-08T07:43:53.255Z</timestamp>
+                </acquisition>
+            </provenance>
         </_metadata>
-        <name>Simulation report: Items changed</name>
-        <description>Items changed within individual objects processed by a simulation.</description>
-        <operationExecution id="44">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-08T07:43:53.301Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>add</t:changeType>
-                    <t:objectType>c:ReportType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000000170</token>
-                </executionResult>
-                <objectName>Simulation report: Items changed</objectName>
-            </operation>
-            <status>success</status>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
-        </operationExecution>
-        <operationExecution id="45">
-            <recordType>complex</recordType>
-            <timestamp>2024-11-08T07:53:16.858Z</timestamp>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
-            <activityPath/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <operationExecution id="46">
-            <recordType>complex</recordType>
-            <timestamp>2024-11-18T08:09:27.126Z</timestamp>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
-            <activityPath/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <assignment id="1">
-            <_metadata id="37">
-                <storage>
-                    <createTimestamp>2024-11-08T07:43:53.273Z</createTimestamp>
-                    <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
-                </storage>
-                <process>
-                    <requestTimestamp>2024-11-08T07:43:53.255Z</requestTimestamp>
-                </process>
-                <provenance>
-                    <acquisition id="38">
-                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
-                        <timestamp>2024-11-08T07:43:53.255Z</timestamp>
-                    </acquisition>
-                </provenance>
-            </_metadata>
-            <identifier>archetype</identifier>
-            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-            <activation>
-                <effectiveStatus>enabled</effectiveStatus>
-            </activation>
-        </assignment>
-        <iteration>0</iteration>
-        <iterationToken/>
-        <archetypeRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-        <archetypeRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
-        <roleMembershipRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType">
-            <_metadata id="39">
-                <storage>
-                    <createTimestamp>2024-11-08T07:43:53.270Z</createTimestamp>
-                </storage>
-                <provenance>
-                    <assignmentPath>
-                        <sourceRef oid="00000000-0000-0000-0000-ea32deff43df" relation="org:default" type="c:ReportType"/>
-                        <segment id="40">
-                            <segmentOrder>1</segmentOrder>
-                            <assignmentId>1</assignmentId>
-                            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-                            <matchingOrder>true</matchingOrder>
-                        </segment>
-                    </assignmentPath>
-                </provenance>
-            </_metadata>
-        </roleMembershipRef>
-        <roleMembershipRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType">
-            <_metadata id="41">
-                <storage>
-                    <createTimestamp>2024-11-08T07:43:53.270Z</createTimestamp>
-                </storage>
-                <provenance>
-                    <assignmentPath>
-                        <sourceRef oid="00000000-0000-0000-0000-ea32deff43df" relation="org:default" type="c:ReportType"/>
-                        <segment id="42">
-                            <segmentOrder>1</segmentOrder>
-                            <assignmentId>1</assignmentId>
-                            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-                            <matchingOrder>true</matchingOrder>
-                        </segment>
-                        <segment id="43">
-                            <segmentOrder>2</segmentOrder>
-                            <targetRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
-                            <matchingOrder>true</matchingOrder>
-                        </segment>
-                    </assignmentPath>
-                </provenance>
-            </_metadata>
-        </roleMembershipRef>
-        <objectCollection>
-            <collection>
-                <filter>
-                    <q:text>. ownedByOid `simulationResultRef?.oid`</q:text>
-                </filter>
-            </collection>
-            <view>
-                <column id="2">
-                    <name>id</name>
-                    <display>
-                        <label>
-                            <t:orig>ID</t:orig>
-                            <t:norm>id</t:norm>
-                            <t:translation>
-                                <t:key>SimulationReports.column.ID</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>object.id</code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="3">
-                    <name>oid</name>
-                    <path>oid</path>
-                    <display>
-                        <label>
-                            <t:orig>OID</t:orig>
-                            <t:norm>oid</t:norm>
-                            <t:translation>
-                                <t:key>SimulationReports.column.OID</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>id</previousColumn>
-                </column>
-                <column id="4">
-                    <name>name</name>
-                    <path>name</path>
-                    <previousColumn>oid</previousColumn>
-                </column>
-                <column id="5">
-                    <name>type</name>
-                    <path>type</path>
-                    <previousColumn>name</previousColumn>
-                </column>
-                <column id="6">
-                    <name>archetype</name>
-                    <path>structuralArchetypeRef</path>
-                    <previousColumn>type</previousColumn>
-                </column>
-                <column id="7">
-                    <name>resourceRef</name>
-                    <path>resourceObjectCoordinates/resourceRef</path>
-                    <previousColumn>archetype</previousColumn>
-                </column>
-                <column id="8">
-                    <name>kind</name>
-                    <path>resourceObjectCoordinates/kind</path>
-                    <previousColumn>resourceRef</previousColumn>
-                </column>
-                <column id="9">
-                    <name>intent</name>
-                    <path>resourceObjectCoordinates/intent</path>
-                    <previousColumn>kind</previousColumn>
-                </column>
-                <column id="10">
-                    <name>tag</name>
-                    <path>resourceObjectCoordinates/tag</path>
-                    <previousColumn>intent</previousColumn>
-                </column>
-                <column id="11">
-                    <name>objectMark</name>
-                    <display>
-                        <label>
-                            <t:orig>Object mark</t:orig>
-                            <t:norm>object mark</t:norm>
-                            <t:translation>
-                                <t:key>SimulationReports.column.objectMark</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>tag</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>objectMarks</code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="12">
-                    <name>state</name>
-                    <path>state</path>
-                    <previousColumn>objectMark</previousColumn>
-                </column>
-                <column id="13">
-                    <name>resultStatus</name>
-                    <path>resultStatus</path>
-                    <previousColumn>state</previousColumn>
-                </column>
-                <column id="14">
-                    <name>eventMarkRef</name>
-                    <path>eventMarkRef</path>
-                    <previousColumn>resultStatus</previousColumn>
-                </column>
-                <column id="15">
-                    <name>itemChanged</name>
-                    <display>
-                        <label>
-                            <t:orig>Item changed</t:orig>
-                            <t:norm>item changed</t:norm>
-                            <t:translation>
-                                <t:key>SimulationReports.column.itemChanged</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>eventMarkRef</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>
+        <identifier>archetype</identifier>
+        <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+    </assignment>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <archetypeRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+    <archetypeRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
+    <roleMembershipRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType">
+        <_metadata id="39">
+            <storage>
+                <createTimestamp>2024-11-08T07:43:53.270Z</createTimestamp>
+            </storage>
+            <provenance>
+                <assignmentPath>
+                    <sourceRef oid="00000000-0000-0000-0000-ea32deff43df" relation="org:default" type="c:ReportType"/>
+                    <segment id="40">
+                        <segmentOrder>1</segmentOrder>
+                        <assignmentId>1</assignmentId>
+                        <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+                        <matchingOrder>true</matchingOrder>
+                    </segment>
+                </assignmentPath>
+            </provenance>
+        </_metadata>
+    </roleMembershipRef>
+    <roleMembershipRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType">
+        <_metadata id="41">
+            <storage>
+                <createTimestamp>2024-11-08T07:43:53.270Z</createTimestamp>
+            </storage>
+            <provenance>
+                <assignmentPath>
+                    <sourceRef oid="00000000-0000-0000-0000-ea32deff43df" relation="org:default" type="c:ReportType"/>
+                    <segment id="42">
+                        <segmentOrder>1</segmentOrder>
+                        <assignmentId>1</assignmentId>
+                        <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+                        <matchingOrder>true</matchingOrder>
+                    </segment>
+                    <segment id="43">
+                        <segmentOrder>2</segmentOrder>
+                        <targetRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
+                        <matchingOrder>true</matchingOrder>
+                    </segment>
+                </assignmentPath>
+            </provenance>
+        </_metadata>
+    </roleMembershipRef>
+    <objectCollection>
+        <collection>
+            <filter>
+                <q:text>. ownedByOid `simulationResultRef?.oid`</q:text>
+            </filter>
+        </collection>
+        <view>
+            <column id="2">
+                <name>id</name>
+                <display>
+                    <label>
+                        <t:orig>ID</t:orig>
+                        <t:norm>id</t:norm>
+                        <t:translation>
+                            <t:key>SimulationReports.column.ID</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <export>
+                    <expression>
+                        <script>
+                            <code>object.id</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="3">
+                <name>oid</name>
+                <path>oid</path>
+                <display>
+                    <label>
+                        <t:orig>OID</t:orig>
+                        <t:norm>oid</t:norm>
+                        <t:translation>
+                            <t:key>SimulationReports.column.OID</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>id</previousColumn>
+            </column>
+            <column id="4">
+                <name>name</name>
+                <path>name</path>
+                <previousColumn>oid</previousColumn>
+            </column>
+            <column id="5">
+                <name>type</name>
+                <path>type</path>
+                <previousColumn>name</previousColumn>
+            </column>
+            <column id="6">
+                <name>archetype</name>
+                <path>structuralArchetypeRef</path>
+                <previousColumn>type</previousColumn>
+            </column>
+            <column id="7">
+                <name>resourceRef</name>
+                <path>resourceObjectCoordinates/resourceRef</path>
+                <previousColumn>archetype</previousColumn>
+            </column>
+            <column id="8">
+                <name>kind</name>
+                <path>resourceObjectCoordinates/kind</path>
+                <previousColumn>resourceRef</previousColumn>
+            </column>
+            <column id="9">
+                <name>intent</name>
+                <path>resourceObjectCoordinates/intent</path>
+                <previousColumn>kind</previousColumn>
+            </column>
+            <column id="10">
+                <name>tag</name>
+                <path>resourceObjectCoordinates/tag</path>
+                <previousColumn>intent</previousColumn>
+            </column>
+            <column id="11">
+                <name>objectMark</name>
+                <display>
+                    <label>
+                        <t:orig>Object mark</t:orig>
+                        <t:norm>object mark</t:norm>
+                        <t:translation>
+                            <t:key>SimulationReports.column.objectMark</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>tag</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <code>objectMarks</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="12">
+                <name>state</name>
+                <path>state</path>
+                <previousColumn>objectMark</previousColumn>
+            </column>
+            <column id="13">
+                <name>resultStatus</name>
+                <path>resultStatus</path>
+                <previousColumn>state</previousColumn>
+            </column>
+            <column id="14">
+                <name>eventMarkRef</name>
+                <path>eventMarkRef</path>
+                <previousColumn>resultStatus</previousColumn>
+            </column>
+            <column id="15">
+                <name>itemChanged</name>
+                <display>
+                    <label>
+                        <t:orig>Item changed</t:orig>
+                        <t:norm>item changed</t:norm>
+                        <t:translation>
+                            <t:key>SimulationReports.column.itemChanged</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>eventMarkRef</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <code>
                                 import static com.evolveum.midpoint.model.api.simulation.ProcessedObject.*
 
                                 (itemDelta as ProcessedObjectItemDelta)?.path
                             </code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="16">
-                    <name>oldValues</name>
-                    <display>
-                        <label>
-                            <t:orig>Old value(s)</t:orig>
-                            <t:norm>old values</t:norm>
-                            <t:translation>
-                                <t:key>SimulationReports.column.oldValues</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>itemChanged</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="16">
+                <name>oldValues</name>
+                <display>
+                    <label>
+                        <t:orig>Old value(s)</t:orig>
+                        <t:norm>old values</t:norm>
+                        <t:translation>
+                            <t:key>SimulationReports.column.oldValues</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>itemChanged</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <code>
                                 import static com.evolveum.midpoint.model.api.simulation.ProcessedObject.*
 
                                 (itemDelta as ProcessedObjectItemDelta)?.realValuesBefore
                             </code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="17">
-                    <name>newValues</name>
-                    <display>
-                        <label>
-                            <t:orig>New value(s)</t:orig>
-                            <t:norm>new values</t:norm>
-                            <t:translation>
-                                <t:key>SimulationReports.column.newValues</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>oldValues</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="17">
+                <name>newValues</name>
+                <display>
+                    <label>
+                        <t:orig>New value(s)</t:orig>
+                        <t:norm>new values</t:norm>
+                        <t:translation>
+                            <t:key>SimulationReports.column.newValues</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>oldValues</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <code>
                                 import static com.evolveum.midpoint.model.api.simulation.ProcessedObject.*
 
                                 (itemDelta as ProcessedObjectItemDelta)?.realValuesAfter
                             </code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="18">
-                    <name>valuesAdded</name>
-                    <display>
-                        <label>
-                            <t:orig>Value(s) added</t:orig>
-                            <t:norm>values added</t:norm>
-                            <t:translation>
-                                <t:key>SimulationReports.column.valuesAdded</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>newValues</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="18">
+                <name>valuesAdded</name>
+                <display>
+                    <label>
+                        <t:orig>Value(s) added</t:orig>
+                        <t:norm>values added</t:norm>
+                        <t:translation>
+                            <t:key>SimulationReports.column.valuesAdded</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>newValues</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <code>
                                 import static com.evolveum.midpoint.model.api.simulation.ProcessedObject.*
 
                                 (itemDelta as ProcessedObjectItemDelta)?.realValuesAdded
                             </code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="19">
-                    <name>valuesDeleted</name>
-                    <display>
-                        <label>
-                            <t:orig>Value(s) deleted</t:orig>
-                            <t:norm>values deleted</t:norm>
-                            <t:translation>
-                                <t:key>SimulationReports.column.valuesDeleted</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>valuesAdded</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="19">
+                <name>valuesDeleted</name>
+                <display>
+                    <label>
+                        <t:orig>Value(s) deleted</t:orig>
+                        <t:norm>values deleted</t:norm>
+                        <t:translation>
+                            <t:key>SimulationReports.column.valuesDeleted</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>valuesAdded</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <code>
                                 import static com.evolveum.midpoint.model.api.simulation.ProcessedObject.*
 
                                 (itemDelta as ProcessedObjectItemDelta)?.realValuesDeleted
                             </code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="20">
-                    <name>relatedAssignment</name>
-                    <display>
-                        <label>
-                            <t:orig>Related assignment</t:orig>
-                            <t:norm>related assignment</t:norm>
-                            <t:translation>
-                                <t:key>SimulationReports.column.relatedAssignment</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>valuesDeleted</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>relatedAssignment</code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="21">
-                    <name>relatedAssignmentId</name>
-                    <display>
-                        <label>
-                            <t:orig>Related assignment ID</t:orig>
-                            <t:norm>related assignment id</t:norm>
-                            <t:translation>
-                                <t:key>SimulationReports.column.relatedAssignmentId</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>relatedAssignment</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>relatedAssignment?.id</code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="22">
-                    <name>relatedAssignmentTarget</name>
-                    <display>
-                        <label>
-                            <t:orig>Related assignment target</t:orig>
-                            <t:norm>related assignment target</t:norm>
-                            <t:translation>
-                                <t:key>SimulationReports.column.relatedAssignmentTarget</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>relatedAssignmentId</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>relatedAssignment?.targetRef</code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="23">
-                    <name>relatedAssignmentTargetRelation</name>
-                    <display>
-                        <label>
-                            <t:orig>Related assignment relation</t:orig>
-                            <t:norm>related assignment relation</t:norm>
-                            <t:translation>
-                                <t:key>SimulationReports.column.relatedAssignmentTargetRelation</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>relatedAssignmentTarget</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>relatedAssignment?.targetRef?.relation</code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="24">
-                    <name>relatedAssignmentResource</name>
-                    <display>
-                        <label>
-                            <t:orig>Related assignment resource</t:orig>
-                            <t:norm>related assignment resource</t:norm>
-                            <t:translation>
-                                <t:key>SimulationReports.column.relatedAssignmentResource</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>relatedAssignmentTargetRelation</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>relatedAssignment?.construction?.resourceRef</code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="25">
-                    <name>relatedAssignmentKind</name>
-                    <display>
-                        <label>
-                            <t:orig>Related assignment kind</t:orig>
-                            <t:norm>related assignment kind</t:norm>
-                            <t:translation>
-                                <t:key>SimulationReports.column.relatedAssignmentKind</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>relatedAssignmentResource</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>relatedAssignment?.construction?.kind</code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <column id="26">
-                    <name>relatedAssignmentIntent</name>
-                    <display>
-                        <label>
-                            <t:orig>Related assignment intent</t:orig>
-                            <t:norm>related assignment intent</t:norm>
-                            <t:translation>
-                                <t:key>SimulationReports.column.relatedAssignmentIntent</t:key>
-                            </t:translation>
-                        </label>
-                    </display>
-                    <previousColumn>relatedAssignmentKind</previousColumn>
-                    <export>
-                        <expression>
-                            <script>
-                                <code>relatedAssignment?.construction?.intent</code>
-                            </script>
-                        </expression>
-                    </export>
-                </column>
-                <type>c:SimulationResultProcessedObjectType</type>
-            </view>
-            <parameter id="27">
-                <name>simulationResultRef</name>
-                <type>c:ObjectReferenceType</type>
-                <targetType>SimulationResultType</targetType>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="20">
+                <name>relatedAssignment</name>
                 <display>
                     <label>
-                        <t:orig>simulationResultRef</t:orig>
-                        <t:norm>simulationresultref</t:norm>
+                        <t:orig>Related assignment</t:orig>
+                        <t:norm>related assignment</t:norm>
                         <t:translation>
-                            <t:key>runReportPopupContent.param.name.simulationResultRef</t:key>
+                            <t:key>SimulationReports.column.relatedAssignment</t:key>
                         </t:translation>
                     </label>
                 </display>
-            </parameter>
-            <parameter id="28">
-                <name>pathsToInclude</name>
-                <type>t:ItemPathType</type>
+                <previousColumn>valuesDeleted</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <code>relatedAssignment</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="21">
+                <name>relatedAssignmentId</name>
                 <display>
                     <label>
-                        <t:orig>pathsToInclude</t:orig>
-                        <t:norm>pathstoinclude</t:norm>
+                        <t:orig>Related assignment ID</t:orig>
+                        <t:norm>related assignment id</t:norm>
                         <t:translation>
-                            <t:key>runReportPopupContent.param.name.pathsToInclude</t:key>
+                            <t:key>SimulationReports.column.relatedAssignmentId</t:key>
                         </t:translation>
                     </label>
                 </display>
-            </parameter>
-            <parameter id="29">
-                <name>pathsToExclude</name>
-                <type>t:ItemPathType</type>
+                <previousColumn>relatedAssignment</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <code>relatedAssignment?.id</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="22">
+                <name>relatedAssignmentTarget</name>
                 <display>
                     <label>
-                        <t:orig>pathsToExclude</t:orig>
-                        <t:norm>pathstoexclude</t:norm>
+                        <t:orig>Related assignment target</t:orig>
+                        <t:norm>related assignment target</t:norm>
                         <t:translation>
-                            <t:key>runReportPopupContent.param.name.pathsToExclude</t:key>
+                            <t:key>SimulationReports.column.relatedAssignmentTarget</t:key>
                         </t:translation>
                     </label>
                 </display>
-            </parameter>
-            <parameter id="30">
-                <name>includeOperationalItems</name>
-                <type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</type>
+                <previousColumn>relatedAssignmentId</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <code>relatedAssignment?.targetRef</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="23">
+                <name>relatedAssignmentTargetRelation</name>
                 <display>
                     <label>
-                        <t:orig>includeOperationalItems</t:orig>
-                        <t:norm>includeoperationalitems</t:norm>
+                        <t:orig>Related assignment relation</t:orig>
+                        <t:norm>related assignment relation</t:norm>
                         <t:translation>
-                            <t:key>runReportPopupContent.param.name.includeOperationalItems</t:key>
+                            <t:key>SimulationReports.column.relatedAssignmentTargetRelation</t:key>
                         </t:translation>
                     </label>
                 </display>
-            </parameter>
-            <parameter id="31">
-                <name>showIfNoDetails</name>
-                <type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</type>
+                <previousColumn>relatedAssignmentTarget</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <code>relatedAssignment?.targetRef?.relation</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="24">
+                <name>relatedAssignmentResource</name>
                 <display>
                     <label>
-                        <t:orig>showIfNoDetails</t:orig>
-                        <t:norm>showifnodetails</t:norm>
+                        <t:orig>Related assignment resource</t:orig>
+                        <t:norm>related assignment resource</t:norm>
                         <t:translation>
-                            <t:key>runReportPopupContent.param.name.showIfNoDetails</t:key>
+                            <t:key>SimulationReports.column.relatedAssignmentResource</t:key>
                         </t:translation>
                     </label>
                 </display>
-            </parameter>
-            <subreport id="32">
-                <name>objectMarks</name>
-                <type>c:ObjectReferenceType</type>
-                <expression>
-                    <script>
-                        <code>
+                <previousColumn>relatedAssignmentTargetRelation</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <code>relatedAssignment?.construction?.resourceRef</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="25">
+                <name>relatedAssignmentKind</name>
+                <display>
+                    <label>
+                        <t:orig>Related assignment kind</t:orig>
+                        <t:norm>related assignment kind</t:norm>
+                        <t:translation>
+                            <t:key>SimulationReports.column.relatedAssignmentKind</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>relatedAssignmentResource</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <code>relatedAssignment?.construction?.kind</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <column id="26">
+                <name>relatedAssignmentIntent</name>
+                <display>
+                    <label>
+                        <t:orig>Related assignment intent</t:orig>
+                        <t:norm>related assignment intent</t:norm>
+                        <t:translation>
+                            <t:key>SimulationReports.column.relatedAssignmentIntent</t:key>
+                        </t:translation>
+                    </label>
+                </display>
+                <previousColumn>relatedAssignmentKind</previousColumn>
+                <export>
+                    <expression>
+                        <script>
+                            <code>relatedAssignment?.construction?.intent</code>
+                        </script>
+                    </expression>
+                </export>
+            </column>
+            <type>c:SimulationResultProcessedObjectType</type>
+        </view>
+        <parameter id="27">
+            <name>simulationResultRef</name>
+            <type>c:ObjectReferenceType</type>
+            <targetType>SimulationResultType</targetType>
+            <display>
+                <label>
+                    <t:orig>simulationResultRef</t:orig>
+                    <t:norm>simulationresultref</t:norm>
+                    <t:translation>
+                        <t:key>runReportPopupContent.param.name.simulationResultRef</t:key>
+                    </t:translation>
+                </label>
+            </display>
+        </parameter>
+        <parameter id="28">
+            <name>pathsToInclude</name>
+            <type>t:ItemPathType</type>
+            <display>
+                <label>
+                    <t:orig>pathsToInclude</t:orig>
+                    <t:norm>pathstoinclude</t:norm>
+                    <t:translation>
+                        <t:key>runReportPopupContent.param.name.pathsToInclude</t:key>
+                    </t:translation>
+                </label>
+            </display>
+        </parameter>
+        <parameter id="29">
+            <name>pathsToExclude</name>
+            <type>t:ItemPathType</type>
+            <display>
+                <label>
+                    <t:orig>pathsToExclude</t:orig>
+                    <t:norm>pathstoexclude</t:norm>
+                    <t:translation>
+                        <t:key>runReportPopupContent.param.name.pathsToExclude</t:key>
+                    </t:translation>
+                </label>
+            </display>
+        </parameter>
+        <parameter id="30">
+            <name>includeOperationalItems</name>
+            <type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</type>
+            <display>
+                <label>
+                    <t:orig>includeOperationalItems</t:orig>
+                    <t:norm>includeoperationalitems</t:norm>
+                    <t:translation>
+                        <t:key>runReportPopupContent.param.name.includeOperationalItems</t:key>
+                    </t:translation>
+                </label>
+            </display>
+        </parameter>
+        <parameter id="31">
+            <name>showIfNoDetails</name>
+            <type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</type>
+            <display>
+                <label>
+                    <t:orig>showIfNoDetails</t:orig>
+                    <t:norm>showifnodetails</t:norm>
+                    <t:translation>
+                        <t:key>runReportPopupContent.param.name.showIfNoDetails</t:key>
+                    </t:translation>
+                </label>
+            </display>
+        </parameter>
+        <subreport id="32">
+            <name>objectMarks</name>
+            <type>c:ObjectReferenceType</type>
+            <expression>
+                <script>
+                    <code>
                         import com.evolveum.midpoint.xml.ns._public.common.common_3.SimulationResultProcessedObjectType
 
                         report.getObjectMarks(object as SimulationResultProcessedObjectType)
                     </code>
-                    </script>
-                </expression>
-                <order>5</order>
-            </subreport>
-            <subreport id="33">
-                <name>itemDelta</name>
-                <expression>
-                    <script>
-                        <code>
+                </script>
+            </expression>
+            <order>5</order>
+        </subreport>
+        <subreport id="33">
+            <name>itemDelta</name>
+            <expression>
+                <script>
+                    <code>
                         import com.evolveum.midpoint.xml.ns._public.common.common_3.SimulationResultProcessedObjectType
 
                         report.getProcessedObjectItemDeltas(
@@ -579,38 +579,38 @@
                                 pathsToExclude,
                                 includeOperationalItems)
                     </code>
-                    </script>
-                </expression>
-                <order>10</order>
-                <resultHandling>
-                    <multipleValues>splitParentRow</multipleValues>
-                </resultHandling>
-            </subreport>
-            <subreport id="34">
-                <name>detailsPresent</name>
-                <type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</type>
-                <expression>
-                    <script>
-                        <code>showIfNoDetails != false || itemDelta != null ? true : null</code>
-                    </script>
-                </expression>
-                <order>20</order>
-                <resultHandling>
-                    <noValues>removeParentRow</noValues>
-                </resultHandling>
-            </subreport>
-            <subreport id="35">
-                <name>relatedAssignment</name>
-                <type>AssignmentType</type>
-                <expression>
-                    <script>
-                        <code>report.getRelatedAssignment(itemDelta)</code>
-                    </script>
-                </expression>
-                <order>30</order>
-                <resultHandling>
-                    <multipleValues>splitParentRow</multipleValues>
-                </resultHandling>
-            </subreport>
-        </objectCollection>
-    </apti:object>
+                </script>
+            </expression>
+            <order>10</order>
+            <resultHandling>
+                <multipleValues>splitParentRow</multipleValues>
+            </resultHandling>
+        </subreport>
+        <subreport id="34">
+            <name>detailsPresent</name>
+            <type xmlns:xsd="http://www.w3.org/2001/XMLSchema">xsd:boolean</type>
+            <expression>
+                <script>
+                    <code>showIfNoDetails != false || itemDelta != null ? true : null</code>
+                </script>
+            </expression>
+            <order>20</order>
+            <resultHandling>
+                <noValues>removeParentRow</noValues>
+            </resultHandling>
+        </subreport>
+        <subreport id="35">
+            <name>relatedAssignment</name>
+            <type>AssignmentType</type>
+            <expression>
+                <script>
+                    <code>report.getRelatedAssignment(itemDelta)</code>
+                </script>
+            </expression>
+            <order>30</order>
+            <resultHandling>
+                <multipleValues>splitParentRow</multipleValues>
+            </resultHandling>
+        </subreport>
+    </objectCollection>
+</report>

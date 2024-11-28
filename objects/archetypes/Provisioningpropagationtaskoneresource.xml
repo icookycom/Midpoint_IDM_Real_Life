@@ -1,5 +1,53 @@
-<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000532" version="3"  xsi:type="c:ArchetypeType">
-        <_metadata id="8">
+<archetype xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000532" version="3" >
+    <_metadata id="8">
+        <storage>
+            <createTimestamp>2024-11-08T07:43:55.652Z</createTimestamp>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2024-11-08T07:43:55.643Z</requestTimestamp>
+        </process>
+    </_metadata>
+    <name>Provisioning propagation task (one resource)</name>
+    <operationExecution id="11">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-08T07:43:55.671Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:ArchetypeType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000000470</token>
+            </executionResult>
+            <objectName>Provisioning propagation task (one resource)</objectName>
+        </operation>
+        <status>success</status>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+    </operationExecution>
+    <operationExecution id="12">
+        <recordType>complex</recordType>
+        <timestamp>2024-11-08T07:53:15.983Z</timestamp>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
+        <activityPath/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="13">
+        <recordType>complex</recordType>
+        <timestamp>2024-11-18T08:09:26.407Z</timestamp>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+        <activityPath/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <assignment id="4">
+        <_metadata id="9">
             <storage>
                 <createTimestamp>2024-11-08T07:43:55.652Z</createTimestamp>
                 <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
@@ -7,129 +55,81 @@
             <process>
                 <requestTimestamp>2024-11-08T07:43:55.643Z</requestTimestamp>
             </process>
+            <provenance>
+                <acquisition id="10">
+                    <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                    <timestamp>2024-11-08T07:43:55.643Z</timestamp>
+                </acquisition>
+            </provenance>
         </_metadata>
-        <name>Provisioning propagation task (one resource)</name>
-        <operationExecution id="11">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-08T07:43:55.671Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>add</t:changeType>
-                    <t:objectType>c:ArchetypeType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000000470</token>
-                </executionResult>
-                <objectName>Provisioning propagation task (one resource)</objectName>
-            </operation>
-            <status>success</status>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
-        </operationExecution>
-        <operationExecution id="12">
-            <recordType>complex</recordType>
-            <timestamp>2024-11-08T07:53:15.983Z</timestamp>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
-            <activityPath/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <operationExecution id="13">
-            <recordType>complex</recordType>
-            <timestamp>2024-11-18T08:09:26.407Z</timestamp>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
-            <activityPath/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <assignment id="4">
-            <_metadata id="9">
-                <storage>
-                    <createTimestamp>2024-11-08T07:43:55.652Z</createTimestamp>
-                    <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
-                </storage>
-                <process>
-                    <requestTimestamp>2024-11-08T07:43:55.643Z</requestTimestamp>
-                </process>
-                <provenance>
-                    <acquisition id="10">
-                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
-                        <timestamp>2024-11-08T07:43:55.643Z</timestamp>
-                    </acquisition>
-                </provenance>
-            </_metadata>
-            <identifier>holderType</identifier>
-            <activation>
-                <effectiveStatus>enabled</effectiveStatus>
-            </activation>
-            <assignmentRelation id="5">
-                <holderType>TaskType</holderType>
-            </assignmentRelation>
-        </assignment>
-        <iteration>0</iteration>
-        <iterationToken/>
+        <identifier>holderType</identifier>
         <activation>
             <effectiveStatus>enabled</effectiveStatus>
-            <enableTimestamp>2024-11-08T07:43:55.647Z</enableTimestamp>
         </activation>
-        <inducement id="6">
-            <identifier>nameMapping</identifier>
-            <focusMappings>
-                <mapping id="7">
-                    <strength>weak</strength>
-                    <expression>
-                        <script>
-                            <code>
+        <assignmentRelation id="5">
+            <holderType>TaskType</holderType>
+        </assignmentRelation>
+    </assignment>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <activation>
+        <effectiveStatus>enabled</effectiveStatus>
+        <enableTimestamp>2024-11-08T07:43:55.647Z</enableTimestamp>
+    </activation>
+    <inducement id="6">
+        <identifier>nameMapping</identifier>
+        <focusMappings>
+            <mapping id="7">
+                <strength>weak</strength>
+                <expression>
+                    <script>
+                        <code>
                             return source.name
                         </code>
-                        </script>
-                    </expression>
-                    <target>
-                        <path>name</path>
-                    </target>
-                </mapping>
-            </focusMappings>
-        </inducement>
-        <archetypePolicy>
-            <display>
-                <label>
-                    <t:orig>Provisioning propagation task (one resource)</t:orig>
-                    <t:norm>provisioning propagation task one resource</t:norm>
-                    <t:translation>
-                        <t:key>ProvisioningPropagationTask.oneResource.label</t:key>
-                    </t:translation>
-                </label>
-                <pluralLabel>
-                    <t:orig>Provisioning propagation task (one resource)</t:orig>
-                    <t:norm>provisioning propagation task one resource</t:norm>
-                    <t:translation>
-                        <t:key>TaskHandlerSelector.provisioning.task.propagation.handler</t:key>
-                    </t:translation>
-                </pluralLabel>
-                <icon>
-                    <cssClass>fa fa-save</cssClass>
-                    <color>green</color>
-                </icon>
-            </display>
-            <adminGuiConfiguration>
-                <objectDetails>
-                    <type>TaskType</type>
-                    <panel id="1">
-                        <identifier>activity</identifier>
-                        <panel id="2">
-                            <identifier>work</identifier>
-                            <container id="3">
-                                <identifier>work-propagation</identifier>
-                                <path>activity/work/propagation</path>
-                            </container>
-                        </panel>
+                    </script>
+                </expression>
+                <target>
+                    <path>name</path>
+                </target>
+            </mapping>
+        </focusMappings>
+    </inducement>
+    <archetypePolicy>
+        <display>
+            <label>
+                <t:orig>Provisioning propagation task (one resource)</t:orig>
+                <t:norm>provisioning propagation task one resource</t:norm>
+                <t:translation>
+                    <t:key>ProvisioningPropagationTask.oneResource.label</t:key>
+                </t:translation>
+            </label>
+            <pluralLabel>
+                <t:orig>Provisioning propagation task (one resource)</t:orig>
+                <t:norm>provisioning propagation task one resource</t:norm>
+                <t:translation>
+                    <t:key>TaskHandlerSelector.provisioning.task.propagation.handler</t:key>
+                </t:translation>
+            </pluralLabel>
+            <icon>
+                <cssClass>fa fa-save</cssClass>
+                <color>green</color>
+            </icon>
+        </display>
+        <adminGuiConfiguration>
+            <objectDetails>
+                <type>TaskType</type>
+                <panel id="1">
+                    <identifier>activity</identifier>
+                    <panel id="2">
+                        <identifier>work</identifier>
+                        <container id="3">
+                            <identifier>work-propagation</identifier>
+                            <path>activity/work/propagation</path>
+                        </container>
                     </panel>
-                </objectDetails>
-            </adminGuiConfiguration>
-        </archetypePolicy>
-        <archetypeType>auxiliary</archetypeType>
-    </apti:object>
+                </panel>
+            </objectDetails>
+        </adminGuiConfiguration>
+    </archetypePolicy>
+    <archetypeType>auxiliary</archetypeType>
+</archetype>

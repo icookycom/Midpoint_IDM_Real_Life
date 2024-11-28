@@ -1,5 +1,54 @@
-<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000080" version="3"  xsi:type="c:ReportType">
-        <_metadata id="9">
+<report xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000080" version="3" >
+    <_metadata id="9">
+        <storage>
+            <createTimestamp>2024-11-08T07:43:52.687Z</createTimestamp>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2024-11-08T07:43:52.668Z</requestTimestamp>
+        </process>
+    </_metadata>
+    <name>All audit records report</name>
+    <description>Report made from all audit records.</description>
+    <operationExecution id="17">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-08T07:43:52.722Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:ReportType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000000125</token>
+            </executionResult>
+            <objectName>All audit records report</objectName>
+        </operation>
+        <status>success</status>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+    </operationExecution>
+    <operationExecution id="18">
+        <recordType>complex</recordType>
+        <timestamp>2024-11-08T07:53:14.824Z</timestamp>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
+        <activityPath/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="19">
+        <recordType>complex</recordType>
+        <timestamp>2024-11-18T08:09:25.566Z</timestamp>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+        <activityPath/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <assignment id="1">
+        <_metadata id="10">
             <storage>
                 <createTimestamp>2024-11-08T07:43:52.687Z</createTimestamp>
                 <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
@@ -7,262 +56,213 @@
             <process>
                 <requestTimestamp>2024-11-08T07:43:52.668Z</requestTimestamp>
             </process>
+            <provenance>
+                <acquisition id="11">
+                    <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                    <timestamp>2024-11-08T07:43:52.668Z</timestamp>
+                </acquisition>
+            </provenance>
         </_metadata>
-        <name>All audit records report</name>
-        <description>Report made from all audit records.</description>
-        <operationExecution id="17">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-08T07:43:52.722Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>add</t:changeType>
-                    <t:objectType>c:ReportType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000000125</token>
-                </executionResult>
-                <objectName>All audit records report</objectName>
-            </operation>
-            <status>success</status>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
-        </operationExecution>
-        <operationExecution id="18">
-            <recordType>complex</recordType>
-            <timestamp>2024-11-08T07:53:14.824Z</timestamp>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
-            <activityPath/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <operationExecution id="19">
-            <recordType>complex</recordType>
-            <timestamp>2024-11-18T08:09:25.566Z</timestamp>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
-            <activityPath/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <assignment id="1">
-            <_metadata id="10">
-                <storage>
-                    <createTimestamp>2024-11-08T07:43:52.687Z</createTimestamp>
-                    <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
-                </storage>
-                <process>
-                    <requestTimestamp>2024-11-08T07:43:52.668Z</requestTimestamp>
-                </process>
-                <provenance>
-                    <acquisition id="11">
-                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
-                        <timestamp>2024-11-08T07:43:52.668Z</timestamp>
-                    </acquisition>
-                </provenance>
-            </_metadata>
-            <identifier>archetype</identifier>
-            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-            <activation>
-                <effectiveStatus>enabled</effectiveStatus>
-            </activation>
-        </assignment>
-        <iteration>0</iteration>
-        <iterationToken/>
-        <archetypeRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-        <archetypeRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
-        <roleMembershipRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType">
-            <_metadata id="12">
-                <storage>
-                    <createTimestamp>2024-11-08T07:43:52.684Z</createTimestamp>
-                </storage>
-                <provenance>
-                    <assignmentPath>
-                        <sourceRef oid="00000000-0000-0000-0000-000000000080" relation="org:default" type="c:ReportType"/>
-                        <segment id="13">
-                            <segmentOrder>1</segmentOrder>
-                            <assignmentId>1</assignmentId>
-                            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-                            <matchingOrder>true</matchingOrder>
-                        </segment>
-                    </assignmentPath>
-                </provenance>
-            </_metadata>
-        </roleMembershipRef>
-        <roleMembershipRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType">
-            <_metadata id="14">
-                <storage>
-                    <createTimestamp>2024-11-08T07:43:52.684Z</createTimestamp>
-                </storage>
-                <provenance>
-                    <assignmentPath>
-                        <sourceRef oid="00000000-0000-0000-0000-000000000080" relation="org:default" type="c:ReportType"/>
-                        <segment id="15">
-                            <segmentOrder>1</segmentOrder>
-                            <assignmentId>1</assignmentId>
-                            <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
-                            <matchingOrder>true</matchingOrder>
-                        </segment>
-                        <segment id="16">
-                            <segmentOrder>2</segmentOrder>
-                            <targetRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
-                            <matchingOrder>true</matchingOrder>
-                        </segment>
-                    </assignmentPath>
-                </provenance>
-            </_metadata>
-        </roleMembershipRef>
-        <objectCollection>
-            <collection>
-                <filter>
-                    <q:and>
-                        <q:ref>
-                            <q:path>targetRef</q:path>
-                            <expression>
-                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
-                                <path>$targetRef</path>
-                            </expression>
-                        </q:ref>
-                        <q:ref>
-                            <q:path>initiatorRef</q:path>
-                            <expression>
-                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
-                                <path>$initiatorRef</path>
-                            </expression>
-                        </q:ref>
-                        <q:equal>
-                            <q:path>outcome</q:path>
-                            <expression>
-                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
-                                <path>$outcome</path>
-                            </expression>
-                        </q:equal>
-                        <q:equal>
-                            <q:path>eventType</q:path>
-                            <expression>
-                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
-                                <path>$eventType</path>
-                            </expression>
-                        </q:equal>
-                        <q:equal>
-                            <q:path>eventStage</q:path>
-                            <expression>
-                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
-                                <path>$eventStage</path>
-                            </expression>
-                        </q:equal>
-                        <q:greater>
-                            <q:path>timestamp</q:path>
-                            <expression>
-                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
-                                <path>$from</path>
-                            </expression>
-                        </q:greater>
-                        <q:less>
-                            <q:path>timestamp</q:path>
-                            <expression>
-                                <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
-                                <path>$to</path>
-                            </expression>
-                        </q:less>
-                    </q:and>
-                </filter>
-                <baseCollectionRef>
-                    <collectionRef oid="00000000-0000-0000-0001-000000000284" relation="org:default" type="c:ObjectCollectionType"/>
-                </baseCollectionRef>
-            </collection>
-            <parameter id="2">
-                <name>outcome</name>
-                <type>OperationResultStatusType</type>
-                <display>
-                    <label>
-                        <t:orig>outcome</t:orig>
-                        <t:norm>outcome</t:norm>
-                        <t:translation>
-                            <t:key>AuditEventRecordType.outcome</t:key>
-                        </t:translation>
-                    </label>
-                </display>
-            </parameter>
-            <parameter id="3">
-                <name>eventType</name>
-                <type>AuditEventTypeType</type>
-                <display>
-                    <label>
-                        <t:orig>eventType</t:orig>
-                        <t:norm>eventtype</t:norm>
-                        <t:translation>
-                            <t:key>AuditEventRecordType.eventType</t:key>
-                        </t:translation>
-                    </label>
-                </display>
-            </parameter>
-            <parameter id="4">
-                <name>eventStage</name>
-                <type>AuditEventStageType</type>
-                <display>
-                    <label>
-                        <t:orig>eventStage</t:orig>
-                        <t:norm>eventstage</t:norm>
-                        <t:translation>
-                            <t:key>AuditEventRecordType.eventStage</t:key>
-                        </t:translation>
-                    </label>
-                </display>
-            </parameter>
-            <parameter id="5">
-                <name>from</name>
-                <type>dateTime</type>
-                <display>
-                    <label>
-                        <t:orig>from</t:orig>
-                        <t:norm>from</t:norm>
-                        <t:translation>
-                            <t:key>AuditPopupPanel.dateFrom</t:key>
-                        </t:translation>
-                    </label>
-                </display>
-            </parameter>
-            <parameter id="6">
-                <name>to</name>
-                <type>dateTime</type>
-                <display>
-                    <label>
-                        <t:orig>to</t:orig>
-                        <t:norm>to</t:norm>
-                        <t:translation>
-                            <t:key>AuditPopupPanel.dateTo</t:key>
-                        </t:translation>
-                    </label>
-                </display>
-            </parameter>
-            <parameter id="7">
-                <name>targetRef</name>
-                <type>c:ObjectReferenceType</type>
-                <display>
-                    <label>
-                        <t:orig>targetRef</t:orig>
-                        <t:norm>targetref</t:norm>
-                        <t:translation>
-                            <t:key>AuditEventRecordType.targetRef</t:key>
-                        </t:translation>
-                    </label>
-                </display>
-            </parameter>
-            <parameter id="8">
-                <name>initiatorRef</name>
-                <type>c:ObjectReferenceType</type>
-                <display>
-                    <label>
-                        <t:orig>initiatorRef</t:orig>
-                        <t:norm>initiatorref</t:norm>
-                        <t:translation>
-                            <t:key>AuditEventRecordType.initiatorRef</t:key>
-                        </t:translation>
-                    </label>
-                </display>
-            </parameter>
-        </objectCollection>
-    </apti:object>
+        <identifier>archetype</identifier>
+        <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+    </assignment>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <archetypeRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+    <archetypeRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
+    <roleMembershipRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType">
+        <_metadata id="12">
+            <storage>
+                <createTimestamp>2024-11-08T07:43:52.684Z</createTimestamp>
+            </storage>
+            <provenance>
+                <assignmentPath>
+                    <sourceRef oid="00000000-0000-0000-0000-000000000080" relation="org:default" type="c:ReportType"/>
+                    <segment id="13">
+                        <segmentOrder>1</segmentOrder>
+                        <assignmentId>1</assignmentId>
+                        <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+                        <matchingOrder>true</matchingOrder>
+                    </segment>
+                </assignmentPath>
+            </provenance>
+        </_metadata>
+    </roleMembershipRef>
+    <roleMembershipRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType">
+        <_metadata id="14">
+            <storage>
+                <createTimestamp>2024-11-08T07:43:52.684Z</createTimestamp>
+            </storage>
+            <provenance>
+                <assignmentPath>
+                    <sourceRef oid="00000000-0000-0000-0000-000000000080" relation="org:default" type="c:ReportType"/>
+                    <segment id="15">
+                        <segmentOrder>1</segmentOrder>
+                        <assignmentId>1</assignmentId>
+                        <targetRef oid="00000000-0000-0000-0000-000000000171" relation="org:default" type="c:ArchetypeType"/>
+                        <matchingOrder>true</matchingOrder>
+                    </segment>
+                    <segment id="16">
+                        <segmentOrder>2</segmentOrder>
+                        <targetRef oid="00000000-0000-0000-0000-000000000172" relation="org:default" type="c:ArchetypeType"/>
+                        <matchingOrder>true</matchingOrder>
+                    </segment>
+                </assignmentPath>
+            </provenance>
+        </_metadata>
+    </roleMembershipRef>
+    <objectCollection>
+        <collection>
+            <filter>
+                <q:and>
+                    <q:ref>
+                        <q:path>targetRef</q:path>
+                        <expression>
+                            <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                            <path>$targetRef</path>
+                        </expression>
+                    </q:ref>
+                    <q:ref>
+                        <q:path>initiatorRef</q:path>
+                        <expression>
+                            <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                            <path>$initiatorRef</path>
+                        </expression>
+                    </q:ref>
+                    <q:equal>
+                        <q:path>outcome</q:path>
+                        <expression>
+                            <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                            <path>$outcome</path>
+                        </expression>
+                    </q:equal>
+                    <q:equal>
+                        <q:path>eventType</q:path>
+                        <expression>
+                            <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                            <path>$eventType</path>
+                        </expression>
+                    </q:equal>
+                    <q:equal>
+                        <q:path>eventStage</q:path>
+                        <expression>
+                            <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                            <path>$eventStage</path>
+                        </expression>
+                    </q:equal>
+                    <q:greater>
+                        <q:path>timestamp</q:path>
+                        <expression>
+                            <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                            <path>$from</path>
+                        </expression>
+                    </q:greater>
+                    <q:less>
+                        <q:path>timestamp</q:path>
+                        <expression>
+                            <queryInterpretationOfNoValue>filterAll</queryInterpretationOfNoValue>
+                            <path>$to</path>
+                        </expression>
+                    </q:less>
+                </q:and>
+            </filter>
+            <baseCollectionRef>
+                <collectionRef oid="00000000-0000-0000-0001-000000000284" relation="org:default" type="c:ObjectCollectionType"/>
+            </baseCollectionRef>
+        </collection>
+        <parameter id="2">
+            <name>outcome</name>
+            <type>OperationResultStatusType</type>
+            <display>
+                <label>
+                    <t:orig>outcome</t:orig>
+                    <t:norm>outcome</t:norm>
+                    <t:translation>
+                        <t:key>AuditEventRecordType.outcome</t:key>
+                    </t:translation>
+                </label>
+            </display>
+        </parameter>
+        <parameter id="3">
+            <name>eventType</name>
+            <type>AuditEventTypeType</type>
+            <display>
+                <label>
+                    <t:orig>eventType</t:orig>
+                    <t:norm>eventtype</t:norm>
+                    <t:translation>
+                        <t:key>AuditEventRecordType.eventType</t:key>
+                    </t:translation>
+                </label>
+            </display>
+        </parameter>
+        <parameter id="4">
+            <name>eventStage</name>
+            <type>AuditEventStageType</type>
+            <display>
+                <label>
+                    <t:orig>eventStage</t:orig>
+                    <t:norm>eventstage</t:norm>
+                    <t:translation>
+                        <t:key>AuditEventRecordType.eventStage</t:key>
+                    </t:translation>
+                </label>
+            </display>
+        </parameter>
+        <parameter id="5">
+            <name>from</name>
+            <type>dateTime</type>
+            <display>
+                <label>
+                    <t:orig>from</t:orig>
+                    <t:norm>from</t:norm>
+                    <t:translation>
+                        <t:key>AuditPopupPanel.dateFrom</t:key>
+                    </t:translation>
+                </label>
+            </display>
+        </parameter>
+        <parameter id="6">
+            <name>to</name>
+            <type>dateTime</type>
+            <display>
+                <label>
+                    <t:orig>to</t:orig>
+                    <t:norm>to</t:norm>
+                    <t:translation>
+                        <t:key>AuditPopupPanel.dateTo</t:key>
+                    </t:translation>
+                </label>
+            </display>
+        </parameter>
+        <parameter id="7">
+            <name>targetRef</name>
+            <type>c:ObjectReferenceType</type>
+            <display>
+                <label>
+                    <t:orig>targetRef</t:orig>
+                    <t:norm>targetref</t:norm>
+                    <t:translation>
+                        <t:key>AuditEventRecordType.targetRef</t:key>
+                    </t:translation>
+                </label>
+            </display>
+        </parameter>
+        <parameter id="8">
+            <name>initiatorRef</name>
+            <type>c:ObjectReferenceType</type>
+            <display>
+                <label>
+                    <t:orig>initiatorRef</t:orig>
+                    <t:norm>initiatorref</t:norm>
+                    <t:translation>
+                        <t:key>AuditEventRecordType.initiatorRef</t:key>
+                    </t:translation>
+                </label>
+            </display>
+        </parameter>
+    </objectCollection>
+</report>

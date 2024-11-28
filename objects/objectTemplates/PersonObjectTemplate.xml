@@ -1,102 +1,102 @@
-<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000380" version="8"  xsi:type="c:ObjectTemplateType">
-        <_metadata id="3">
-            <storage>
-                <createTimestamp>2024-11-08T07:43:54.572Z</createTimestamp>
-                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
-                <modifyTimestamp>2024-11-20T08:11:39.118Z</modifyTimestamp>
-                <modifierRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-                <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
-            </storage>
-            <process>
-                <requestTimestamp>2024-11-08T07:43:54.565Z</requestTimestamp>
-            </process>
-        </_metadata>
-        <name>Person Object Template</name>
-        <description>Object template for Person users, contains mappings to generate fullName and username. Please enable appropriate mappings as needed.</description>
-        <operationExecution id="4">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-08T07:43:54.587Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>add</t:changeType>
-                    <t:objectType>c:ObjectTemplateType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000000330</token>
-                </executionResult>
-                <objectName>Person Object Template</objectName>
-            </operation>
-            <status>success</status>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
-        </operationExecution>
-        <operationExecution id="5">
-            <recordType>complex</recordType>
-            <timestamp>2024-11-08T07:53:15.501Z</timestamp>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
-            <activityPath/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <operationExecution id="8">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-12T06:55:22.943Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>modify</t:changeType>
-                    <t:objectType>c:ObjectTemplateType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000002367</token>
-                </executionResult>
-                <objectName>Person Object Template</objectName>
-            </operation>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <operationExecution id="9">
-            <recordType>complex</recordType>
-            <timestamp>2024-11-18T08:09:26.076Z</timestamp>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
-            <activityPath/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <operationExecution id="10">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-20T08:11:39.141Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>modify</t:changeType>
-                    <t:objectType>c:ObjectTemplateType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000065230</token>
-                </executionResult>
-                <objectName>Person Object Template</objectName>
-            </operation>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <iteration>0</iteration>
-        <iterationToken/>
-        <iterationSpecification>
-            <maxIterations>99</maxIterations>
-            <tokenExpression>
-                <description>The iteration starts with empty string, then a number is appended, starting with 2 (skipping 1), 3, ... up to 99.</description>
-                <documentation>
+<objectTemplate xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000380" version="8" >
+    <_metadata id="3">
+        <storage>
+            <createTimestamp>2024-11-08T07:43:54.572Z</createTimestamp>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+            <modifyTimestamp>2024-11-20T08:11:39.118Z</modifyTimestamp>
+            <modifierRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2024-11-08T07:43:54.565Z</requestTimestamp>
+        </process>
+    </_metadata>
+    <name>Person Object Template</name>
+    <description>Object template for Person users, contains mappings to generate fullName and username. Please enable appropriate mappings as needed.</description>
+    <operationExecution id="4">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-08T07:43:54.587Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:ObjectTemplateType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000000330</token>
+            </executionResult>
+            <objectName>Person Object Template</objectName>
+        </operation>
+        <status>success</status>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+    </operationExecution>
+    <operationExecution id="5">
+        <recordType>complex</recordType>
+        <timestamp>2024-11-08T07:53:15.501Z</timestamp>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="b0d65371-2a0e-4970-93cc-6d82a82b8dfa" relation="org:default" type="c:TaskType"/>
+        <activityPath/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="8">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-12T06:55:22.943Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ObjectTemplateType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000002367</token>
+            </executionResult>
+            <objectName>Person Object Template</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="9">
+        <recordType>complex</recordType>
+        <timestamp>2024-11-18T08:09:26.076Z</timestamp>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+        <activityPath/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="10">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-20T08:11:39.141Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ObjectTemplateType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000065230</token>
+            </executionResult>
+            <objectName>Person Object Template</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <iterationSpecification>
+        <maxIterations>99</maxIterations>
+        <tokenExpression>
+            <description>The iteration starts with empty string, then a number is appended, starting with 2 (skipping 1), 3, ... up to 99.</description>
+            <documentation>
                 Example, how the iteration could look like if `jsmith` username is already taken:
 
                 . jsmith
@@ -112,8 +112,8 @@
 
                 E.g. iterationToken can be created as '02' instead of just '2'. Or a random number instead of a sequential iterator can be used.
             </documentation>
-                <script>
-                    <code>
+            <script>
+                <code>
                     if (iteration == 0) {
                         return ""
                     } else {
@@ -122,37 +122,37 @@
                         return iteration + 1
                     }
                 </code>
-                </script>
-            </tokenExpression>
-        </iterationSpecification>
-        <item id="1">
-            <ref>assignment</ref>
-            <displayName>Assignment to OU form user locality</displayName>
-            <mapping id="9">
-                <name>its a mapping</name>
-                <strength>strong</strength>
-                <source>
-                    <path>locality</path>
-                </source>
-                <expression>
-                    <assignmentTargetSearch>
-                        <targetType>OrgType</targetType>
-                        <filter>
-                            <q:equal>
-                                <q:path>identifier</q:path>
-                                <expression>
-                                    <path>$user/locality</path>
-                                </expression>
-                            </q:equal>
-                        </filter>
-                    </assignmentTargetSearch>
-                </expression>
-            </mapping>
-        </item>
-        <mapping id="1">
-            <name>generate-name-jsmith-8-2</name>
-            <description>Generate unique login name using jsmith and iterator suitable for sAMAccountName (8 + up to 2 characters). Does not change the login name when user is renamed. Example: John Smith-Baker, jsmithba or jsmithba2</description>
-            <documentation>
+            </script>
+        </tokenExpression>
+    </iterationSpecification>
+    <item id="1">
+        <ref>assignment</ref>
+        <displayName>Assignment to OU form user locality</displayName>
+        <mapping id="9">
+            <name>its a mapping</name>
+            <strength>strong</strength>
+            <source>
+                <path>locality</path>
+            </source>
+            <expression>
+                <assignmentTargetSearch>
+                    <targetType>OrgType</targetType>
+                    <filter>
+                        <q:equal>
+                            <q:path>identifier</q:path>
+                            <expression>
+                                <path>$user/locality</path>
+                            </expression>
+                        </q:equal>
+                    </filter>
+                </assignmentTargetSearch>
+            </expression>
+        </mapping>
+    </item>
+    <mapping id="1">
+        <name>generate-name-jsmith-8-2</name>
+        <description>Generate unique login name using jsmith and iterator suitable for sAMAccountName (8 + up to 2 characters). Does not change the login name when user is renamed. Example: John Smith-Baker, jsmithba or jsmithba2</description>
+        <documentation>
             Generate a login based on "jsmith" convention. Maximum length of login is 10 characters (8 + up-to 2-digit iterator).
 
             If the login is not unique, a number 2-99 is appended.
@@ -165,57 +165,57 @@
 
             This algorithm can be further improved, e.g. to remove "von", "von der", "van", "van der", "de la" from lastName before doing normalization.
         </documentation>
-            <lifecycleState>draft</lifecycleState>
-            <strength>weak</strength>
-            <source>
-                <path>givenName</path>
-            </source>
-            <source>
-                <path>familyName</path>
-            </source>
-            <expression>
-                <script>
-                    <code>
+        <lifecycleState>draft</lifecycleState>
+        <strength>weak</strength>
+        <source>
+            <path>givenName</path>
+        </source>
+        <source>
+            <path>familyName</path>
+        </source>
+        <expression>
+            <script>
+                <code>
                     tmpGivenName = basic.trim(basic.norm(basic.stringify(givenName)))
                     tmpFamilyName  = basic.trim(basic.norm(basic.stringify(familyName)))
                     tmpGivenNameInitial = tmpGivenName?.take(1) // safe even with empty firstName (but not null)
                     return (tmpGivenNameInitial + tmpFamilyName?.replaceAll(" ", ""))?.take(8) + iterationToken // no spaces
                 </code>
-                </script>
-            </expression>
-            <target>
-                <path>name</path>
-            </target>
-        </mapping>
-        <mapping id="2">
-            <name>generate-fullname</name>
-            <description>Generate fullName (enforcing on renames because of strong mapping)</description>
-            <strength>strong</strength>
-            <source>
-                <path>givenName</path>
-            </source>
-            <source>
-                <path>familyName</path>
-            </source>
-            <source>
-                <_metadata id="6">
-                    <provenance>
-                        <acquisition id="7">
-                            <actorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-                            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-                            <timestamp>2024-11-12T06:55:22.592Z</timestamp>
-                        </acquisition>
-                    </provenance>
-                </_metadata>
-                <path>c:additionalName</path>
-            </source>
-            <expression>
-                <script>
-                    <code>basic.concatName(givenName, additionalName, familyName)</code>
-                </script>
-            </expression>
-            <target>
-                <path>fullName</path>
-            </target>
-        </mapping>
-    </apti:object>
+            </script>
+        </expression>
+        <target>
+            <path>name</path>
+        </target>
+    </mapping>
+    <mapping id="2">
+        <name>generate-fullname</name>
+        <description>Generate fullName (enforcing on renames because of strong mapping)</description>
+        <strength>strong</strength>
+        <source>
+            <path>givenName</path>
+        </source>
+        <source>
+            <path>familyName</path>
+        </source>
+        <source>
+            <_metadata id="6">
+                <provenance>
+                    <acquisition id="7">
+                        <actorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+                        <timestamp>2024-11-12T06:55:22.592Z</timestamp>
+                    </acquisition>
+                </provenance>
+            </_metadata>
+            <path>c:additionalName</path>
+        </source>
+        <expression>
+            <script>
+                <code>basic.concatName(givenName, additionalName, familyName)</code>
+            </script>
+        </expression>
+        <target>
+            <path>fullName</path>
+        </target>
+    </mapping>
+</objectTemplate>

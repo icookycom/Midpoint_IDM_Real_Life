@@ -1,58 +1,58 @@
-<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="99513e8c-c7b8-42ee-ba7e-d4847fbbc485" version="2"  xsi:type="c:ObjectTemplateType">
-        <_metadata id="1">
-            <storage>
-                <createTimestamp>2024-11-26T07:42:57.788Z</createTimestamp>
-                <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
-            </storage>
-            <process>
-                <requestTimestamp>2024-11-26T07:42:57.652Z</requestTimestamp>
-                <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            </process>
-        </_metadata>
-        <name>WO Object Template</name>
-        <operationExecution id="2">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-26T07:42:57.824Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>add</t:changeType>
-                    <t:objectType>c:ObjectTemplateType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000000525</token>
-                </executionResult>
-                <objectName>WO Object Template</objectName>
-            </operation>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <iteration>0</iteration>
-        <iterationToken/>
-        <mapping id="2">
-            <name>Block</name>
-            <strength>strong</strength>
-            <source>
-                <path>c:documentation</path>
-            </source>
-            <expression>
-                <script>
-                    <code>import com.evolveum.midpoint.xml.ns._public.common.common_3.ActivationStatusType;
+<objectTemplate xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="99513e8c-c7b8-42ee-ba7e-d4847fbbc485" version="2" >
+    <_metadata id="1">
+        <storage>
+            <createTimestamp>2024-11-26T07:42:57.788Z</createTimestamp>
+            <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2024-11-26T07:42:57.652Z</requestTimestamp>
+            <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        </process>
+    </_metadata>
+    <name>WO Object Template</name>
+    <operationExecution id="2">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-26T07:42:57.824Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:ObjectTemplateType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000000525</token>
+            </executionResult>
+            <objectName>WO Object Template</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <mapping id="2">
+        <name>Block</name>
+        <strength>strong</strength>
+        <source>
+            <path>c:documentation</path>
+        </source>
+        <expression>
+            <script>
+                <code>import com.evolveum.midpoint.xml.ns._public.common.common_3.ActivationStatusType;
 return ActivationStatusType.DISABLED</code>
-                </script>
-            </expression>
-            <target>
-                <path>c:activation/c:administrativeStatus</path>
-            </target>
-            <condition>
-                <script>
-                    <code>documentation == 'DONE'</code>
-                </script>
-            </condition>
-            <evaluationPhase>afterAssignments</evaluationPhase>
-        </mapping>
-    </apti:object>
+            </script>
+        </expression>
+        <target>
+            <path>c:activation/c:administrativeStatus</path>
+        </target>
+        <condition>
+            <script>
+                <code>documentation == 'DONE'</code>
+            </script>
+        </condition>
+        <evaluationPhase>afterAssignments</evaluationPhase>
+    </mapping>
+</objectTemplate>

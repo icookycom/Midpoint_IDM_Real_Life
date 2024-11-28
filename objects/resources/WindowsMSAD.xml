@@ -1,179 +1,185 @@
-<apti:object xmlns:apti="http://midpoint.evolveum.com/xml/ns/public/common/api-types-3" xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="b8618fba-cf8b-416c-8e3b-32ea34cf003d" version="84"  xsi:type="c:ResourceType">
-        <_metadata id="1">
-            <storage>
-                <createTimestamp>2024-11-17T11:32:05.066Z</createTimestamp>
-                <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
-                <modifyTimestamp>2024-11-26T07:21:35.395Z</modifyTimestamp>
-                <modifierRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-                <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
-            </storage>
-            <process>
-                <requestTimestamp>2024-11-17T11:32:04.996Z</requestTimestamp>
-                <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            </process>
-        </_metadata>
-        <name>Windows MS AD</name>
-        <lifecycleState>active</lifecycleState>
-        <operationExecution id="875">
-            <recordType>complex</recordType>
-            <timestamp>2024-11-18T08:09:28.072Z</timestamp>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
-            <activityPath/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <operationExecution id="908">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-20T07:41:41.751Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>modify</t:changeType>
-                    <t:objectType>c:ResourceType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000054917</token>
-                </executionResult>
-                <objectName>Windows MS AD</objectName>
-            </operation>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <operationExecution id="911">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-25T08:37:46.914Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>modify</t:changeType>
-                    <t:objectType>c:ResourceType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000006349</token>
-                </executionResult>
-                <objectName>Windows MS AD</objectName>
-            </operation>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <operationExecution id="11491">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-25T08:44:25.812Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>modify</t:changeType>
-                    <t:objectType>c:ResourceType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000013300</token>
-                </executionResult>
-                <objectName>Windows MS AD</objectName>
-            </operation>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <operationExecution id="11494">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-26T07:07:19.799Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>modify</t:changeType>
-                    <t:objectType>c:ResourceType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000018539</token>
-                </executionResult>
-                <objectName>Windows MS AD</objectName>
-            </operation>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <operationExecution id="11499">
-            <recordType>simple</recordType>
-            <timestamp>2024-11-26T07:21:35.550Z</timestamp>
-            <operation>
-                <objectDelta>
-                    <t:changeType>modify</t:changeType>
-                    <t:objectType>c:ResourceType</t:objectType>
-                </objectDelta>
-                <executionResult>
-                    <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                    <status>success</status>
-                    <importance>normal</importance>
-                    <token>1000000000000015285</token>
-                </executionResult>
-                <objectName>Windows MS AD</objectName>
-            </operation>
-            <status>success</status>
-            <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-            <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-        </operationExecution>
-        <iteration>0</iteration>
-        <iterationToken/>
-        <operationalState>
-            <lastAvailabilityStatus>up</lastAvailabilityStatus>
-            <message>Status set to UP because resource schema was successfully fetched</message>
-            <timestamp>2024-11-17T11:32:06.785Z</timestamp>
-            <nodeId>DefaultNode</nodeId>
-        </operationalState>
-        <operationalStateHistory id="4">
-            <lastAvailabilityStatus>up</lastAvailabilityStatus>
-            <message>Status set to UP because resource schema was successfully fetched</message>
-            <timestamp>2024-11-17T11:32:06.785Z</timestamp>
-            <nodeId>DefaultNode</nodeId>
-        </operationalStateHistory>
-        <connectorRef oid="d0ff2d8b-27c8-424e-8cb6-4a01d713a6bb" relation="org:default" type="c:ConnectorType"/>
-        <connectorConfiguration xmlns:icfc="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/connector-schema-3">
-            <icfc:configurationProperties xmlns:cfg="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/bundle/com.evolveum.polygon.connector-ldap/com.evolveum.polygon.connector.ldap.ad.AdLdapConnector">
-                <cfg:host>192.168.1.168</cfg:host>
-                <cfg:port>636</cfg:port>
-                <cfg:connectionSecurity>ssl</cfg:connectionSecurity>
-                <cfg:bindDn>cn=midpoint,cn=Users,dc=168testserverhome,dc=com</cfg:bindDn>
-                <cfg:bindPassword>
-                    <t:encryptedData>
-                        <t:encryptionMethod>
-                            <t:algorithm>http://www.w3.org/2001/04/xmlenc#aes256-cbc</t:algorithm>
-                        </t:encryptionMethod>
-                        <t:keyInfo>
-                            <t:keyName>rvl4H8QKIsY0SH/sI+iGBUj5dqs=</t:keyName>
-                        </t:keyInfo>
-                        <t:cipherData>
-                            <t:cipherValue>yn/J9vVixJ2NgwdvWKYAI+WnQadsx54FtaMf0/FzDOQ=</t:cipherValue>
-                        </t:cipherData>
-                    </t:encryptedData>
-                </cfg:bindPassword>
-                <cfg:baseContext>OU=OOO_ODIN,DC=168testserverhome,DC=com</cfg:baseContext>
-            </icfc:configurationProperties>
-        </connectorConfiguration>
-        <schema>
-            <cachingMetadata>
-                <retrievalTimestamp>2024-11-18T08:04:35.262Z</retrievalTimestamp>
-                <serialNumber>5639e64dcbdc7d43-27b36650264be136</serialNumber>
-            </cachingMetadata>
-            <generationConstraints>
-                <generateObjectClass>ri:group</generateObjectClass>
-                <generateObjectClass>ri:organizationalUnit</generateObjectClass>
-                <generateObjectClass>ri:user</generateObjectClass>
-                <generateObjectClass>ri:msDS-ManagedServiceAccount</generateObjectClass>
-            </generationConstraints>
-            <definition>
-                <xsd:schema xmlns:a="http://prism.evolveum.com/xml/ns/public/annotation-3" xmlns:ra="http://midpoint.evolveum.com/xml/ns/public/resource/annotation-3" xmlns:tns="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xml:space="preserve">
+<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="b8618fba-cf8b-416c-8e3b-32ea34cf003d" version="85" >
+    <_metadata id="1">
+        <storage>
+            <createTimestamp>2024-11-17T11:32:05.066Z</createTimestamp>
+            <creatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+            <modifyTimestamp>2024-11-26T07:21:35.395Z</modifyTimestamp>
+            <modifierRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+            <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2024-11-17T11:32:04.996Z</requestTimestamp>
+            <requestorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        </process>
+    </_metadata>
+    <name>Windows MS AD</name>
+    <lifecycleState>active</lifecycleState>
+    <operationExecution id="875">
+        <recordType>complex</recordType>
+        <timestamp>2024-11-18T08:09:28.072Z</timestamp>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="95b6c786-0099-4bb6-9f8b-80d9bb19ed6b" relation="org:default" type="c:TaskType"/>
+        <activityPath/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="908">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-20T07:41:41.751Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ResourceType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000054917</token>
+            </executionResult>
+            <objectName>Windows MS AD</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="911">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-25T08:37:46.914Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ResourceType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000006349</token>
+            </executionResult>
+            <objectName>Windows MS AD</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="11491">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-25T08:44:25.812Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ResourceType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000013300</token>
+            </executionResult>
+            <objectName>Windows MS AD</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="11494">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-26T07:07:19.799Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ResourceType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000018539</token>
+            </executionResult>
+            <objectName>Windows MS AD</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="11499">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-26T07:21:35.550Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ResourceType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000015285</token>
+            </executionResult>
+            <objectName>Windows MS AD</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <operationalState>
+        <lastAvailabilityStatus>down</lastAvailabilityStatus>
+        <message>Status changed from UP to DOWN because getting shadow:551bbb7d-9aee-4001-baa4-5839bdaf4b7a(OU=HR,OU=OOO_ODIN,DC=168testserverhome,DC=com) on resource:b8618fba-cf8b-416c-8e3b-32ea34cf003d(Windows MS AD) [LIVE] (repo) ended with communication problem, Connection failed: org.identityconnectors.framework.common.exceptions.ConnectionFailedException(Unable to connect to LDAP server 192.168.1.168:636: ERR_04110_CANNOT_CONNECT_TO_SERVER Cannot connect to the server: No route to host)-&gt;org.apache.directory.ldap.client.api.exception.InvalidConnectionException(ERR_04110_CANNOT_CONNECT_TO_SERVER Cannot connect to the server: No route to host)-&gt;java.net.NoRouteToHostException(No route to host)</message>
+        <timestamp>2024-11-27T09:16:36.993Z</timestamp>
+        <nodeId>DefaultNode</nodeId>
+    </operationalState>
+    <operationalStateHistory id="4">
+        <lastAvailabilityStatus>up</lastAvailabilityStatus>
+        <message>Status set to UP because resource schema was successfully fetched</message>
+        <timestamp>2024-11-17T11:32:06.785Z</timestamp>
+        <nodeId>DefaultNode</nodeId>
+    </operationalStateHistory>
+    <operationalStateHistory id="11500">
+        <lastAvailabilityStatus>down</lastAvailabilityStatus>
+        <message>Status changed from UP to DOWN because getting shadow:551bbb7d-9aee-4001-baa4-5839bdaf4b7a(OU=HR,OU=OOO_ODIN,DC=168testserverhome,DC=com) on resource:b8618fba-cf8b-416c-8e3b-32ea34cf003d(Windows MS AD) [LIVE] (repo) ended with communication problem, Connection failed: org.identityconnectors.framework.common.exceptions.ConnectionFailedException(Unable to connect to LDAP server 192.168.1.168:636: ERR_04110_CANNOT_CONNECT_TO_SERVER Cannot connect to the server: No route to host)-&gt;org.apache.directory.ldap.client.api.exception.InvalidConnectionException(ERR_04110_CANNOT_CONNECT_TO_SERVER Cannot connect to the server: No route to host)-&gt;java.net.NoRouteToHostException(No route to host)</message>
+        <timestamp>2024-11-27T09:16:36.993Z</timestamp>
+        <nodeId>DefaultNode</nodeId>
+    </operationalStateHistory>
+    <connectorRef oid="d0ff2d8b-27c8-424e-8cb6-4a01d713a6bb" relation="org:default" type="c:ConnectorType"/>
+    <connectorConfiguration xmlns:icfc="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/connector-schema-3">
+        <icfc:configurationProperties xmlns:cfg="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/bundle/com.evolveum.polygon.connector-ldap/com.evolveum.polygon.connector.ldap.ad.AdLdapConnector">
+            <cfg:host>192.168.1.168</cfg:host>
+            <cfg:port>636</cfg:port>
+            <cfg:connectionSecurity>ssl</cfg:connectionSecurity>
+            <cfg:bindDn>cn=midpoint,cn=Users,dc=168testserverhome,dc=com</cfg:bindDn>
+            <cfg:bindPassword>
+                <t:encryptedData>
+                    <t:encryptionMethod>
+                        <t:algorithm xmlns="http://prism.evolveum.com/xml/ns/public/types-3">http://www.w3.org/2001/04/xmlenc#aes256-cbc</t:algorithm>
+                    </t:encryptionMethod>
+                    <t:keyInfo>
+                        <t:keyName>rvl4H8QKIsY0SH/sI+iGBUj5dqs=</t:keyName>
+                    </t:keyInfo>
+                    <t:cipherData>
+                        <t:cipherValue>yn/J9vVixJ2NgwdvWKYAI+WnQadsx54FtaMf0/FzDOQ=</t:cipherValue>
+                    </t:cipherData>
+                </t:encryptedData>
+            </cfg:bindPassword>
+            <cfg:baseContext>OU=OOO_ODIN,DC=168testserverhome,DC=com</cfg:baseContext>
+        </icfc:configurationProperties>
+    </connectorConfiguration>
+    <schema>
+        <cachingMetadata>
+            <retrievalTimestamp>2024-11-18T08:04:35.262Z</retrievalTimestamp>
+            <serialNumber>5639e64dcbdc7d43-27b36650264be136</serialNumber>
+        </cachingMetadata>
+        <generationConstraints>
+            <generateObjectClass>ri:group</generateObjectClass>
+            <generateObjectClass>ri:organizationalUnit</generateObjectClass>
+            <generateObjectClass>ri:user</generateObjectClass>
+            <generateObjectClass>ri:msDS-ManagedServiceAccount</generateObjectClass>
+        </generationConstraints>
+        <definition>
+            <xsd:schema xmlns:a="http://prism.evolveum.com/xml/ns/public/annotation-3" xmlns:ra="http://midpoint.evolveum.com/xml/ns/public/resource/annotation-3" xmlns:tns="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xml:space="preserve">
                 <xsd:import namespace="http://prism.evolveum.com/xml/ns/public/annotation-3"/>
                 <xsd:import namespace="http://midpoint.evolveum.com/xml/ns/public/resource/annotation-3"/>
                 <xsd:complexType name="msDS-ManagedServiceAccount">
@@ -12091,786 +12097,786 @@
                     </xsd:sequence>
                 </xsd:complexType>
             </xsd:schema>
-            </definition>
-        </schema>
-        <schemaHandling>
-            <objectType id="5">
-                <kind>account</kind>
-                <intent>intent  MS AD account</intent>
-                <displayName>MS AD account</displayName>
-                <default>true</default>
-                <delineation>
-                    <objectClass>ri:user</objectClass>
-                </delineation>
-                <focus>
-                    <type>c:UserType</type>
-                    <archetypeRef oid="00000000-0000-0000-0000-000000000702" relation="org:default" type="c:ArchetypeType"/>
-                </focus>
-                <attribute id="18">
-                    <ref>ri:sn</ref>
-                    <outbound>
-                        <name>03 out</name>
-                        <strength>strong</strength>
-                        <source>
-                            <path>familyName</path>
-                        </source>
-                    </outbound>
-                </attribute>
-                <attribute id="20">
-                    <ref>ri:givenName</ref>
-                    <outbound>
-                        <name>01 out</name>
-                        <strength>strong</strength>
-                        <source>
-                            <path>givenName</path>
-                        </source>
-                    </outbound>
-                </attribute>
-                <attribute id="24">
-                    <ref>ri:employeeNumber</ref>
-                    <outbound>
-                        <name>10 out</name>
-                        <strength>strong</strength>
-                        <source>
-                            <path>personalNumber</path>
-                        </source>
-                    </outbound>
-                    <inbound id="742">
-                        <name>01 in</name>
-                        <strength>strong</strength>
-                        <target>
-                            <path>personalNumber</path>
-                        </target>
-                        <use>correlation</use>
-                    </inbound>
-                </attribute>
-                <attribute id="37">
-                    <ref>ri:cn</ref>
-                    <outbound>
-                        <name>04 out</name>
-                        <strength>strong</strength>
-                        <source>
-                            <path>nickName</path>
-                        </source>
-                    </outbound>
-                    <inbound id="796">
-                        <name>05 in assign to role AD account</name>
-                        <lifecycleState>draft</lifecycleState>
-                        <strength>normal</strength>
-                        <expression>
-                            <assignmentTargetSearch>
-                                <targetType>c:RoleType</targetType>
-                                <oid>1cae659f-69f2-43b8-b075-8226d718eef9</oid>
-                            </assignmentTargetSearch>
-                        </expression>
-                        <target>
-                            <path>$focus/assignment</path>
-                        </target>
-                    </inbound>
-                </attribute>
-                <attribute id="104">
-                    <ref>ri:sAMAccountName</ref>
-                    <outbound>
-                        <name>05 out</name>
-                        <strength>strong</strength>
-                        <source>
-                            <path>nickName</path>
-                        </source>
-                    </outbound>
-                    <inbound id="844">
-                        <name>02 in</name>
-                        <strength>strong</strength>
-                        <target>
-                            <path>nickName</path>
-                        </target>
-                    </inbound>
-                    <inbound id="845">
-                        <name>03 in</name>
-                        <strength>strong</strength>
-                        <target>
-                            <path>name</path>
-                        </target>
-                    </inbound>
-                </attribute>
-                <attribute id="105">
-                    <ref>ri:dn</ref>
-                    <outbound>
-                        <name>06 out new script for OU</name>
-                        <strength>strong</strength>
-                        <source>
-                            <path>locality</path>
-                        </source>
-                        <source>
-                            <path>nickName</path>
-                        </source>
-                        <expression>
-                            <script>
-                                <code>if (locality)  {
+        </definition>
+    </schema>
+    <schemaHandling>
+        <objectType id="5">
+            <kind>account</kind>
+            <intent>intent  MS AD account</intent>
+            <displayName>MS AD account</displayName>
+            <default>true</default>
+            <delineation>
+                <objectClass>ri:user</objectClass>
+            </delineation>
+            <focus>
+                <type>c:UserType</type>
+                <archetypeRef oid="00000000-0000-0000-0000-000000000702" relation="org:default" type="c:ArchetypeType"/>
+            </focus>
+            <attribute id="18">
+                <ref>ri:sn</ref>
+                <outbound>
+                    <name>03 out</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>familyName</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="20">
+                <ref>ri:givenName</ref>
+                <outbound>
+                    <name>01 out</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>givenName</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="24">
+                <ref>ri:employeeNumber</ref>
+                <outbound>
+                    <name>10 out</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>personalNumber</path>
+                    </source>
+                </outbound>
+                <inbound id="742">
+                    <name>01 in</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>personalNumber</path>
+                    </target>
+                    <use>correlation</use>
+                </inbound>
+            </attribute>
+            <attribute id="37">
+                <ref>ri:cn</ref>
+                <outbound>
+                    <name>04 out</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>nickName</path>
+                    </source>
+                </outbound>
+                <inbound id="796">
+                    <name>05 in assign to role AD account</name>
+                    <lifecycleState>draft</lifecycleState>
+                    <strength>normal</strength>
+                    <expression>
+                        <assignmentTargetSearch>
+                            <targetType>c:RoleType</targetType>
+                            <oid>1cae659f-69f2-43b8-b075-8226d718eef9</oid>
+                        </assignmentTargetSearch>
+                    </expression>
+                    <target>
+                        <path>$focus/assignment</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="104">
+                <ref>ri:sAMAccountName</ref>
+                <outbound>
+                    <name>05 out</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>nickName</path>
+                    </source>
+                </outbound>
+                <inbound id="844">
+                    <name>02 in</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>nickName</path>
+                    </target>
+                </inbound>
+                <inbound id="845">
+                    <name>03 in</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>name</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="105">
+                <ref>ri:dn</ref>
+                <outbound>
+                    <name>06 out new script for OU</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>locality</path>
+                    </source>
+                    <source>
+                        <path>nickName</path>
+                    </source>
+                    <expression>
+                        <script>
+                            <code>if (locality)  {
 	dn_value = 'CN=' + nickName + ',' + locality
 } else {
 	baseContext = basic.getResourceIcfConfigurationPropertyValue(resource, 'baseContext')
 	dn_value = 'CN=' + nickName + ',OU=New_Employees,' + baseContext
 }
 return dn_value</code>
-                            </script>
-                        </expression>
-                    </outbound>
-                    <inbound id="775">
-                        <name>04 in write OU to locality</name>
-                        <strength>strong</strength>
-                        <expression>
-                            <script>
-                                <code>return ((basic.stringify(input).split(',')).tail()).join(',');</code>
-                            </script>
-                        </expression>
-                        <target>
-                            <path>locality</path>
-                        </target>
-                    </inbound>
-                </attribute>
-                <attribute id="106">
-                    <ref>ri:displayName</ref>
-                    <outbound>
-                        <name>07 out</name>
-                        <strength>strong</strength>
-                        <source>
-                            <path>nickName</path>
-                        </source>
-                    </outbound>
-                </attribute>
-                <attribute id="328">
-                    <ref>ri:middleName</ref>
-                    <outbound>
-                        <name>02 out</name>
-                        <strength>strong</strength>
-                        <source>
-                            <path>additionalName</path>
-                        </source>
-                    </outbound>
-                </attribute>
-                <attribute id="554">
-                    <ref>ri:pwdLastSet</ref>
-                    <limitations id="557">
-                        <access>
-                            <read>true</read>
-                            <add>true</add>
-                            <modify>false</modify>
-                        </access>
-                    </limitations>
-                    <fetchStrategy>explicit</fetchStrategy>
-                    <outbound>
-                        <name>08 out change pass on next login</name>
-                        <strength>strong</strength>
-                        <expression>
-                            <script>
-                                <code>// -1 next logon reset password required
+                        </script>
+                    </expression>
+                </outbound>
+                <inbound id="775">
+                    <name>04 in write OU to locality</name>
+                    <strength>strong</strength>
+                    <expression>
+                        <script>
+                            <code>return ((basic.stringify(input).split(',')).tail()).join(',');</code>
+                        </script>
+                    </expression>
+                    <target>
+                        <path>locality</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="106">
+                <ref>ri:displayName</ref>
+                <outbound>
+                    <name>07 out</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>nickName</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="328">
+                <ref>ri:middleName</ref>
+                <outbound>
+                    <name>02 out</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>additionalName</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="554">
+                <ref>ri:pwdLastSet</ref>
+                <limitations id="557">
+                    <access>
+                        <read>true</read>
+                        <add>true</add>
+                        <modify>false</modify>
+                    </access>
+                </limitations>
+                <fetchStrategy>explicit</fetchStrategy>
+                <outbound>
+                    <name>08 out change pass on next login</name>
+                    <strength>strong</strength>
+                    <expression>
+                        <script>
+                            <code>// -1 next logon reset password required
 // 0 no previous loggon
 return "0"</code>
-                            </script>
-                        </expression>
-                        <condition>
-                            <script>
-                                <code>"add".equals(operation.toString()) &amp;&amp; midpoint.isEvaluateNew()</code>
-                            </script>
-                        </condition>
-                    </outbound>
-                </attribute>
-                <attribute id="699">
-                    <ref>ri:userPrincipalName</ref>
-                    <outbound>
-                        <name>09 out</name>
-                        <strength>strong</strength>
-                        <source>
-                            <path>nickName</path>
-                        </source>
-                        <expression>
-                            <script>
-                                <code>return nickName + "@168testserverhome.com"</code>
-                            </script>
-                        </expression>
-                    </outbound>
-                </attribute>
-                <attribute id="770">
-                    <ref>ri:distinguishedName</ref>
-                </attribute>
-                <association id="306">
-                    <ref>AD shared group membership to Midpoint</ref>
-                    <inbound id="4781">
-                        <strength>normal</strength>
-                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#reconciliation</channel>
-                        <expression>
-                            <assignmentTargetSearch>
-                                <targetType>RoleType</targetType>
-                                <filter>
-                                    <q:equal>
-                                        <q:path>identifier</q:path>
-                                        <expression>
-                                            <script>
-                                                <code>
+                        </script>
+                    </expression>
+                    <condition>
+                        <script>
+                            <code>"add".equals(operation.toString()) &amp;&amp; midpoint.isEvaluateNew()</code>
+                        </script>
+                    </condition>
+                </outbound>
+            </attribute>
+            <attribute id="699">
+                <ref>ri:userPrincipalName</ref>
+                <outbound>
+                    <name>09 out</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>nickName</path>
+                    </source>
+                    <expression>
+                        <script>
+                            <code>return nickName + "@168testserverhome.com"</code>
+                        </script>
+                    </expression>
+                </outbound>
+            </attribute>
+            <attribute id="770">
+                <ref>ri:distinguishedName</ref>
+            </attribute>
+            <association id="306">
+                <ref>AD shared group membership to Midpoint</ref>
+                <inbound id="4781">
+                    <strength>normal</strength>
+                    <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#reconciliation</channel>
+                    <expression>
+                        <assignmentTargetSearch>
+                            <targetType>RoleType</targetType>
+                            <filter>
+                                <q:equal>
+                                    <q:path>identifier</q:path>
+                                    <expression>
+                                        <script>
+                                            <code>
                                                 return basic.getAttributeValue(entitlement, 'dn')
                                             </code>
-                                            </script>
-                                        </expression>
-                                    </q:equal>
-                                </filter>
-                                <createOnDemand>true</createOnDemand>
-                                <populateObject>
-                                    <populateItem>
-                                        <expression>
-                                            <script>
-                                                <code>
+                                        </script>
+                                    </expression>
+                                </q:equal>
+                            </filter>
+                            <createOnDemand>true</createOnDemand>
+                            <populateObject>
+                                <populateItem>
+                                    <expression>
+                                        <script>
+                                            <code>
                                                 basic.getAttributeValue(entitlement, 'cn')
                                             </code>
-                                            </script>
-                                        </expression>
-                                        <target>
-                                            <path>name</path>
-                                        </target>
-                                    </populateItem>
-                                    <populateItem>
-                                        <expression>
-                                            <script>
-                                                <code>
+                                        </script>
+                                    </expression>
+                                    <target>
+                                        <path>name</path>
+                                    </target>
+                                </populateItem>
+                                <populateItem>
+                                    <expression>
+                                        <script>
+                                            <code>
                                                 basic.getAttributeValue(entitlement, 'dn')
                                             </code>
-                                            </script>
-                                        </expression>
-                                        <target>
-                                            <path>identifier</path>
-                                        </target>
-                                    </populateItem>
-                                    <populateItem>
-                                        <expression>
-                                            <assignmentTargetSearch>
-                                                <targetType>ArchetypeType</targetType>
-                                                <filter>
-                                                    <q:equal>
-                                                        <q:path>name</q:path>
-                                                        <expression>
-                                                            <value>AD Group Shared ArcheType</value>
-                                                        </expression>
-                                                    </q:equal>
-                                                </filter>
-                                            </assignmentTargetSearch>
-                                        </expression>
-                                        <target>
-                                            <path>assignment</path>
-                                        </target>
-                                    </populateItem>
-                                </populateObject>
-                            </assignmentTargetSearch>
-                        </expression>
-                        <target>
-                            <path>assignment</path>
-                        </target>
-                    </inbound>
-                    <kind>entitlement</kind>
-                    <intent>intent Groups Shared Folder POC</intent>
-                    <direction>objectToSubject</direction>
-                    <associationAttribute>ri:member</associationAttribute>
-                    <valueAttribute>ri:dn</valueAttribute>
-                </association>
-                <association id="307">
-                    <ref>AD group membership to Midpoint</ref>
-                    <inbound id="478">
-                        <strength>normal</strength>
-                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#reconciliation</channel>
-                        <expression>
-                            <assignmentTargetSearch>
-                                <targetType>RoleType</targetType>
-                                <filter>
-                                    <q:equal>
-                                        <q:path>identifier</q:path>
-                                        <expression>
-                                            <script>
-                                                <code>
-                                                return basic.getAttributeValue(entitlement, 'dn')
-                                            </code>
-                                            </script>
-                                        </expression>
-                                    </q:equal>
-                                </filter>
-                                <createOnDemand>true</createOnDemand>
-                                <populateObject>
-                                    <populateItem>
-                                        <expression>
-                                            <script>
-                                                <code>
-                                                "ADG:" + basic.getAttributeValue(entitlement, 'cn')
-                                            </code>
-                                            </script>
-                                        </expression>
-                                        <target>
-                                            <path>name</path>
-                                        </target>
-                                    </populateItem>
-                                    <populateItem>
-                                        <expression>
-                                            <script>
-                                                <code>
-                                                basic.getAttributeValue(entitlement, 'dn')
-                                            </code>
-                                            </script>
-                                        </expression>
-                                        <target>
-                                            <path>identifier</path>
-                                        </target>
-                                    </populateItem>
-                                    <populateItem>
-                                        <expression>
-                                            <assignmentTargetSearch>
-                                                <targetType>ArchetypeType</targetType>
-                                                <filter>
-                                                    <q:equal>
-                                                        <q:path>name</q:path>
-                                                        <expression>
-                                                            <value>AD Group ArcheType</value>
-                                                        </expression>
-                                                    </q:equal>
-                                                </filter>
-                                            </assignmentTargetSearch>
-                                        </expression>
-                                        <target>
-                                            <path>assignment</path>
-                                        </target>
-                                    </populateItem>
-                                </populateObject>
-                            </assignmentTargetSearch>
-                        </expression>
-                        <target>
-                            <path>assignment</path>
-                        </target>
-                    </inbound>
-                    <kind>entitlement</kind>
-                    <intent>intent MS AD group</intent>
-                    <direction>objectToSubject</direction>
-                    <associationAttribute>ri:member</associationAttribute>
-                    <valueAttribute>ri:dn</valueAttribute>
-                    <explicitReferentialIntegrity>false</explicitReferentialIntegrity>
-                </association>
-                <activation>
-                    <administrativeStatus>
-                        <outbound id="794">
-                            <name>Just Block</name>
-                            <strength>strong</strength>
-                            <source>
-                                <path>activation/administrativeStatus</path>
-                            </source>
-                        </outbound>
-                    </administrativeStatus>
-                    <lockoutStatus/>
-                </activation>
-                <credentials>
-                    <password>
-                        <outbound id="765">
-                            <name>initial</name>
-                            <strength>weak</strength>
-                            <expression>
-                                <generate>
-                                    <mode>policy</mode>
-                                    <valuePolicyRef oid="00000000-0000-0000-0000-000000000003" type="c:ValuePolicyType" xsi:type="c:ObjectReferenceType"/>
-                                </generate>
-                            </expression>
-                        </outbound>
-                    </password>
-                </credentials>
-                <correlation>
-                    <correlators>
-                        <items id="820">
-                            <name>personalNumber correlation</name>
-                            <item id="821">
-                                <ref>personalNumber</ref>
-                            </item>
-                            <composition/>
-                        </items>
-                    </correlators>
-                </correlation>
-                <synchronization>
-                    <reaction id="755">
-                        <situation>linked</situation>
-                        <actions>
-                            <synchronize id="756"/>
-                        </actions>
-                    </reaction>
-                    <reaction id="757">
-                        <situation>unlinked</situation>
-                        <actions>
-                            <link id="758"/>
-                        </actions>
-                    </reaction>
-                    <reaction id="835">
-                        <situation>deleted</situation>
-                        <actions>
-                            <deleteResourceObject id="836"/>
-                        </actions>
-                    </reaction>
-                </synchronization>
-            </objectType>
-            <objectType id="847">
-                <kind>entitlement</kind>
-                <intent>intent MS AD group</intent>
-                <displayName>MS AD group</displayName>
-                <delineation>
-                    <objectClass>ri:group</objectClass>
-                    <filter>
-                        <_metadata id="909">
-                            <provenance>
-                                <acquisition id="910">
-                                    <actorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-                                    <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-                                    <timestamp>2024-11-25T08:37:46.691Z</timestamp>
-                                </acquisition>
-                            </provenance>
-                        </_metadata>
-                        <q:text>attributes/cn not startsWith 'Shared_Folder_'</q:text>
-                    </filter>
-                </delineation>
-                <focus>
-                    <type>c:RoleType</type>
-                    <archetypeRef oid="e9eda47b-b097-4814-9605-7177a2482fa1" relation="org:default" type="c:ArchetypeType"/>
-                </focus>
-                <attribute id="849">
-                    <ref>ri:cn</ref>
-                    <inbound id="850">
-                        <name>01 in g</name>
-                        <strength>strong</strength>
-                        <expression>
-                            <script>
-                                <code>"ADG:" + basic.stringify(input)</code>
-                            </script>
-                        </expression>
-                        <target>
-                            <path>name</path>
-                        </target>
-                    </inbound>
-                </attribute>
-                <attribute id="851">
-                    <ref>ri:displayName</ref>
-                    <inbound id="852">
-                        <name>02 in g</name>
-                        <strength>strong</strength>
-                        <target>
-                            <path>displayName</path>
-                        </target>
-                    </inbound>
-                </attribute>
-                <attribute id="853">
-                    <ref>ri:distinguishedName</ref>
-                    <inbound id="854">
-                        <name>03 in g</name>
-                        <strength>strong</strength>
-                        <target>
-                            <path>identifier</path>
-                        </target>
-                    </inbound>
-                </attribute>
-                <correlation>
-                    <correlators>
-                        <items id="865">
-                            <name>Correlate by identifier and dn</name>
-                            <item id="866">
-                                <ref>identifier</ref>
-                            </item>
-                        </items>
-                    </correlators>
-                </correlation>
-                <synchronization>
-                    <reaction id="856">
-                        <situation>unmatched</situation>
-                        <actions>
-                            <addFocus id="857"/>
-                        </actions>
-                    </reaction>
-                    <reaction id="858">
-                        <situation>linked</situation>
-                        <actions>
-                            <synchronize id="859"/>
-                        </actions>
-                    </reaction>
-                    <reaction id="860">
-                        <situation>unlinked</situation>
-                        <actions>
-                            <link id="861"/>
-                        </actions>
-                    </reaction>
-                    <reaction id="862">
-                        <situation>deleted</situation>
-                        <actions>
-                            <deleteResourceObject id="863"/>
-                        </actions>
-                    </reaction>
-                </synchronization>
-            </objectType>
-            <objectType id="878">
-                <kind>generic</kind>
-                <intent>intent MS AD OrgUnit</intent>
-                <displayName>MS AD OrgUnit</displayName>
-                <delineation>
-                    <objectClass>ri:organizationalUnit</objectClass>
-                </delineation>
-                <focus>
-                    <type>c:OrgType</type>
-                    <archetypeRef oid="fd97bda5-6d7a-41ca-badb-f321fec3d9ff" relation="org:default" type="c:ArchetypeType"/>
-                </focus>
-                <attribute id="888">
-                    <ref>ri:cn</ref>
-                </attribute>
-                <attribute id="891">
-                    <ref>ri:dn</ref>
-                    <inbound id="892">
-                        <name>02 in ou</name>
-                        <strength>strong</strength>
-                        <target>
-                            <path>identifier</path>
-                        </target>
-                    </inbound>
-                    <inbound id="899">
-                        <name>05 in ou</name>
-                        <strength>strong</strength>
-                        <expression>
-                            <script>
-                                <code>return ((basic.stringify(input).split(',')).tail()).join(',');</code>
-                            </script>
-                        </expression>
-                        <target>
-                            <path>locality</path>
-                        </target>
-                    </inbound>
-                </attribute>
-                <attribute id="893">
-                    <ref>ri:description</ref>
-                    <inbound id="894">
-                        <name>04 in ou</name>
-                        <strength>strong</strength>
-                        <target>
-                            <path>description</path>
-                        </target>
-                    </inbound>
-                </attribute>
-                <attribute id="901">
-                    <ref>ri:ou</ref>
-                    <inbound id="902">
-                        <name>01 in ou</name>
-                        <strength>strong</strength>
-                        <expression>
-                            <script>
-                                <code>"ADOU:" + input</code>
-                            </script>
-                        </expression>
-                        <target>
-                            <path>name</path>
-                        </target>
-                    </inbound>
-                    <inbound id="903">
-                        <name>03 in ou</name>
-                        <strength>strong</strength>
-                        <target>
-                            <path>displayName</path>
-                        </target>
-                    </inbound>
-                </attribute>
-                <correlation>
-                    <correlators>
-                        <items id="896">
-                            <name>ou corr dn and identifier</name>
-                            <item id="897">
-                                <ref>identifier</ref>
-                            </item>
-                        </items>
-                    </correlators>
-                </correlation>
-                <synchronization>
-                    <reaction id="880">
-                        <situation>unmatched</situation>
-                        <actions>
-                            <addFocus id="881"/>
-                        </actions>
-                    </reaction>
-                    <reaction id="882">
-                        <situation>unlinked</situation>
-                        <actions>
-                            <link id="883"/>
-                        </actions>
-                    </reaction>
-                    <reaction id="884">
-                        <situation>linked</situation>
-                        <actions>
-                            <synchronize id="885"/>
-                        </actions>
-                    </reaction>
-                </synchronization>
-            </objectType>
-            <objectType id="747">
+                                        </script>
+                                    </expression>
+                                    <target>
+                                        <path>identifier</path>
+                                    </target>
+                                </populateItem>
+                                <populateItem>
+                                    <expression>
+                                        <assignmentTargetSearch>
+                                            <targetType>ArchetypeType</targetType>
+                                            <filter>
+                                                <q:equal>
+                                                    <q:path>name</q:path>
+                                                    <expression>
+                                                        <value>AD Group Shared ArcheType</value>
+                                                    </expression>
+                                                </q:equal>
+                                            </filter>
+                                        </assignmentTargetSearch>
+                                    </expression>
+                                    <target>
+                                        <path>assignment</path>
+                                    </target>
+                                </populateItem>
+                            </populateObject>
+                        </assignmentTargetSearch>
+                    </expression>
+                    <target>
+                        <path>assignment</path>
+                    </target>
+                </inbound>
                 <kind>entitlement</kind>
                 <intent>intent Groups Shared Folder POC</intent>
-                <displayName>Groups Shared Folder POC</displayName>
-                <delineation>
-                    <objectClass>ri:group</objectClass>
-                    <filter>
-                        <_metadata id="11492">
-                            <provenance>
-                                <acquisition id="11493">
-                                    <actorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-                                    <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-                                    <timestamp>2024-11-26T07:07:19.592Z</timestamp>
-                                </acquisition>
-                            </provenance>
-                        </_metadata>
-                        <q:text>attributes/cn startsWith 'Shared_Folder_'</q:text>
-                    </filter>
-                </delineation>
-                <focus>
-                    <type>c:RoleType</type>
-                    <archetypeRef oid="29587779-047a-4965-b16b-ead921f9cfe1" relation="org:default" type="c:ArchetypeType"/>
-                </focus>
-                <attribute id="749">
-                    <ref>ri:cn</ref>
-                    <inbound id="750">
-                        <name>01 name is name</name>
+                <direction>objectToSubject</direction>
+                <associationAttribute>ri:member</associationAttribute>
+                <valueAttribute>ri:dn</valueAttribute>
+            </association>
+            <association id="307">
+                <ref>AD group membership to Midpoint</ref>
+                <inbound id="478">
+                    <strength>normal</strength>
+                    <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#reconciliation</channel>
+                    <expression>
+                        <assignmentTargetSearch>
+                            <targetType>RoleType</targetType>
+                            <filter>
+                                <q:equal>
+                                    <q:path>identifier</q:path>
+                                    <expression>
+                                        <script>
+                                            <code>
+                                                return basic.getAttributeValue(entitlement, 'dn')
+                                            </code>
+                                        </script>
+                                    </expression>
+                                </q:equal>
+                            </filter>
+                            <createOnDemand>true</createOnDemand>
+                            <populateObject>
+                                <populateItem>
+                                    <expression>
+                                        <script>
+                                            <code>
+                                                "ADG:" + basic.getAttributeValue(entitlement, 'cn')
+                                            </code>
+                                        </script>
+                                    </expression>
+                                    <target>
+                                        <path>name</path>
+                                    </target>
+                                </populateItem>
+                                <populateItem>
+                                    <expression>
+                                        <script>
+                                            <code>
+                                                basic.getAttributeValue(entitlement, 'dn')
+                                            </code>
+                                        </script>
+                                    </expression>
+                                    <target>
+                                        <path>identifier</path>
+                                    </target>
+                                </populateItem>
+                                <populateItem>
+                                    <expression>
+                                        <assignmentTargetSearch>
+                                            <targetType>ArchetypeType</targetType>
+                                            <filter>
+                                                <q:equal>
+                                                    <q:path>name</q:path>
+                                                    <expression>
+                                                        <value>AD Group ArcheType</value>
+                                                    </expression>
+                                                </q:equal>
+                                            </filter>
+                                        </assignmentTargetSearch>
+                                    </expression>
+                                    <target>
+                                        <path>assignment</path>
+                                    </target>
+                                </populateItem>
+                            </populateObject>
+                        </assignmentTargetSearch>
+                    </expression>
+                    <target>
+                        <path>assignment</path>
+                    </target>
+                </inbound>
+                <kind>entitlement</kind>
+                <intent>intent MS AD group</intent>
+                <direction>objectToSubject</direction>
+                <associationAttribute>ri:member</associationAttribute>
+                <valueAttribute>ri:dn</valueAttribute>
+                <explicitReferentialIntegrity>false</explicitReferentialIntegrity>
+            </association>
+            <activation>
+                <administrativeStatus>
+                    <outbound id="794">
+                        <name>Just Block</name>
                         <strength>strong</strength>
-                        <target>
-                            <path>name</path>
-                        </target>
-                    </inbound>
-                    <inbound id="774">
-                        <name>02 set requestable mark</name>
-                        <strength>strong</strength>
+                        <source>
+                            <path>activation/administrativeStatus</path>
+                        </source>
+                    </outbound>
+                </administrativeStatus>
+                <lockoutStatus/>
+            </activation>
+            <credentials>
+                <password>
+                    <outbound id="765">
+                        <name>initial</name>
+                        <strength>weak</strength>
                         <expression>
-                            <script>
-                                <code>return true</code>
-                            </script>
+                            <generate>
+                                <mode>policy</mode>
+                                <valuePolicyRef oid="00000000-0000-0000-0000-000000000003" type="c:ValuePolicyType" xsi:type="c:ObjectReferenceType"/>
+                            </generate>
                         </expression>
-                        <target>
-                            <path>requestable</path>
-                        </target>
-                    </inbound>
-                    <inbound id="11472">
-                        <name>03 add POLICY add approver from role atribute</name>
-                        <lifecycleState>active</lifecycleState>
-                        <strength>strong</strength>
-                        <expression>
-                            <assignmentTargetSearch>
-                                <targetType>c:RoleType</targetType>
-                                <oid>70402d4d-4292-42ef-b545-20c988e0533d</oid>
-                            </assignmentTargetSearch>
-                        </expression>
-                        <target>
-                            <path>$focus/assignment</path>
-                        </target>
-                    </inbound>
-                </attribute>
-                <attribute id="751">
-                    <ref>ri:objectGUID</ref>
-                </attribute>
-                <attribute id="753">
-                    <ref>ri:description</ref>
-                    <inbound id="754">
-                        <name>05 some human readable text</name>
-                        <strength>strong</strength>
-                        <expression>
-                            <script>
-                                <code>"Rights for user HRID:" + input + " shared folder path \\\\Win-ikpur723q06\\sf_" + input</code>
-                            </script>
-                        </expression>
-                        <target>
-                            <path>description</path>
-                        </target>
-                    </inbound>
-                    <inbound id="11488">
-                        <name>06 user HR id for approver set</name>
-                        <strength>strong</strength>
-                        <target>
-                            <path>documentation</path>
-                        </target>
-                    </inbound>
-                </attribute>
-                <attribute id="11475">
-                    <ref>ri:dn</ref>
-                    <inbound id="11479">
-                        <name>07 dn for identifier</name>
-                        <strength>strong</strength>
-                        <target>
-                            <path>identifier</path>
-                        </target>
-                    </inbound>
-                </attribute>
-                <correlation>
-                    <correlators>
-                        <items id="767">
-                            <item id="768">
-                                <ref>c:identifier</ref>
-                            </item>
-                        </items>
-                    </correlators>
-                </correlation>
-                <synchronization>
-                    <reaction id="756">
-                        <situation>unlinked</situation>
-                        <actions>
-                            <link id="761"/>
-                        </actions>
-                    </reaction>
-                    <reaction id="757">
-                        <situation>linked</situation>
-                        <actions>
-                            <synchronize id="762"/>
-                        </actions>
-                    </reaction>
-                    <reaction id="758">
-                        <situation>unmatched</situation>
-                        <actions>
-                            <addFocus id="763"/>
-                        </actions>
-                    </reaction>
-                    <reaction id="11495">
-                        <situation>deleted</situation>
-                        <actions>
-                            <deleteResourceObject id="11496"/>
-                        </actions>
-                    </reaction>
-                    <reaction id="11497">
-                        <situation>deleted</situation>
-                        <actions>
-                            <deleteFocus id="11498"/>
-                        </actions>
-                    </reaction>
-                </synchronization>
-            </objectType>
-        </schemaHandling>
-        <capabilities>
-            <cachingMetadata>
-                <retrievalTimestamp>2024-11-17T11:32:06.744Z</retrievalTimestamp>
-                <serialNumber>7c53b62a9274c8e0-5bdbd4527a44ddbe</serialNumber>
-            </cachingMetadata>
-            <native xmlns:cap="http://midpoint.evolveum.com/xml/ns/public/resource/capabilities-3">
-                <cap:schema/>
-                <cap:discoverConfiguration/>
-                <cap:activation>
-                    <cap:status/>
-                </cap:activation>
-                <cap:credentials>
-                    <cap:password>
-                        <cap:returnedByDefault>false</cap:returnedByDefault>
-                    </cap:password>
-                </cap:credentials>
-                <cap:liveSync/>
-                <cap:create/>
-                <cap:read>
-                    <cap:returnDefaultAttributesOption>true</cap:returnDefaultAttributesOption>
-                </cap:read>
-                <cap:update>
-                    <cap:delta>true</cap:delta>
-                    <cap:addRemoveAttributeValues>true</cap:addRemoveAttributeValues>
-                </cap:update>
-                <cap:delete/>
-                <cap:testConnection/>
-                <cap:script>
-                    <cap:host id="3">
-                        <cap:type>connector</cap:type>
-                    </cap:host>
-                </cap:script>
-                <cap:pagedSearch/>
-                <cap:auxiliaryObjectClasses/>
-            </native>
-        </capabilities>
-    </apti:object>
+                    </outbound>
+                </password>
+            </credentials>
+            <correlation>
+                <correlators>
+                    <items id="820">
+                        <name>personalNumber correlation</name>
+                        <item id="821">
+                            <ref>personalNumber</ref>
+                        </item>
+                        <composition/>
+                    </items>
+                </correlators>
+            </correlation>
+            <synchronization>
+                <reaction id="755">
+                    <situation>linked</situation>
+                    <actions>
+                        <synchronize id="756"/>
+                    </actions>
+                </reaction>
+                <reaction id="757">
+                    <situation>unlinked</situation>
+                    <actions>
+                        <link id="758"/>
+                    </actions>
+                </reaction>
+                <reaction id="835">
+                    <situation>deleted</situation>
+                    <actions>
+                        <deleteResourceObject id="836"/>
+                    </actions>
+                </reaction>
+            </synchronization>
+        </objectType>
+        <objectType id="847">
+            <kind>entitlement</kind>
+            <intent>intent MS AD group</intent>
+            <displayName>MS AD group</displayName>
+            <delineation>
+                <objectClass>ri:group</objectClass>
+                <filter>
+                    <_metadata id="909">
+                        <provenance>
+                            <acquisition id="910">
+                                <actorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+                                <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+                                <timestamp>2024-11-25T08:37:46.691Z</timestamp>
+                            </acquisition>
+                        </provenance>
+                    </_metadata>
+                    <q:text>attributes/cn not startsWith 'Shared_Folder_'</q:text>
+                </filter>
+            </delineation>
+            <focus>
+                <type>c:RoleType</type>
+                <archetypeRef oid="e9eda47b-b097-4814-9605-7177a2482fa1" relation="org:default" type="c:ArchetypeType"/>
+            </focus>
+            <attribute id="849">
+                <ref>ri:cn</ref>
+                <inbound id="850">
+                    <name>01 in g</name>
+                    <strength>strong</strength>
+                    <expression>
+                        <script>
+                            <code>"ADG:" + basic.stringify(input)</code>
+                        </script>
+                    </expression>
+                    <target>
+                        <path>name</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="851">
+                <ref>ri:displayName</ref>
+                <inbound id="852">
+                    <name>02 in g</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>displayName</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="853">
+                <ref>ri:distinguishedName</ref>
+                <inbound id="854">
+                    <name>03 in g</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>identifier</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <correlation>
+                <correlators>
+                    <items id="865">
+                        <name>Correlate by identifier and dn</name>
+                        <item id="866">
+                            <ref>identifier</ref>
+                        </item>
+                    </items>
+                </correlators>
+            </correlation>
+            <synchronization>
+                <reaction id="856">
+                    <situation>unmatched</situation>
+                    <actions>
+                        <addFocus id="857"/>
+                    </actions>
+                </reaction>
+                <reaction id="858">
+                    <situation>linked</situation>
+                    <actions>
+                        <synchronize id="859"/>
+                    </actions>
+                </reaction>
+                <reaction id="860">
+                    <situation>unlinked</situation>
+                    <actions>
+                        <link id="861"/>
+                    </actions>
+                </reaction>
+                <reaction id="862">
+                    <situation>deleted</situation>
+                    <actions>
+                        <deleteResourceObject id="863"/>
+                    </actions>
+                </reaction>
+            </synchronization>
+        </objectType>
+        <objectType id="878">
+            <kind>generic</kind>
+            <intent>intent MS AD OrgUnit</intent>
+            <displayName>MS AD OrgUnit</displayName>
+            <delineation>
+                <objectClass>ri:organizationalUnit</objectClass>
+            </delineation>
+            <focus>
+                <type>c:OrgType</type>
+                <archetypeRef oid="fd97bda5-6d7a-41ca-badb-f321fec3d9ff" relation="org:default" type="c:ArchetypeType"/>
+            </focus>
+            <attribute id="888">
+                <ref>ri:cn</ref>
+            </attribute>
+            <attribute id="891">
+                <ref>ri:dn</ref>
+                <inbound id="892">
+                    <name>02 in ou</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>identifier</path>
+                    </target>
+                </inbound>
+                <inbound id="899">
+                    <name>05 in ou</name>
+                    <strength>strong</strength>
+                    <expression>
+                        <script>
+                            <code>return ((basic.stringify(input).split(',')).tail()).join(',');</code>
+                        </script>
+                    </expression>
+                    <target>
+                        <path>locality</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="893">
+                <ref>ri:description</ref>
+                <inbound id="894">
+                    <name>04 in ou</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>description</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="901">
+                <ref>ri:ou</ref>
+                <inbound id="902">
+                    <name>01 in ou</name>
+                    <strength>strong</strength>
+                    <expression>
+                        <script>
+                            <code>"ADOU:" + input</code>
+                        </script>
+                    </expression>
+                    <target>
+                        <path>name</path>
+                    </target>
+                </inbound>
+                <inbound id="903">
+                    <name>03 in ou</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>displayName</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <correlation>
+                <correlators>
+                    <items id="896">
+                        <name>ou corr dn and identifier</name>
+                        <item id="897">
+                            <ref>identifier</ref>
+                        </item>
+                    </items>
+                </correlators>
+            </correlation>
+            <synchronization>
+                <reaction id="880">
+                    <situation>unmatched</situation>
+                    <actions>
+                        <addFocus id="881"/>
+                    </actions>
+                </reaction>
+                <reaction id="882">
+                    <situation>unlinked</situation>
+                    <actions>
+                        <link id="883"/>
+                    </actions>
+                </reaction>
+                <reaction id="884">
+                    <situation>linked</situation>
+                    <actions>
+                        <synchronize id="885"/>
+                    </actions>
+                </reaction>
+            </synchronization>
+        </objectType>
+        <objectType id="747">
+            <kind>entitlement</kind>
+            <intent>intent Groups Shared Folder POC</intent>
+            <displayName>Groups Shared Folder POC</displayName>
+            <delineation>
+                <objectClass>ri:group</objectClass>
+                <filter>
+                    <_metadata id="11492">
+                        <provenance>
+                            <acquisition id="11493">
+                                <actorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+                                <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+                                <timestamp>2024-11-26T07:07:19.592Z</timestamp>
+                            </acquisition>
+                        </provenance>
+                    </_metadata>
+                    <q:text>attributes/cn startsWith 'Shared_Folder_'</q:text>
+                </filter>
+            </delineation>
+            <focus>
+                <type>c:RoleType</type>
+                <archetypeRef oid="29587779-047a-4965-b16b-ead921f9cfe1" relation="org:default" type="c:ArchetypeType"/>
+            </focus>
+            <attribute id="749">
+                <ref>ri:cn</ref>
+                <inbound id="750">
+                    <name>01 name is name</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>name</path>
+                    </target>
+                </inbound>
+                <inbound id="774">
+                    <name>02 set requestable mark</name>
+                    <strength>strong</strength>
+                    <expression>
+                        <script>
+                            <code>return true</code>
+                        </script>
+                    </expression>
+                    <target>
+                        <path>requestable</path>
+                    </target>
+                </inbound>
+                <inbound id="11472">
+                    <name>03 add POLICY add approver from role atribute</name>
+                    <lifecycleState>active</lifecycleState>
+                    <strength>strong</strength>
+                    <expression>
+                        <assignmentTargetSearch>
+                            <targetType>c:RoleType</targetType>
+                            <oid>70402d4d-4292-42ef-b545-20c988e0533d</oid>
+                        </assignmentTargetSearch>
+                    </expression>
+                    <target>
+                        <path>$focus/assignment</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="751">
+                <ref>ri:objectGUID</ref>
+            </attribute>
+            <attribute id="753">
+                <ref>ri:description</ref>
+                <inbound id="754">
+                    <name>05 some human readable text</name>
+                    <strength>strong</strength>
+                    <expression>
+                        <script>
+                            <code>"Rights for user HRID:" + input + " shared folder path \\\\Win-ikpur723q06\\sf_" + input</code>
+                        </script>
+                    </expression>
+                    <target>
+                        <path>description</path>
+                    </target>
+                </inbound>
+                <inbound id="11488">
+                    <name>06 user HR id for approver set</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>documentation</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="11475">
+                <ref>ri:dn</ref>
+                <inbound id="11479">
+                    <name>07 dn for identifier</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>identifier</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <correlation>
+                <correlators>
+                    <items id="767">
+                        <item id="768">
+                            <ref>c:identifier</ref>
+                        </item>
+                    </items>
+                </correlators>
+            </correlation>
+            <synchronization>
+                <reaction id="756">
+                    <situation>unlinked</situation>
+                    <actions>
+                        <link id="761"/>
+                    </actions>
+                </reaction>
+                <reaction id="757">
+                    <situation>linked</situation>
+                    <actions>
+                        <synchronize id="762"/>
+                    </actions>
+                </reaction>
+                <reaction id="758">
+                    <situation>unmatched</situation>
+                    <actions>
+                        <addFocus id="763"/>
+                    </actions>
+                </reaction>
+                <reaction id="11495">
+                    <situation>deleted</situation>
+                    <actions>
+                        <deleteResourceObject id="11496"/>
+                    </actions>
+                </reaction>
+                <reaction id="11497">
+                    <situation>deleted</situation>
+                    <actions>
+                        <deleteFocus id="11498"/>
+                    </actions>
+                </reaction>
+            </synchronization>
+        </objectType>
+    </schemaHandling>
+    <capabilities>
+        <cachingMetadata>
+            <retrievalTimestamp>2024-11-17T11:32:06.744Z</retrievalTimestamp>
+            <serialNumber>7c53b62a9274c8e0-5bdbd4527a44ddbe</serialNumber>
+        </cachingMetadata>
+        <native xmlns:cap="http://midpoint.evolveum.com/xml/ns/public/resource/capabilities-3">
+            <cap:schema/>
+            <cap:discoverConfiguration/>
+            <cap:activation>
+                <cap:status/>
+            </cap:activation>
+            <cap:credentials>
+                <cap:password>
+                    <cap:returnedByDefault>false</cap:returnedByDefault>
+                </cap:password>
+            </cap:credentials>
+            <cap:liveSync/>
+            <cap:create/>
+            <cap:read>
+                <cap:returnDefaultAttributesOption>true</cap:returnDefaultAttributesOption>
+            </cap:read>
+            <cap:update>
+                <cap:delta>true</cap:delta>
+                <cap:addRemoveAttributeValues>true</cap:addRemoveAttributeValues>
+            </cap:update>
+            <cap:delete/>
+            <cap:testConnection/>
+            <cap:script>
+                <cap:host id="3">
+                    <cap:type>connector</cap:type>
+                </cap:host>
+            </cap:script>
+            <cap:pagedSearch/>
+            <cap:auxiliaryObjectClasses/>
+        </native>
+    </capabilities>
+</resource>
