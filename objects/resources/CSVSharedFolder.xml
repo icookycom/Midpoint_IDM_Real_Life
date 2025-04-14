@@ -62,7 +62,7 @@
             <icfc:configurationProperties xmlns:cfg="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/bundle/com.evolveum.polygon.connector-ssh/com.evolveum.polygon.connector.ssh.SshConnector">
                 <cfg:host>192.168.1.168</cfg:host>
                 <cfg:username>midpoint</cfg:username>
-                <cfg:password>Jabali123</cfg:password>
+                <cfg:password>YOUR_PASSWORD</cfg:password>
             </icfc:configurationProperties>
             <icfc:resultsHandlerConfiguration>
                 <icfc:enableNormalizingResultsHandler>false</icfc:enableNormalizingResultsHandler>
