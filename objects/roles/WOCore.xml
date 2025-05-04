@@ -147,6 +147,7 @@ if (!assignmentsToDelete.empty) {
 delta = prismContext.deltaFor(UserType.class).item(UserType.F_ASSIGNMENT).delete(assignmentsToDelete).asObjectDelta(user.oid)
 //log.info "Deleting"
 midpoint.modifyObject(delta, ModelExecuteOptions.createRaw())
+midpoint.recompute(UserType, basic.stringify(user.oid))
 roleDescription = 'OK: Deleted role identfier:' + roleId + ' from user personalNumber:' + userId
 delta = prismContext.deltaFor(RoleType.class).item(RoleType.F_DESCRIPTION).replace(roleDescription).asObjectDelta(input.oid)
 midpoint.modifyObject(delta, ModelExecuteOptions.createRaw())
@@ -173,6 +174,7 @@ addAssignment.setTargetRef(orgUnit)
 def delta = []
 delta = prismContext.deltaFor(UserType.class).item(FocusType.F_ASSIGNMENT).add(addAssignment.asPrismContainerValue()).asObjectDelta(user.oid)
 midpoint.modifyObject(delta, ModelExecuteOptions.createRaw())
+midpoint.recompute(UserType, basic.stringify(user.oid))
 roleDescription = 'OK: Added role identfier:' + roleId + ' to user personalNumber:' + userId
 delta = prismContext.deltaFor(RoleType.class).item(RoleType.F_DESCRIPTION).replace(roleDescription).asObjectDelta(input.oid)
 midpoint.modifyObject(delta, ModelExecuteOptions.createRaw())
