@@ -1,0 +1,101 @@
+<role xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="ffe3dd0a-3e69-4fad-b4de-e7823bb52cc4" version="2" >
+    <_metadata id="1">
+        <storage>
+            <createTimestamp>2025-05-07T13:40:20.432Z</createTimestamp>
+            <creatorRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </creatorRef>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2025-05-07T13:40:20.394Z</requestTimestamp>
+            <requestorRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </requestorRef>
+        </process>
+    </_metadata>
+    <name>POLICY add approver from role atribute</name>
+    <operationExecution id="2">
+        <recordType>simple</recordType>
+        <timestamp>2025-05-07T13:40:20.457Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:RoleType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000002881</token>
+            </executionResult>
+            <objectName>POLICY add approver from role atribute</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <activation>
+        <effectiveStatus>enabled</effectiveStatus>
+        <enableTimestamp>2025-05-07T13:40:20.409Z</enableTimestamp>
+    </activation>
+    <inducement id="2">
+        <policyRule>
+            <name>add approver from role atribute</name>
+            <policyConstraints>
+                <modification id="30">
+                    <item>c:documentation</item>
+                </modification>
+            </policyConstraints>
+            <policyActions>
+                <scriptExecution id="5">
+                    <name>some script</name>
+                    <executeScript xmlns:s="http://midpoint.evolveum.com/xml/ns/public/model/scripting-3">
+                        <s:pipeline list="true">
+                            <s:action>
+                                <s:type>execute-script</s:type>
+                                <s:parameter>
+                                    <s:name>script</s:name>
+                                    <s:value>
+                                        <code>
+import com.evolveum.midpoint.xml.ns._public.common.common_3.*
+import com.evolveum.midpoint.prism.delta.builder.*
+import com.evolveum.midpoint.model.api.*
+import com.evolveum.midpoint.schema.constants.SchemaConstants
+import javax.xml.namespace.QName
+
+
+role = midpoint.getObject(RoleType.class, input.oid)
+userId = basic.stringify(role.documentation)
+query_user = midpoint.queryFor(UserType.class, "personalNumber = '$userId'") 
+result_USER = midpoint.searchObjects(query_user)
+
+userApprover = new ObjectReferenceType()
+userApprover.setOid(input.oid)
+userApprover.setType(RoleType.COMPLEX_TYPE)
+userApprover.setRelation(SchemaConstants.ORG_APPROVER)
+addAssignment = new AssignmentType()
+addAssignment.setTargetRef(userApprover)
+def delta = []
+delta = prismContext.deltaFor(UserType.class).item(FocusType.F_ASSIGNMENT).add(addAssignment.asPrismContainerValue()).asObjectDelta(result_USER.oid)
+midpoint.modifyObject(delta, ModelExecuteOptions.createRaw())
+midpoint.recompute(UserType.class, basic.stringify(result_USER.oid))
+
+</code>
+                                    </s:value>
+                                </s:parameter>
+                            </s:action>
+                        </s:pipeline>
+                    </executeScript>
+                </scriptExecution>
+            </policyActions>
+        </policyRule>
+        <focusType>c:RoleType</focusType>
+    </inducement>
+</role>

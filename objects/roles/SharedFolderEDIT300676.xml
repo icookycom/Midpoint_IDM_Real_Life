@@ -1,0 +1,216 @@
+<role xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="2c11d299-7fee-4007-8687-6bf944f3b130" version="3" >
+    <_metadata id="3">
+        <storage>
+            <createTimestamp>2025-05-07T14:06:47.834Z</createTimestamp>
+            <creatorRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </creatorRef>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#reconciliation</createChannel>
+            <createTaskRef>
+                <t:oid>410e5d36-c368-4abe-80c7-7c1eeb0c4786</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:TaskType</t:type>
+            </createTaskRef>
+            <modifyTimestamp>2025-05-07T14:06:47.877Z</modifyTimestamp>
+            <modifierRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </modifierRef>
+            <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#reconciliation</modifyChannel>
+            <modifyTaskRef>
+                <t:oid>410e5d36-c368-4abe-80c7-7c1eeb0c4786</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:TaskType</t:type>
+            </modifyTaskRef>
+        </storage>
+        <process>
+            <requestTimestamp>2025-05-07T14:06:47.772Z</requestTimestamp>
+            <requestorRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </requestorRef>
+        </process>
+        <provisioning>
+            <lastProvisioningTimestamp>2025-05-07T14:06:47.834Z</lastProvisioningTimestamp>
+        </provisioning>
+    </_metadata>
+    <name>Shared_Folder_EDIT_300676</name>
+    <description>Rights for user HRID:300676 shared folder path \\Win-ikpur723q06\sf_300676</description>
+    <documentation>300676</documentation>
+    <operationExecution id="14">
+        <recordType>simple</recordType>
+        <timestamp>2025-05-07T14:06:48.326Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:RoleType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000074584</token>
+            </executionResult>
+            <objectName>Shared_Folder_EDIT_300676</objectName>
+        </operation>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:RoleType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.linkShadow</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000074585</token>
+            </executionResult>
+            <objectName>Shared_Folder_EDIT_300676</objectName>
+            <resourceOid>b8618fba-cf8b-416c-8e3b-32ea34cf003d</resourceOid>
+            <resourceName>Windows MS AD</resourceName>
+        </operation>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:RoleType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000074586</token>
+            </executionResult>
+            <objectName>Shared_Folder_EDIT_300676</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <taskRef oid="410e5d36-c368-4abe-80c7-7c1eeb0c4786" relation="org:default" type="c:TaskType"/>
+        <activityPath>
+            <identifier>resourceObjects</identifier>
+        </activityPath>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#reconciliation</channel>
+    </operationExecution>
+    <assignment id="1">
+        <_metadata id="4">
+            <storage>
+                <createTimestamp>2025-05-07T14:06:47.834Z</createTimestamp>
+                <creatorRef>
+                    <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                    <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                    <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+                </creatorRef>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#reconciliation</createChannel>
+                <createTaskRef>
+                    <t:oid>410e5d36-c368-4abe-80c7-7c1eeb0c4786</t:oid>
+                    <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                    <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:TaskType</t:type>
+                </createTaskRef>
+            </storage>
+            <process>
+                <requestTimestamp>2025-05-07T14:06:47.772Z</requestTimestamp>
+                <requestorRef>
+                    <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                    <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                    <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+                </requestorRef>
+            </process>
+        </_metadata>
+        <targetRef oid="29587779-047a-4965-b16b-ead921f9cfe1" relation="org:default" type="c:ArchetypeType"/>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+    </assignment>
+    <assignment id="2">
+        <_metadata id="5">
+            <storage>
+                <createTimestamp>2025-05-07T14:06:47.834Z</createTimestamp>
+                <creatorRef>
+                    <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                    <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                    <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+                </creatorRef>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#reconciliation</createChannel>
+                <createTaskRef>
+                    <t:oid>410e5d36-c368-4abe-80c7-7c1eeb0c4786</t:oid>
+                    <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                    <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:TaskType</t:type>
+                </createTaskRef>
+            </storage>
+            <process>
+                <requestTimestamp>2025-05-07T14:06:47.772Z</requestTimestamp>
+                <requestorRef>
+                    <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                    <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                    <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+                </requestorRef>
+            </process>
+            <provenance>
+                <mappingSpecification>
+                    <definitionObjectRef>
+                        <t:oid>b8618fba-cf8b-416c-8e3b-32ea34cf003d</t:oid>
+                        <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                        <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:ResourceType</t:type>
+                    </definitionObjectRef>
+                    <objectType>
+                        <kind>entitlement</kind>
+                        <intent>intent Groups Shared Folder POC</intent>
+                    </objectType>
+                    <mappingName>03 add POLICY add approver from role atribute</mappingName>
+                </mappingSpecification>
+            </provenance>
+        </_metadata>
+        <targetRef oid="ffe3dd0a-3e69-4fad-b4de-e7823bb52cc4" relation="org:default" type="c:RoleType"/>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+    </assignment>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <archetypeRef oid="29587779-047a-4965-b16b-ead921f9cfe1" relation="org:default" type="c:ArchetypeType"/>
+    <roleMembershipRef oid="ffe3dd0a-3e69-4fad-b4de-e7823bb52cc4" relation="org:default" type="c:RoleType">
+        <_metadata id="10">
+            <storage>
+                <createTimestamp>2025-05-07T14:06:47.834Z</createTimestamp>
+            </storage>
+            <provenance>
+                <assignmentPath>
+                    <sourceRef oid="2c11d299-7fee-4007-8687-6bf944f3b130" relation="org:default" type="c:RoleType"/>
+                    <segment id="11">
+                        <segmentOrder>1</segmentOrder>
+                        <assignmentId>2</assignmentId>
+                        <targetRef oid="ffe3dd0a-3e69-4fad-b4de-e7823bb52cc4" relation="org:default" type="c:RoleType"/>
+                        <matchingOrder>true</matchingOrder>
+                    </segment>
+                </assignmentPath>
+            </provenance>
+        </_metadata>
+    </roleMembershipRef>
+    <roleMembershipRef oid="29587779-047a-4965-b16b-ead921f9cfe1" relation="org:default" type="c:ArchetypeType">
+        <_metadata id="12">
+            <storage>
+                <createTimestamp>2025-05-07T14:06:47.834Z</createTimestamp>
+            </storage>
+            <provenance>
+                <assignmentPath>
+                    <sourceRef oid="2c11d299-7fee-4007-8687-6bf944f3b130" relation="org:default" type="c:RoleType"/>
+                    <segment id="13">
+                        <segmentOrder>1</segmentOrder>
+                        <assignmentId>1</assignmentId>
+                        <targetRef oid="29587779-047a-4965-b16b-ead921f9cfe1" relation="org:default" type="c:ArchetypeType"/>
+                        <matchingOrder>true</matchingOrder>
+                    </segment>
+                </assignmentPath>
+            </provenance>
+        </_metadata>
+    </roleMembershipRef>
+    <linkRef oid="1424b8ed-1d8d-404f-b4ab-2c45eede7196" relation="org:default" type="c:ShadowType"/>
+    <activation>
+        <effectiveStatus>enabled</effectiveStatus>
+        <enableTimestamp>2025-05-07T14:06:47.773Z</enableTimestamp>
+    </activation>
+    <identifier>CN=Shared_Folder_EDIT_300676,OU=Groups,OU=OOO_ODIN,DC=168testserverhome,DC=com</identifier>
+    <requestable>true</requestable>
+</role>

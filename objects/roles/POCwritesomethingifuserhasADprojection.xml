@@ -1,0 +1,146 @@
+<role xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="e46ad1be-21f3-423d-a492-a4f01a24b40f" version="6" >
+    <_metadata id="1">
+        <storage>
+            <createTimestamp>2024-11-27T07:34:35.457Z</createTimestamp>
+            <creatorRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </creatorRef>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+            <modifyTimestamp>2024-11-27T07:41:05.147Z</modifyTimestamp>
+            <modifierRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </modifierRef>
+            <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2024-11-27T07:34:35.432Z</requestTimestamp>
+            <requestorRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </requestorRef>
+        </process>
+    </_metadata>
+    <name>POC: write something if user has AD projection</name>
+    <operationExecution id="2">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-27T07:34:35.473Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:RoleType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000027476</token>
+            </executionResult>
+            <objectName>POC: write something if user has AD projection</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="5">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-27T07:35:42.091Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:RoleType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000028060</token>
+            </executionResult>
+            <objectName>POC: write something if user has AD projection</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="6">
+        <recordType>simple</recordType>
+        <timestamp>2024-11-27T07:41:05.170Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:RoleType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000030922</token>
+            </executionResult>
+            <objectName>POC: write something if user has AD projection</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <activation>
+        <effectiveStatus>enabled</effectiveStatus>
+        <enableTimestamp>2024-11-27T07:34:35.436Z</enableTimestamp>
+    </activation>
+    <inducement id="3">
+        <identifier>write "AD account" to User documentation</identifier>
+        <focusMappings>
+            <mapping id="4">
+                <name>01</name>
+                <strength>strong</strength>
+                <source>
+                    <path>name</path>
+                </source>
+                <expression>
+                    <value>AD account</value>
+                </expression>
+                <target>
+                    <path>documentation</path>
+                </target>
+            </mapping>
+        </focusMappings>
+        <focusType>c:UserType</focusType>
+        <condition>
+            <source>
+                <path>$user/linkRef</path>
+            </source>
+            <expression>
+                <script>
+                    <code>
+import com.evolveum.midpoint.xml.ns._public.common.common_3.ShadowType
+import com.evolveum.midpoint.schema.SelectorOptions
+import com.evolveum.midpoint.schema.GetOperationOptions
+linkrefOidsLIST = []
+resourceOids = []
+linkrefOids = user.getLinkRef()
+for (singleLinkRef in linkrefOids) {
+if (basic.stringify(singleLinkRef).contains('default')){linkrefOidsLIST.add(singleLinkRef)}
+}
+for (singleLinkRefLIST in linkrefOidsLIST) {
+options = SelectorOptions.createCollection(GetOperationOptions.createNoFetch())
+oid = singleLinkRefLIST.oid
+try {
+shadow = midpoint.getObject(ShadowType.class, oid, options)
+} catch (Exception e) {
+shadow = null
+}
+resourceOid = shadow?.resourceRef?.oid
+resourceOids.add(resourceOid)
+}
+if (resourceOids.contains('b8618fba-cf8b-416c-8e3b-32ea34cf003d')){return true} else {return false}
+</code>
+                </script>
+            </expression>
+        </condition>
+    </inducement>
+</role>

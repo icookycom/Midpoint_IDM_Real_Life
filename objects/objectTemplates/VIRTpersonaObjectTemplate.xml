@@ -1,0 +1,205 @@
+<objectTemplate xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="21239b6d-b888-4187-8eaa-3007aa612c66" version="23" >
+    <_metadata id="1">
+        <storage>
+            <createTimestamp>2024-12-04T06:41:36.181Z</createTimestamp>
+            <creatorRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </creatorRef>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+            <modifyTimestamp>2024-12-04T09:40:57.920Z</modifyTimestamp>
+            <modifierRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </modifierRef>
+            <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2024-12-04T06:41:36.038Z</requestTimestamp>
+            <requestorRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </requestorRef>
+        </process>
+    </_metadata>
+    <name>VIRT persona Object Template</name>
+    <operationExecution id="15">
+        <recordType>simple</recordType>
+        <timestamp>2024-12-04T09:32:49.970Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ObjectTemplateType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000007914</token>
+            </executionResult>
+            <objectName>VIRT persona Object Template</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="17">
+        <recordType>simple</recordType>
+        <timestamp>2024-12-04T09:38:46.723Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ObjectTemplateType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000009879</token>
+            </executionResult>
+            <objectName>VIRT persona Object Template</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="19">
+        <recordType>simple</recordType>
+        <timestamp>2024-12-04T09:39:27.836Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ObjectTemplateType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000010086</token>
+            </executionResult>
+            <objectName>VIRT persona Object Template</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="21">
+        <recordType>simple</recordType>
+        <timestamp>2024-12-04T09:39:59.102Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ObjectTemplateType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000010291</token>
+            </executionResult>
+            <objectName>VIRT persona Object Template</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="23">
+        <recordType>simple</recordType>
+        <timestamp>2024-12-04T09:40:57.932Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ObjectTemplateType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000010543</token>
+            </executionResult>
+            <objectName>VIRT persona Object Template</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <mapping id="10">
+        <name>adminStatus to persona</name>
+        <source>
+            <_metadata id="12">
+                <provenance>
+                    <acquisition id="13">
+                        <actorRef>
+                            <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                            <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                            <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+                        </actorRef>
+                        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+                        <timestamp>2024-12-04T09:32:17.301Z</timestamp>
+                    </acquisition>
+                </provenance>
+            </_metadata>
+            <path>c:activation/c:administrativeStatus</path>
+        </source>
+        <expression/>
+        <target>
+            <path>c:activation/c:administrativeStatus</path>
+        </target>
+    </mapping>
+    <mapping id="16">
+        <name>nickName to nickName+</name>
+        <source>
+            <path>c:nickName</path>
+        </source>
+        <expression>
+            <script>
+                <code>'virt-' + nickName</code>
+            </script>
+        </expression>
+        <target>
+            <path>c:nickName</path>
+        </target>
+    </mapping>
+    <mapping id="18">
+        <name>nickName to name+</name>
+        <source>
+            <path>c:nickName</path>
+        </source>
+        <expression>
+            <script>
+                <code>'virt-' + nickName</code>
+            </script>
+        </expression>
+        <target>
+            <path>c:name</path>
+        </target>
+    </mapping>
+    <mapping id="20">
+        <name>fullName to fullName</name>
+        <source>
+            <path>c:fullName</path>
+        </source>
+        <target>
+            <path>c:fullName</path>
+        </target>
+    </mapping>
+    <mapping id="22">
+        <name>personalNumber to personalNumber+</name>
+        <source>
+            <path>c:personalNumber</path>
+        </source>
+        <expression>
+            <script>
+                <code>'virt-' + personalNumber</code>
+            </script>
+        </expression>
+        <target>
+            <path>c:personalNumber</path>
+        </target>
+    </mapping>
+</objectTemplate>

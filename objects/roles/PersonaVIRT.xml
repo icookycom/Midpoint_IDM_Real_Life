@@ -1,0 +1,195 @@
+<role xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="328685d4-8186-4ab2-85c6-a3d0f08f3ac0" version="64" >
+    <_metadata id="1">
+        <storage>
+            <createTimestamp>2024-12-04T06:47:39.673Z</createTimestamp>
+            <creatorRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </creatorRef>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+            <modifyTimestamp>2024-12-12T08:31:10.978Z</modifyTimestamp>
+            <modifierRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </modifierRef>
+            <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2024-12-04T06:47:39.635Z</requestTimestamp>
+            <requestorRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </requestorRef>
+        </process>
+    </_metadata>
+    <name>Persona VIRT</name>
+    <operationExecution id="2">
+        <recordType>simple</recordType>
+        <timestamp>2024-12-04T06:47:39.703Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:RoleType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000002965</token>
+            </executionResult>
+            <objectName>Persona VIRT</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="5">
+        <recordType>simple</recordType>
+        <timestamp>2024-12-11T07:01:40.790Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:RoleType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000024114</token>
+            </executionResult>
+            <objectName>Persona VIRT</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="1001">
+        <recordType>simple</recordType>
+        <timestamp>2024-12-12T08:31:10.998Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:RoleType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000047804</token>
+            </executionResult>
+            <objectName>Persona VIRT</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <activation>
+        <effectiveStatus>enabled</effectiveStatus>
+        <enableTimestamp>2024-12-04T06:47:39.651Z</enableTimestamp>
+    </activation>
+    <inducement id="4">
+        <personaConstruction>
+            <targetType>UserType</targetType>
+            <objectMappingRef oid="21239b6d-b888-4187-8eaa-3007aa612c66" relation="org:default" type="c:ObjectTemplateType"/>
+            <archetypeRef oid="b21dc019-d581-43f5-9fba-55fe09ba9eb7" relation="org:default" type="c:ArchetypeType"/>
+        </personaConstruction>
+    </inducement>
+    <authorization id="999">
+        <name>persona-VIRT-assign-requestable-roles</name>
+        <description>
+        </description>
+        <action>http://midpoint.evolveum.com/xml/ns/public/security/authorization-model-3#assign</action>
+        <phase>request</phase>
+        <object id="891">
+            <type>UserType</type>
+            <archetypeRef oid="b21dc019-d581-43f5-9fba-55fe09ba9eb7" relation="org:default" type="c:ArchetypeType"/>
+            <filter>
+                <q:text>name startsWith "virt-" and name endsWith `actor.name`</q:text>
+            </filter>
+        </object>
+        <target id="23">
+            <type>RoleType</type>
+            <filter>
+                <q:text>name startsWith "ADGS"</q:text>
+            </filter>
+        </target>
+        <relation>org:default</relation>
+    </authorization>
+    <authorization id="11">
+        <name>persona-VIRT-shadow-execution-add-modify-delete</name>
+        <description>
+            Authorization that allows to persona-modification of user's accounts, but only in execution phase.
+            The real limitation of these operations is done in the request phase.
+        </description>
+        <action>http://midpoint.evolveum.com/xml/ns/public/security/authorization-model-3#add</action>
+        <action>http://midpoint.evolveum.com/xml/ns/public/security/authorization-model-3#modify</action>
+        <action>http://midpoint.evolveum.com/xml/ns/public/security/authorization-model-3#delete</action>
+        <phase>execution</phase>
+        <object id="25">
+            <type>ShadowType</type>
+            <owner>
+                <type>UserType</type>
+                <archetypeRef oid="b21dc019-d581-43f5-9fba-55fe09ba9eb7" relation="org:default" type="c:ArchetypeType"/>
+                <filter>
+                    <q:text>name startsWith "virt-" and name endsWith `actor.name`</q:text>
+                </filter>
+            </owner>
+        </object>
+    </authorization>
+    <authorization id="888">
+        <name>auth-persona-execute-modify-delete</name>
+        <action>http://midpoint.evolveum.com/xml/ns/public/security/authorization-model-3#modify</action>
+        <action>http://midpoint.evolveum.com/xml/ns/public/security/authorization-model-3#delete</action>
+        <phase>execution</phase>
+        <object id="891">
+            <type>UserType</type>
+            <archetypeRef oid="b21dc019-d581-43f5-9fba-55fe09ba9eb7" relation="org:default" type="c:ArchetypeType"/>
+            <filter>
+                <q:text>name startsWith "virt-" and name endsWith `actor.name`</q:text>
+            </filter>
+        </object>
+    </authorization>
+    <authorization id="8888">
+        <name>auth-persona-execute-modify-delete</name>
+        <action>http://midpoint.evolveum.com/xml/ns/public/security/authorization-model-3#read</action>
+        <object id="891">
+            <type>UserType</type>
+            <archetypeRef oid="b21dc019-d581-43f5-9fba-55fe09ba9eb7" relation="org:default" type="c:ArchetypeType"/>
+            <filter>
+                <q:text>name startsWith "virt-" and name endsWith `actor.name`</q:text>
+            </filter>
+        </object>
+    </authorization>
+    <authorization id="9990">
+        <name>read-ADGS-Role</name>
+        <description>
+        </description>
+        <action>http://midpoint.evolveum.com/xml/ns/public/security/authorization-model-3#read</action>
+        <object id="891">
+            <type>RoleType</type>
+            <filter>
+                <q:text>name startsWith "ADGS"</q:text>
+            </filter>
+        </object>
+    </authorization>
+    <authorization id="111">
+        <name>persona-VIRT-shadow-read</name>
+        <action>http://midpoint.evolveum.com/xml/ns/public/security/authorization-model-3#read</action>
+        <object id="25">
+            <type>ShadowType</type>
+            <owner>
+                <type>UserType</type>
+                <archetypeRef oid="b21dc019-d581-43f5-9fba-55fe09ba9eb7" relation="org:default" type="c:ArchetypeType"/>
+                <filter>
+                    <q:text>name startsWith "virt-" and name endsWith `actor.name`</q:text>
+                </filter>
+            </owner>
+        </object>
+    </authorization>
+    <requestable>true</requestable>
+</role>
