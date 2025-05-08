@@ -1,4 +1,4 @@
-<b>POC Midpoint IDM Real Life - it a pack of 4 concepts in 1 deployment!</b><br><br>
+<b>POC Midpoint IDM Real Life - is a pack of 4 concepts in 1 deployment!</b><br><br>
 <b>- Making IDM Midpoint work with external request tickets</b><br>
 This is a tricky one! IDM Midpoint reads requests from other system's databases and executes them. Add/delete operations and it creates roles-tickets with comments done or not.<br>
 Tutorial: <a href="https://habr.com/ru/articles/842756/">Making IDM Midpoint work with external request tickets</a><br>
