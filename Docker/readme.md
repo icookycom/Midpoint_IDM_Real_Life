@@ -3,7 +3,6 @@ Username: administrator<br>
 Password: Test5ecr3t<br>
 <br>
 ATTENTION: After firts start of Midpoint - in Admin GUI go to CONFIGURATION/About and press Reindex repository objects<br>
-
 <br>
 <br>
 <b>Docker Compose</b><br>
