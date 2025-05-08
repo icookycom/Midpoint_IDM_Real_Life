@@ -1,7 +1,7 @@
 <b>POC Midpoint IDM Real Life - it a pack of 4 concepts in 1 deployment!</b><br><br>
-<b>- Making IDM Midpoint work with external requests tickets</b><br>
-This is a tricky one! IDM Midpoint reads queries from other system's databases and executes them. Add/delete operations and it creates roles-tickets with comments done or not.<br>
-Tutorial: <a href="https://habr.com/ru/articles/842756/">Making IDM Midpoint work with external requests tickets</a><br>
+<b>- Making IDM Midpoint work with external request tickets</b><br>
+This is a tricky one! IDM Midpoint reads requests from other system's databases and executes them. Add/delete operations and it creates roles-tickets with comments done or not.<br>
+Tutorial: <a href="https://habr.com/ru/articles/842756/">Making IDM Midpoint work with external request tickets</a><br>
 <img src=https://github.com/icookycom/Midpoint_IDM_Real_Life/blob/master/manuals/Midpoint_WO.jpg><br><br>
 <b>- Automate the process of requesting, creating and distributing access to an employee's network folder via IDM Midpoint</b><br>
 This is a tricky one too! The user can create a network folder for himself and distribute access to it if requested - without the participation of the Windows Administrator!<br>
