@@ -1,0 +1,6 @@
+wo_num;wo_user;wo_role;wo_action;wo_satus
+1;500201;CN=ADG Terra WC,OU=Groups,OU=OOO_ODIN,DC=168testserverhome,DC=com;ADD;DONE
+2;843734;CN=ADG Terra WC,OU=Groups,OU=OOO_ODIN,DC=168testserverhome,DC=com;ADD;DONE
+3;500201;CN=ADG Venus WC,OU=Groups,OU=OOO_ODIN,DC=168testserverhome,DC=com;ADD;todo
+4;500215;CN=ADG Terra WC,OU=Groups,OU=OOO_ODIN,DC=168testserverhome,DC=com;ADD;DONE
+5;300676;CN=ADG IT Level 6,OU=Groups,OU=OOO_ODIN,DC=168testserverhome,DC=com;ADD;DONE
