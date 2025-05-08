@@ -8,7 +8,7 @@ This is a tricky one too! The user can create a network folder for himself and d
 Tutorial: <a href="https://habr.com/ru/articles/852726/">Automate the process of requesting, creating and distributing access to an employee's network folder via IDM Midpoint</a><br>
 <img src=https://github.com/icookycom/Midpoint_IDM_Real_Life/blob/master/manuals/Midpoint%20Shared%20Folder%20AD%20Schema.png><br><br>
 <b>- Complete guide to installing IDM Midpoint and connecting to MS AD</b><br>
-Not a big story here, иut incredible this is the first ever full description of how to connect IDM Midpoint to Windows Server MS AD!<br>
+Not a big story here, but <b>incredible</b> this is the first ever full description of how to connect IDM Midpoint to Windows Server MS AD!<br>
 Tutorial: <a href="https://habr.com/ru/articles/862112/">Complete guide to installing IDM Midpoint and connecting to MS AD</a><br><br>
 <b>- Creating Managed Twins in IDM Midpoint via Personas</b><br>
 Description of how to create Persona.<br>
