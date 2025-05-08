@@ -1,4 +1,12 @@
-Files from a configured and working Midpoint 4.9<br>
+<b>POC Midpoint IDM Real Life its a pack of 4 concepts in 1 deployment!</b><br>
+1 Making IDM Midpoint work with external requests tickets<br>
+2 Automate the process of requesting, creating and distributing access to an employee's network folder via IDM Midpoint<br>
+3 Complete guide to installing IDM Midpoint and connecting to MS AD<br>
+4 Creating Managed Twins in IDM Midpoint via Personas<br>
+<br>
+
+
+
 
 <b>Docker</b><br>
 Yes! In here <a href="https://github.com/icookycom/Midpoint_IDM_Real_Life/tree/master/Docker">Midpoint_IDM_Real_Life/tree/master/Docker</a>
