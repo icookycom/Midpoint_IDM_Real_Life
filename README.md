@@ -19,3 +19,7 @@ Folder contents:<br>
 &emsp;&emsp;&emsp;&emsp;- all files used for CSV connector<br>
 &emsp;&emsp;&emsp;/opt/var/schema<br>
 &emsp;&emsp;&emsp;&emsp;- additional attributes file<br>
+&emsp;/Windows Server<br>
+&emsp;&emsp;- files for Windows Server<br>
+&emsp;&emsp;&emsp;/C:\Users\midpoint\Documents\
+&emsp;&emsp;&emsp;&emsp;- Powershell scripts<br>
